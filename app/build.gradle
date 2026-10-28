@@ -21,6 +21,11 @@ if (!(appVersion ==~ /\d+\.\d{1,2}\.\d{1,2}/)) {
 }
 def versionParts = appVersion.tokenize('.').collect { it as int }
 
+// The project's key the releases built on GitHub are signed with, given there through the environment: a key file and
+// its password, the key's password being the same. Without it a release is signed with the local debug key, enough
+// for one's own phones
+def releaseKeystore = System.getenv('RELEASE_KEYSTORE_FILE') ?: ''
+
 // meteosphere-debug.apk and meteosphere-release.apk rather than app-*.apk
 base {
     archivesName = 'meteosphere'
@@ -55,12 +60,22 @@ android {
         buildConfigField 'String', 'FORECA_TOKEN', "\"${privateProperty('foreca.token')}\""
     }
 
+    signingConfigs {
+        if (!releaseKeystore.isEmpty()) {
+            release {
+                storeFile = file(releaseKeystore)
+                storePassword = System.getenv('RELEASE_KEYSTORE_PASSWORD')
+                keyAlias = System.getenv('RELEASE_KEY_ALIAS')
+                keyPassword = System.getenv('RELEASE_KEYSTORE_PASSWORD')
+            }
+        }
+    }
+
     buildTypes {
         release {
             // R8 shrinks and optimizes the code for a quicker cold start; the resources stay, as some are found by name
             minifyEnabled = true
-            // Personal installs only: sign with the local debug key.
-            signingConfig = signingConfigs.debug
+            signingConfig = releaseKeystore.isEmpty() ? signingConfigs.debug : signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

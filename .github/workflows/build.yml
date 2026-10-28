@@ -1,0 +1,87 @@
+# Every push to main and every pull request is built and tested; a tag vX.Y.Z also makes the release: the APK built
+# for that version, signed with the project's key, on the Releases page
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: read
+
+# The actions are taken at fixed commits, the release job holding the project's key: a moved tag runs nothing new
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@8da46b539cd8fe6ab27ca75128919a18d757604c # v6.4.1
+      - name: Test and build
+        run: ./gradlew testDebugUnitTest assembleDebug
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      # The certificate of the project's key, public: the APK must be signed with it and no other
+      CERT_SHA256: 6a6a0775c0472b8c6c067e36121e2d3ea4edeffc532c59393b911646d3e1a6cf
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@8da46b539cd8fe6ab27ca75128919a18d757604c # v6.4.1
+      - name: Build the signed release
+        env:
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          RELEASE_KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: meteosphere
+        run: |
+          if [ -z "$RELEASE_KEYSTORE_BASE64" ] || [ -z "$RELEASE_KEYSTORE_PASSWORD" ]; then
+            echo "::error::The secrets RELEASE_KEYSTORE_BASE64 and RELEASE_KEYSTORE_PASSWORD aren't set"
+            exit 1
+          fi
+          export RELEASE_KEYSTORE_FILE="$RUNNER_TEMP/release.jks"
+          # Gone when the step ends, the build failing too
+          trap 'rm -f "$RELEASE_KEYSTORE_FILE"' EXIT
+          echo "$RELEASE_KEYSTORE_BASE64" | base64 -d > "$RELEASE_KEYSTORE_FILE"
+          ./gradlew assembleRelease
+      - name: Check the version and the signature
+        run: |
+          tools=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          apk=app/build/outputs/apk/release/meteosphere-release.apk
+          version=$("$tools/aapt2" dump badging "$apk" | sed -n "s/^package: .* versionName='\([^']*\)'.*/\1/p")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::The tag $GITHUB_REF_NAME isn't the app's version $version, set in app/build.gradle"
+            exit 1
+          fi
+          cert=$("$tools/apksigner" verify --print-certs "$apk" | sed -n 's/^Signer #1 certificate SHA-256 digest: //p')
+          if [ "$cert" != "$CERT_SHA256" ]; then
+            echo "::error::The APK is signed with another key: $cert"
+            exit 1
+          fi
+          mv "$apk" "meteosphere-$version.apk"
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # The tag itself, its message being the release's notes; the checkout may have fetched only its commit
+          git fetch --force origin "refs/tags/$GITHUB_REF_NAME:refs/tags/$GITHUB_REF_NAME"
+          # A job run again finds its release made: the APK is put there anew
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "meteosphere-$VERSION.apk" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "meteosphere-$VERSION.apk" --title "Meteosphere $VERSION" \
+              --notes-from-tag --verify-tag
+          fi

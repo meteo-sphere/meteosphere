@@ -38,6 +38,12 @@ Simplified and Traditional Chinese, Japanese, Dutch), taken from Android, per ap
 light and dark themes; the main screen's tabs can be reordered and hidden; a chart of the requests to each data
 source.
 
+## Download
+
+The APK of each version is on the [Releases](https://github.com/meteo-sphere/meteosphere/releases) page, built by
+GitHub Actions and signed with the project's key, so a new version installs over the one before. Android 7.0 or newer
+runs it.
+
 ## Data sources
 
 | Source | What for | Key |
@@ -71,7 +77,11 @@ You need the Android SDK with platform 37 (Android Studio writes its path to `lo
 The APK is `app/build/outputs/apk/debug/meteosphere-debug.apk`. Android 7.0 or newer runs it.
 
 `./gradlew assembleRelease` makes a smaller, faster build shrunk by R8, `meteosphere-release.apk`. It is signed with
-the local debug key, enough for installing it on your own phones; give it your own signing config to publish it.
+the local debug key, enough for installing it on your own phones; a key file named in the environment
+(`RELEASE_KEYSTORE_FILE`, `RELEASE_KEYSTORE_PASSWORD`, `RELEASE_KEY_ALIAS`) signs it with that key instead.
+
+A tag `vX.Y.Z` matching the version in `app/build.gradle` makes a release: `.github/workflows/build.yml` tests the
+code, builds the APK, signs it with the key kept in the repository's secrets and puts it on the Releases page.
 
 Unit tests:
 
