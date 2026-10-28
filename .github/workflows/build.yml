@@ -65,9 +65,12 @@ jobs:
             echo "::error::The tag $GITHUB_REF_NAME isn't the app's version $version, set in app/build.gradle"
             exit 1
           fi
-          cert=$("$tools/apksigner" verify --print-certs "$apk" | sed -n 's/^Signer #1 certificate SHA-256 digest: //p')
-          if [ "$cert" != "$CERT_SHA256" ]; then
-            echo "::error::The APK is signed with another key: $cert"
+          # "Signer #1", or with the v3.1 scheme a line for each range of Android versions: every one the project's key
+          signers=$("$tools/apksigner" verify --print-certs "$apk")
+          certs=$(printf '%s\n' "$signers" | sed -n 's/^Signer.* certificate SHA-256 digest: //p' | sort -u)
+          if [ "$certs" != "$CERT_SHA256" ]; then
+            echo "::error::The APK isn't signed with the project's key alone: $certs"
+            printf '%s\n' "$signers"
             exit 1
           fi
           mv "$apk" "meteosphere-$version.apk"
