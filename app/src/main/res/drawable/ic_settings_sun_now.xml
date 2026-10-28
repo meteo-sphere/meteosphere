@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A settings row's icon: the glyph on a disc of its group's hue; the Sun with its rays, for the Sun now -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_yellow_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:pathData="M16,12a4,4 0 1,1 -8,0a4,4 0 1,1 8,0zM12,2.5v2.5M12,19v2.5M2.5,12h2.5M19,12h2.5M5.3,5.3l1.8,1.8M16.9,16.9l1.8,1.8M5.3,18.7l1.8,-1.8M16.9,7.1l1.8,-1.8"
+                android:strokeColor="@color/settings_icon_yellow"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.8"/>
+        </vector>
+    </item>
+</layer-list>

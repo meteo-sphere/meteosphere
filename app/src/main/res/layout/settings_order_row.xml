@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A row of the order screens on a segment of its group: the handle it is dragged by, or an icon in its place, its
+     title and whether it is shown. A tap anywhere on the row toggles the tick, which takes no taps itself -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/settings_row_height"
+    android:orientation="horizontal"
+    android:paddingStart="4dp"
+    android:paddingEnd="8dp">
+    <ImageView
+        android:id="@+id/ivDragHandle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:importantForAccessibility="no"
+        android:scaleType="center"
+        android:src="@drawable/ic_drag_handle"/>
+    <TextView
+        android:id="@+id/tvRowTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"/>
+    <!-- Without a ripple of its own: the row's shows. The screen keeps the ticks itself, also when it is made again:
+         the rows' own would come back over its values -->
+    <CheckBox
+        android:id="@+id/cbRowShown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:saveEnabled="false"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The weather notification's weather now: the icon, the place and the weather's text, the temperature at the right;
+     over the place's sky in the sky look. WeatherNotification makes it compact, 48dp high, for the collapsed view from
+     Android 12 on. The texts are in dp, so that the system's font size doesn't break the fixed heights -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notification_corners"
+    android:clipToOutline="true">
+    <ImageView
+        android:id="@+id/imvNowSky"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/llNowRow"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp">
+            <ImageView
+                android:id="@+id/imvNowIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvNowName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/tvNowWeather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingBottom="1dp"
+                android:textSize="12dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvNowTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:singleLine="true"
+            android:textSize="25dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drawn by tools/weather_icons.py -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="48dp"
+    android:viewportWidth="64"
+    android:viewportHeight="48">
+    <path
+        android:pathData="M16.88 44 A11.88 11.88 0 0 1 16.24 20.26 A16.2 16.2 0 0 1 46.05 15.96 A14.04 14.04 0 0 1 44.96 44 Z"
+        android:fillColor="#8796AB"
+        android:fillAlpha="0.55" />
+</vector>

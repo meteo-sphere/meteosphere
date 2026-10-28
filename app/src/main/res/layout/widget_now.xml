@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The 2x1 weather widget: the weather now, or today's, over the place's line -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flWidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imvBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/widget_glass_inset"
+        android:scaleType="fitXY"/>
+    <include
+        layout="@layout/widget_now_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/widget_padding"
+        android:layout_marginTop="@dimen/widget_padding"
+        android:layout_marginRight="@dimen/widget_padding"
+        android:layout_marginBottom="@dimen/widget_padding_bottom"/>
+    <include layout="@layout/widget_settings_gear"/>
+    <FrameLayout
+        android:id="@+id/flRefresh"
+        android:layout_width="@dimen/widget_refresh_area"
+        android:layout_height="@dimen/widget_refresh_area"
+        android:layout_gravity="bottom|left"
+        android:background="@color/widget_tap_area"/>
+</FrameLayout>

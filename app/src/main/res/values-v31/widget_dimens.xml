@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The launcher's own radius since Android 12, as ChartWidget rounds the chart widgets too. The inner one is the
+         same, the edge then a little wider at the corners only -->
+    <dimen name="widget_background_corner">@android:dimen/system_app_widget_background_radius</dimen>
+    <dimen name="widget_background_corner_inner">@android:dimen/system_app_widget_background_radius</dimen>
+    <!-- Since Android 12 the glass stands off the widget's edge: Samsung's launcher on Android 17 shows a widget shrunk
+         (by 0.83 on an S25 Ultra) yet clips it at its full edge with its full radius, which cut the corners of a glass
+         reaching the edge. 3dp keeps them whole down to about 0.7 -->
+    <dimen name="widget_glass_inset">3dp</dimen>
+</resources>

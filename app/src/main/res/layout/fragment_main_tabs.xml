@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The main screen's tabs: the pages fill the screen, fading out under the floating bar of the tabs, over a shade on
+     a dark page; the add button over the bar's end, for the favourites. The bar keeps its own margins, set over the
+     navigation bar by MainTabsFragment -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <org.meteosphere.ui.common.BottomFadeFrame
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpTabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </org.meteosphere.ui.common.BottomFadeFrame>
+    <org.meteosphere.ui.common.BottomScrimView
+        android:id="@+id/bottomScrim"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:importantForAccessibility="no"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/tab_bar_fab_margin"
+        android:contentDescription="@string/favorites_add"
+        app:shapeAppearance="@style/ShapeAppearance.Meteo.Round"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="@android:color/white"/>
+    <org.meteosphere.ui.main.TabPillBar
+        android:id="@+id/tabPill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="@dimen/tab_bar_margin"
+        app:marginBottomSystemWindowInsets="false"
+        app:marginLeftSystemWindowInsets="false"
+        app:marginRightSystemWindowInsets="false"/>
+</FrameLayout>

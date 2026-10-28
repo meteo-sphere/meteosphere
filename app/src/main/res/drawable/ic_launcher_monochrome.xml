@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The icon as one line, for the themed icons -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M39.44 66 A11.44 11.44 0 0 1 38.83 43.14 A15.6 15.6 0 0 1 67.53 39 A13.52 13.52 0 0 1 66.48 66 L61.61 66 L58.91 69.5 L55.66 57 L52.42 76 L49.17 61 L46.47 68 L44.31 66 L39.44 66 Z"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+</vector>

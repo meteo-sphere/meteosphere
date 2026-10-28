@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The data sources' colours in the requests' statistics, the same on the device's chart and the server's -->
+<resources>
+    <color name="stats_open_meteo">#244267</color>
+    <color name="stats_open_meteo_geocoding">#4F8BCB</color>
+    <color name="stats_foreca">#00897B</color>
+    <color name="stats_noaa">#E0A030</color>
+    <color name="stats_geonames">#7A5BB5</color>
+    <color name="stats_usgs">#4E9A6B</color>
+    <color name="stats_helioviewer">#C0566A</color>
+    <color name="stats_other">#8D9199</color>
+</resources>

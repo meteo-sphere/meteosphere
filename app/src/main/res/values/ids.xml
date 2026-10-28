@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- A scrolling view's own bottom padding, before the room for the tabs' toolbar was added -->
+    <item name="tag_own_bottom_padding" type="id"/>
+    <!-- A scrolling view's own top padding, before the room for the glass over its top was added -->
+    <item name="tag_own_top_padding" type="id"/>
+    <!-- A text's own size, before it was set smaller to fit -->
+    <item name="tag_own_text_size" type="id"/>
+    <!-- A page's or a screen's list, found once, for the glass over it to blur -->
+    <item name="tag_blurred_list" type="id"/>
+    <!-- A page's row of controls on glass, or none, found once -->
+    <item name="tag_page_strip" type="id"/>
+    <!-- A settings row's place in its group and the background drawn for it -->
+    <item name="tag_segment_kind" type="id"/>
+    <item name="tag_segment_background" type="id"/>
+    <!-- A view's own width, before it was animated -->
+    <item name="tag_own_width" type="id"/>
+    <!-- A background's fade out under way, to be let finish -->
+    <item name="tag_fading" type="id"/>
+    <!-- What a list's rows show, for them to be made again only when it changes -->
+    <item name="tag_shown_lines" type="id"/>
+</resources>

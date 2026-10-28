@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>Удалённый сервер</item>
+        <item>На устройстве</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>Как в системе</item>
+        <item>Небо погоды</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>Новолуние</item>
+        <item>Растущий серп</item>
+        <item>Первая четверть</item>
+        <item>Растущая луна</item>
+        <item>Полнолуние</item>
+        <item>Убывающая луна</item>
+        <item>Последняя четверть</item>
+        <item>Убывающий серп</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>Не уведомлять</item>
+        <item>M6 и сильнее</item>
+        <item>M6,5 и сильнее</item>
+        <item>M7 и сильнее</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>Не уведомлять</item>
+        <item>Ближе 300 км</item>
+        <item>Ближе 500 км</item>
+        <item>Ближе 1000 км</item>
+        <item>Ближе 2000 км</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>Не уведомлять</item>
+        <item>Полнолуние</item>
+        <item>Новолуние и полнолуние</item>
+        <item>Все четыре фазы</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>Овен</item>
+        <item>Телец</item>
+        <item>Близнецы</item>
+        <item>Рак</item>
+        <item>Лев</item>
+        <item>Дева</item>
+        <item>Весы</item>
+        <item>Скорпион</item>
+        <item>Стрелец</item>
+        <item>Козерог</item>
+        <item>Водолей</item>
+        <item>Рыбы</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>Солнце в Овне</item>
+        <item>Солнце в Тельце</item>
+        <item>Солнце в Близнецах</item>
+        <item>Солнце в Раке</item>
+        <item>Солнце во Льве</item>
+        <item>Солнце в Деве</item>
+        <item>Солнце в Весах</item>
+        <item>Солнце в Скорпионе</item>
+        <item>Солнце в Стрельце</item>
+        <item>Солнце в Козероге</item>
+        <item>Солнце в Водолее</item>
+        <item>Солнце в Рыбах</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>Весеннее равноденствие</item>
+        <item>Летнее солнцестояние</item>
+        <item>Осеннее равноденствие</item>
+        <item>Зимнее солнцестояние</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>Полное солнечное затмение</item>
+        <item>Кольцеобразное солнечное затмение</item>
+        <item>Гибридное солнечное затмение</item>
+        <item>Частное солнечное затмение</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>Полное лунное затмение</item>
+        <item>Частное лунное затмение</item>
+        <item>Полутеневое лунное затмение</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>Не уведомлять</item>
+        <item>Все затмения</item>
+        <item>Только видимые здесь</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>на север</item>
+        <item>на северо-восток</item>
+        <item>на восток</item>
+        <item>на юго-восток</item>
+        <item>на юг</item>
+        <item>на юго-запад</item>
+        <item>на запад</item>
+        <item>на северо-запад</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>зелёный</item>
+        <item>жёлтый</item>
+        <item>оранжевый</item>
+        <item>красный</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>Как на устройстве</item>
+        <item>Светлая</item>
+        <item>Тёмная</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>Новолуние</item>
+        <item>Перв. четв.</item>
+        <item>Полнолуние</item>
+        <item>Посл. четв.</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>в воскресенье</item>
+        <item>в понедельник</item>
+        <item>во вторник</item>
+        <item>в среду</item>
+        <item>в четверг</item>
+        <item>в пятницу</item>
+        <item>в субботу</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>Дождь</item>
+        <item>Снег</item>
+        <item>Мокрый снег</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>Спокойно</item>
+        <item>Неспокойно</item>
+        <item>Буря</item>
+        <item>Сильная буря</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>Вс</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>янв</item>
+        <item>февр</item>
+        <item>мар</item>
+        <item>апр</item>
+        <item>мая</item>
+        <item>июн</item>
+        <item>июл</item>
+        <item>авг</item>
+        <item>сент</item>
+        <item>окт</item>
+        <item>нояб</item>
+        <item>дек</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>Штиль</item>
+        <item>С</item>
+        <item>СВ</item>
+        <item>В</item>
+        <item>ЮВ</item>
+        <item>Ю</item>
+        <item>ЮЗ</item>
+        <item>З</item>
+        <item>СЗ</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>м/с</item>
+        <item>км/ч</item>
+        <item>миль/ч</item>
+        <item>узлы</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>мм рт. ст.</item>
+        <item>гПа</item>
+        <item>мбар</item>
+        <item>дюйм рт. ст.</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>км</item>
+        <item>мили</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>мм</item>
+        <item>дюймы</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>Автоматически</item>
+        <item>Каждые 15 минут</item>
+        <item>Каждые 30 минут</item>
+        <item>Каждый час</item>
+        <item>Каждые 2 часа</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>Тёмный</item>
+        <item>Светлый</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>По часам</item>
+        <item>По дням</item>
+    </string-array>
+</resources>

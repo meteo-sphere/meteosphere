@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>遠端伺服器</item>
+        <item>本機</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>系統預設</item>
+        <item>天氣天空</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>新月</item>
+        <item>眉月</item>
+        <item>上弦月</item>
+        <item>盈凸月</item>
+        <item>滿月</item>
+        <item>虧凸月</item>
+        <item>下弦月</item>
+        <item>殘月</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>關閉</item>
+        <item>M6 以上</item>
+        <item>M6.5 以上</item>
+        <item>M7 以上</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>關閉</item>
+        <item>300 公里以內</item>
+        <item>500 公里以內</item>
+        <item>1000 公里以內</item>
+        <item>2000 公里以內</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>關閉</item>
+        <item>滿月</item>
+        <item>新月和滿月</item>
+        <item>全部四種月相</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>牡羊座</item>
+        <item>金牛座</item>
+        <item>雙子座</item>
+        <item>巨蟹座</item>
+        <item>獅子座</item>
+        <item>處女座</item>
+        <item>天秤座</item>
+        <item>天蠍座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>雙魚座</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>太陽進入牡羊座</item>
+        <item>太陽進入金牛座</item>
+        <item>太陽進入雙子座</item>
+        <item>太陽進入巨蟹座</item>
+        <item>太陽進入獅子座</item>
+        <item>太陽進入處女座</item>
+        <item>太陽進入天秤座</item>
+        <item>太陽進入天蠍座</item>
+        <item>太陽進入射手座</item>
+        <item>太陽進入摩羯座</item>
+        <item>太陽進入水瓶座</item>
+        <item>太陽進入雙魚座</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>春分</item>
+        <item>夏至</item>
+        <item>秋分</item>
+        <item>冬至</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>日全食</item>
+        <item>日環食</item>
+        <item>全環食</item>
+        <item>日偏食</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>月全食</item>
+        <item>月偏食</item>
+        <item>半影月食</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>關閉</item>
+        <item>全部日食和月食</item>
+        <item>僅本地可見</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>正北方向</item>
+        <item>東北方向</item>
+        <item>正東方向</item>
+        <item>東南方向</item>
+        <item>正南方向</item>
+        <item>西南方向</item>
+        <item>正西方向</item>
+        <item>西北方向</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>綠色</item>
+        <item>黃色</item>
+        <item>橙色</item>
+        <item>紅色</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>系統預設</item>
+        <item>淺色</item>
+        <item>深色</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>新月</item>
+        <item>上弦月</item>
+        <item>滿月</item>
+        <item>下弦月</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>週日</item>
+        <item>週一</item>
+        <item>週二</item>
+        <item>週三</item>
+        <item>週四</item>
+        <item>週五</item>
+        <item>週六</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>雨</item>
+        <item>雪</item>
+        <item>雨夾雪</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>平靜</item>
+        <item>擾動</item>
+        <item>磁暴</item>
+        <item>強磁暴</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>週日</item>
+        <item>週一</item>
+        <item>週二</item>
+        <item>週三</item>
+        <item>週四</item>
+        <item>週五</item>
+        <item>週六</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>無風</item>
+        <item>北</item>
+        <item>東北</item>
+        <item>東</item>
+        <item>東南</item>
+        <item>南</item>
+        <item>西南</item>
+        <item>西</item>
+        <item>西北</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>公尺/秒</item>
+        <item>公里/小時</item>
+        <item>英里/小時</item>
+        <item>節</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>毫米汞柱</item>
+        <item>百帕</item>
+        <item>毫巴</item>
+        <item>英寸汞柱</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>公里</item>
+        <item>英里</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>毫米</item>
+        <item>英寸</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>自動</item>
+        <item>每 15 分鐘</item>
+        <item>每 30 分鐘</item>
+        <item>每小時</item>
+        <item>每 2 小時</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>深色</item>
+        <item>淺色</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>每小時</item>
+        <item>每日</item>
+    </string-array>
+</resources>

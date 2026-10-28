@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Perigee: the Moon at the near end of its orbit around the Earth; tinted where used -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.1"
+        android:pathData="M2.7,12A9.3,6 0 1,0 21.3,12A9.3,6 0 1,0 2.7,12Z"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M7.1,12A2.4,2.4 0 1,0 11.9,12A2.4,2.4 0 1,0 7.1,12ZM0.1,12A2.6,2.6 0 1,0 5.3,12A2.6,2.6 0 1,0 0.1,12Z"/>
+</vector>

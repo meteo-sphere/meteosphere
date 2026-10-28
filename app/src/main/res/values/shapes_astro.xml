@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The place chip of the Moon, Sun and Earthquakes tabs, rounded as the moment's pill beside it -->
+    <style name="ShapeAppearance.Meteo.AstroPlace" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <!-- Round, as the favourites' add button -->
+    <style name="ShapeAppearance.Meteo.Round" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

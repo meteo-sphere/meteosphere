@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The card of today's Sun or Moon at the top of their tabs, in the colour of the tabs' cards -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="?attr/colorSurfaceContainerHighest" />
+    <corners android:radius="24dp" />
+</shape>

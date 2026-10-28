@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_language">tr</string>
+    <string name="app_name">Meteosphere</string>
+    <string name="search_failed">Bağlantı yok, arama başarısız oldu</string>
+    <string name="already_in_favorites">Zaten favorilerde</string>
+    <string name="pref_only_strong_wind_summary">Konum listelerinde yalnızca %1$s %2$s ve üzeri rüzgârı göster.</string>
+    <string name="pref_live_sky">Animasyonlu hava</string>
+    <string name="pref_live_sky_summary">Bulutlar akar, yağmur ve kar yağar. Daha fazla pil kullanır</string>
+    <string name="pref_category_experimental">Deneysel özellikler</string>
+    <string name="pref_statistics">İstatistikler</string>
+    <string name="stats_on_device">Bu cihazda</string>
+    <string name="stats_on_server">Sunucuda</string>
+    <string name="stats_today">bugün</string>
+    <string name="stats_max">maks</string>
+    <string name="stats_min">min</string>
+    <string name="stats_loading">Yükleniyor…</string>
+    <string name="stats_failed">Sunucu istatistikleri yüklenemedi</string>
+    <string name="stats_no_requests">Henüz istek yok</string>
+    <string name="stats_note">Veri kaynaklarına günlük istekler, UTC günleri</string>
+    <string name="pref_statusbar_notification_forecast_title">Saatlik tahmin</string>
+    <string name="pref_statusbar_notification_forecast_summary">Bildirim genişletildiğinde</string>
+    <string name="nearby_you_are_here">Buradasınız</string>
+    <string name="tab_favorites">Favoriler</string>
+    <string name="tab_nearby">Yakındakiler</string>
+    <string name="weather_widget_settings">Meteosphere widget\'ı</string>
+    <string name="updated_time">Güncellendi: %2$d %1$s, %3$s</string>
+    <string name="widget_settings_show_wind">Rüzgâr</string>
+    <string name="widget_settings_show_precipitation">Yağış</string>
+    <string name="widget_settings_group_show">Widget\'ta</string>
+    <string name="widget_settings_group_look">Görünüm</string>
+    <string name="widget_settings_group_clock">Saat</string>
+    <string name="widget_settings_city">Şehir</string>
+    <string name="pref_category_general">Genel</string>
+    <string name="pref_category_display">Görünüm</string>
+    <string name="pref_category_location">Konum</string>
+    <string name="pref_category_notifications">Bildirimler</string>
+    <string name="pref_data_provider">Veri kaynağı</string>
+    <string name="pref_weather_source">Hava tahmini</string>
+    <string name="pref_foreca_key">Foreca API anahtarı</string>
+    <string name="foreca_key_message">Foreca, API anahtarını kayıttan sonra %s adresinde verir</string>
+    <string name="foreca_key_hint">Anahtar</string>
+    <string name="foreca_key_checking">Anahtar kontrol ediliyor…</string>
+    <string name="foreca_key_refused">Foreca bu anahtarı kabul etmedi</string>
+    <string name="foreca_key_unchecked">Anahtar kontrol edilemedi, Foreca ile bağlantı yok</string>
+    <string name="foreca_key_busy">Foreca şu anda anahtarı kontrol edemiyor</string>
+    <string name="moon">Ay</string>
+    <string name="moon_label">Ay aydınlanması, %</string>
+    <string name="earthquakes">Depremler</string>
+    <string name="earthquakes_period_day">Gün</string>
+    <string name="earthquakes_period_week">Hafta</string>
+    <string name="earthquakes_period_month">Ay</string>
+    <string name="earthquakes_sort_time">Zamana göre</string>
+    <string name="earthquakes_sort_distance">Mesafeye göre</string>
+    <string name="earthquakes_empty">Bu dönemde M5+ deprem yok</string>
+    <string name="earthquakes_error">USGS verileri yüklenemedi</string>
+    <string name="earthquakes_saved">Bağlantı yok, kayıtlı liste gösteriliyor</string>
+    <string name="tab_earthquakes">Depremler</string>
+    <string name="earthquakes_ago_now">şimdi</string>
+    <string name="earthquakes_ago_minutes">%d dk</string>
+    <string name="earthquakes_ago_hours">%d sa</string>
+    <string name="earthquakes_ago_days">%d g</string>
+    <string name="pref_earthquake_alerts_world">Dünyadaki güçlü depremler</string>
+    <string name="pref_earthquake_alerts_nearby">Konumlarıma yakın M5+ depremler</string>
+    <string name="earthquake_alert_title">Deprem M %s</string>
+    <string name="earthquake_alert_details">Ayrıntılar</string>
+    <string name="earthquake_alerts_denied">Android ayarlarında Meteosphere için bildirimlere izin verilmiyor</string>
+    <string name="pref_main_tabs">Sekmeler</string>
+    <string name="pref_moon_phase_alerts">Ay evreleri</string>
+    <string name="moon_alert_today">Bugün saat %s</string>
+    <string name="moon_alert_tonight">Bu gece saat %s</string>
+    <string name="moon_rise">Ay doğuşu</string>
+    <string name="moon_set">Ay batışı</string>
+    <string name="moon_next_phases">Sonraki evreler</string>
+    <string name="moon_by_day">Günlere göre</string>
+    <string name="moon_tile_age">Yaş</string>
+    <string name="moon_age_days">%s gün</string>
+    <string name="moon_until_new">%1$d %2$s sonra yeniay</string>
+    <string name="moon_new_today">bugün yeniay</string>
+    <string name="moon_illumination_change">bir günde %1$s</string>
+    <string name="moon_illuminated">aydınlık</string>
+    <string name="moon_month_title">Aylık aydınlanma</string>
+    <string name="moon_perigee">Yerberi</string>
+    <string name="moon_apogee">Yeröte</string>
+    <string name="moon_supermoon">süper ay</string>
+    <string name="moon_distance_km">%s km</string>
+    <string name="moon_sign_until">%s tarihine kadar</string>
+    <string name="moon_phase_at">%1$s saat %2$s</string>
+    <string name="tab_sun">Güneş</string>
+    <string name="sun_polar_day">Kutup gündüzü</string>
+    <string name="sun_polar_night">Kutup gecesi</string>
+    <string name="duration_hours_minutes">%1$d sa %2$d dk</string>
+    <string name="duration_minutes_seconds">%1$d dk %2$d sn</string>
+    <string name="duration_seconds">%d sn</string>
+    <string name="eclipse_visible">Buradan görünür: %1$s – %2$s</string>
+    <string name="eclipse_visible_covered">Buradan görünür: %1$s – %2$s, örtülme %3$s</string>
+    <string name="eclipse_not_visible">Buradan görünmez</string>
+    <string name="eclipse_alert_visible">buradan görünür</string>
+    <string name="eclipse_alert_visible_covered">buradan görünür, örtülme %s</string>
+    <string name="eclipse_alert_not_visible">buradan görünmez</string>
+    <string name="pref_eclipse_alerts">Tutulmalar</string>
+    <string name="sun_seasons_title">Gündönümleri ve ekinokslar</string>
+    <string name="solar_eclipses_title">Güneş tutulmaları</string>
+    <string name="lunar_eclipses_title">Ay tutulmaları</string>
+    <string name="sun_year_title">Yıl boyunca gün doğumu ve batımı</string>
+    <string name="sun_signs_title">Burçlar</string>
+    <string name="sun_next_event">Sonraki olay</string>
+    <string name="sun_now">Güneş şu an</string>
+    <string name="sun_now_taken">SDO görüntüsü, saat %s</string>
+    <string name="sun_now_frame">saat %s görüntüsü</string>
+    <string name="sun_now_loading">Yükleniyor…</string>
+    <string name="sun_now_offline">Helioviewer ile bağlantı yok</string>
+    <string name="sun_now_failed">Görüntü yüklenemedi. Tekrar denemek için dokunun</string>
+    <string name="sun_now_day_ago">−24 sa</string>
+    <string name="sun_now_half_day_ago">−12 sa</string>
+    <string name="sun_now_now">şimdi</string>
+    <string name="sun_now_play">Günü oynat</string>
+    <string name="sun_now_pause">Duraklat</string>
+    <string name="sun_now_time">Görüntü zamanı</string>
+    <string name="sun_channel_corona">Korona</string>
+    <string name="sun_channel_loops">Halkalar</string>
+    <string name="sun_channel_prominences">Fışkırmalar</string>
+    <string name="sun_channel_flares">Parlamalar</string>
+    <string name="sun_channel_spots">Lekeler</string>
+    <string name="sun_channel_magnetic">Manyetik alan</string>
+    <string name="sun_channel_ejections">Püskürmeler</string>
+    <string name="sun_channel_corona_about">Sıcak korona, yaklaşık 1,5 milyon °C: aktif bölgeler parlıyor, koronal delikler karanlık</string>
+    <string name="sun_channel_loops_about">Sakin korona ve aktif bölgelerin üzerindeki manyetik halkalar, yaklaşık 600.000 °C</string>
+    <string name="sun_channel_prominences_about">Kromosfer, yaklaşık 50.000 °C: kenarda fışkırmalar (prominensler), diskte filamentler</string>
+    <string name="sun_channel_flares_about">Parlamaların en sıcak plazması, 10 milyon °C\'ye kadar</string>
+    <string name="sun_channel_spots_about">Görünür ışık: fotosfer ve Güneş lekeleri</string>
+    <string name="sun_channel_magnetic_about">Manyetogram: beyaz ve siyah, yüzeydeki manyetik alanın iki kutbu</string>
+    <string name="sun_channel_ejections_about">SOHO koronagrafı: disk örtülü, dış korona ve plazma püskürmeleri görünüyor</string>
+    <string name="sun_event_in_days">%1$d %2$s sonra</string>
+    <string name="sun_event_today">bugün</string>
+    <string name="section_expanded">Genişletildi</string>
+    <string name="section_collapsed">Daraltıldı</string>
+    <string name="sun_tile_day_length">Gün uzunluğu</string>
+    <string name="sun_tile_noon">Güneş öğlesi</string>
+    <string name="sun_tile_twilight">Alacakaranlık</string>
+    <string name="sun_tile_sign">Burç</string>
+    <string name="sun_noon_height">Yükseklik %s°</string>
+    <string name="sun_tile_since_yesterday">düne göre %s</string>
+    <string name="sun_in_days">%1$s · %2$d %3$s sonra</string>
+    <string name="earthquake_title">Deprem</string>
+    <string name="earthquake_magnitude_scale">büyüklük %s</string>
+    <string name="earthquake_time">Zaman</string>
+    <string name="earthquake_depth">Derinlik</string>
+    <string name="earthquake_magnitude">Büyüklük</string>
+    <string name="earthquake_utc">UTC %1$s · %2$s</string>
+    <string name="earthquake_depth_shallow">sığ</string>
+    <string name="earthquake_depth_intermediate">orta derin</string>
+    <string name="earthquake_depth_deep">derin</string>
+    <string name="earthquake_scale_moment">moment</string>
+    <string name="earthquake_scale_body">cisim dalgalarına göre</string>
+    <string name="earthquake_scale_surface">yüzey dalgalarına göre</string>
+    <string name="earthquake_scale_local">yerel</string>
+    <string name="earthquake_scale_duration">süreye göre</string>
+    <string name="earthquake_tsunami">Tsunami bilgisi</string>
+    <string name="earthquake_pager">PAGER: %s</string>
+    <string name="earthquake_felt">%d kişi hissetti</string>
+    <string name="earthquake_open_usgs">USGS sitesinde aç</string>
+    <string name="earthquake_ago_now">az önce</string>
+    <string name="earthquake_ago_minutes">%d dk önce</string>
+    <string name="earthquake_ago_hours">%d sa önce</string>
+    <string name="earthquake_ago_days">%1$d %2$s önce</string>
+    <string name="earthquakes_summary_day">Son 24 saat</string>
+    <string name="earthquake_widget_settings">Deprem widget\'ı</string>
+    <string name="earthquake_widget_period">Dönem</string>
+    <string name="earthquake_widget_show">Göster</string>
+    <string name="earthquake_widget_show_latest">En yeni</string>
+    <string name="earthquake_widget_show_strongest">En güçlü</string>
+    <string name="sun_widget_settings">Güneş widget\'ı</string>
+    <string name="moon_widget_settings">Ay widget\'ı</string>
+    <!-- The zodiac sign next in the Sun and Moon widgets, its date and time on the line below -->
+    <string name="astro_widget_next_sign">%s başlıyor</string>
+    <string name="earthquakes_summary_week">Son 7 gün</string>
+    <string name="earthquakes_summary_month">Son 30 gün</string>
+    <string name="earthquakes_count">%1$d M5+ %2$s</string>
+    <string name="earthquakes_today">Bugün</string>
+    <string name="earthquakes_yesterday">Dün, %s</string>
+    <string name="earthquakes_yesterday_short">dün, %s</string>
+    <string name="earthquakes_today_at">Bugün, %s</string>
+    <string name="earthquakes_legend_day">son 24 saat</string>
+    <string name="astro_time_back">Geri</string>
+    <string name="astro_time_forward">İleri</string>
+    <string name="astro_time_now">Şimdiye dön</string>
+    <string name="astro_day_strip_hint">Şimdiki zamana dönmek için grafiğe iki kez dokunun</string>
+    <string name="pref_theme">Tema</string>
+
+    <!-- City details -->
+    <string name="details_now">Şimdi</string>
+    <string name="details_now_lc">şimdi</string>
+    <string name="details_today">Bugün</string>
+    <string name="details_tomorrow">Yarın</string>
+    <string name="details_today_lc">bugün</string>
+    <string name="details_tomorrow_lc">yarın</string>
+    <string name="details_feels_like">Hissedilen %s</string>
+    <string name="details_summary_day_max">Gündüz en yüksek %s</string>
+    <string name="details_summary_night_min">Gece en düşük %s</string>
+    <string name="details_summary_wind">Rüzgâr %1$s, %2$s</string>
+    <string name="details_precipitation_now_until">%1$s %2$s civarı dinecek</string>
+    <string name="details_precipitation_now">%1$s yağıyor</string>
+    <string name="details_precipitation_from">%1$s %2$s</string>
+    <string name="details_precipitation_on_day">%1$s %2$s</string>
+    <string name="details_precipitation_none">Önümüzdeki günlerde yağış yok</string>
+    <string name="details_precipitation_today">Bugün</string>
+    <string name="details_precipitation_next">Sonraki: %1$s %2$s</string>
+    <string name="details_precipitation_week_none">Yağışsız bir hafta</string>
+    <string name="details_wind">Rüzgâr</string>
+    <string name="details_wind_strong">Kuvvetli rüzgâr %s</string>
+    <string name="details_wind_strong_label">kuvvetli rüzgâr</string>
+    <string name="details_quakes_loading">Yükleniyor…</string>
+    <string name="details_quakes_no_data">USGS verisi yok</string>
+    <string name="details_quakes_day_none">Son 24 saatte M5+ deprem yok</string>
+    <string name="details_quakes_strongest_day">Son 24 saatin en güçlüsü</string>
+    <string name="details_wind_today_max">Bugün en fazla %s</string>
+    <string name="details_magnetic">Manyetik alan</string>
+    <string name="details_kp_storm">Manyetik fırtına %s</string>
+    <string name="details_warmer">Yarın %s daha sıcak</string>
+    <string name="details_colder">Yarın %s daha soğuk</string>
+    <string name="details_sun_sets">Gün batımı %s</string>
+    <string name="details_sun_rises">Gün doğumu %s</string>
+    <string name="details_at_today">bugün saat %s</string>
+    <string name="details_at_tomorrow">yarın saat %s</string>
+    <string name="details_at_day">%1$s saat %2$s</string>
+    <string name="details_dew_point">Çiy noktası %s</string>
+    <string name="details_pressure_rising">Yükseliyor</string>
+    <string name="details_pressure_falling">Düşüyor</string>
+    <string name="details_pressure_steady">Sabit</string>
+    <string name="details_polar_day">kutup gündüzü</string>
+    <string name="details_polar_night">kutup gecesi</string>
+    <string name="details_sun_title">Güneş · gündüz %s</string>
+    <string name="details_moon_illuminated">Aydınlanma %s</string>
+    <string name="details_moon_today_at">%1$s bugün saat %2$s</string>
+    <string name="details_moon_tomorrow">%s yarın</string>
+    <string name="details_moon_in_days">%1$s %2$d %3$s sonra</string>
+    <string name="details_daily_title">Günlük tahmin</string>
+    <string name="details_daily_more">Daha fazla</string>
+    <string name="details_daily_less">Daha az</string>
+    <string name="details_locations">Konumlar</string>
+    <string name="details_more_options">Diğer seçenekler</string>
+    <string name="earthquakes_map_world">Tüm dünya</string>
+    <string name="format_weekday_day">%2$d %1$s</string>
+    <string name="format_weekday_day_month">%2$d %3$s %1$s</string>
+    <string name="city_time_already">%1$s, artık %2$s</string>
+    <string name="city_time_still">%1$s, hâlâ %2$s</string>
+    <string name="sentence">"%s. "</string>
+    <string name="details_row_label">%1$s, %2$s</string>
+    <string name="list_separator">", "</string>
+
+    <!-- Forecast for today and tomorrow -->
+    <string name="pref_daily_forecast">Bugün ve yarın için tahmin</string>
+    <string name="pref_daily_forecast_off">Kapalı</string>
+    <string name="daily_forecast_today">Bugün · %s</string>
+    <string name="daily_forecast_tomorrow">Yarın · %s</string>
+    <string name="daily_forecast_storm">Manyetik fırtına, K-indeksi %d</string>
+    <string name="daily_forecast_precipitation">%1$s %2$s</string>
+    <string name="daily_forecast_from_to">%1$s–%2$s arası</string>
+    <string name="daily_forecast_from">%s itibarıyla</string>
+    <string name="daily_forecast_and">%1$s ve %2$s</string>
+    <string name="daily_forecast_precipitation_breaks">%1$s aralıklarla %2$s</string>
+
+    <!-- The places' menus and messages -->
+    <string name="favorites_add">Favorilere ekle</string>
+    <string name="favorites_remove">Favorilerden kaldır</string>
+    <string name="favorites_added">Favorilere eklendi</string>
+    <string name="favorites_removed">Favorilerden kaldırıldı</string>
+    <string name="rename_place">Yeniden adlandır</string>
+    <string name="delete">Sil</string>
+    <string name="delete_all">Tümünü sil</string>
+    <string name="search">Ara</string>
+    <string name="settings">Ayarlar</string>
+    <string name="favorites_empty">Henüz favori yok. Konum eklemek için sağ alttaki + simgesine dokunun</string>
+    <string name="favorites_header">Kayıtlı konumlar</string>
+    <string name="current_location">Mevcut konum</string>
+    <string name="airport">Havalimanı</string>
+
+    <!-- The nearby tab and the search -->
+    <string name="nearby_header">Yakındaki diğer konumlar</string>
+    <string name="nearby_failed">Yakındaki konumlar yüklenemedi</string>
+    <string name="nearby_permission_needed">Yakınınızdaki konumları göstermek için uygulamanın cihaz konumuna erişmesi gerekiyor</string>
+    <string name="nearby_permission_ask">Erişime izin ver</string>
+    <string name="nearby_permission_settings">Ayarları aç</string>
+    <string name="distance_under_km">1 km\'den az</string>
+    <string name="distance_under_mile">1 milden az</string>
+    <string name="search_hint">Şehir veya yer</string>
+    <string name="search_type_more">En az iki harf yazın</string>
+    <string name="search_nothing_found">Sonuç bulunamadı</string>
+
+    <!-- The rename screen -->
+    <string name="rename_title">Konumu yeniden adlandır</string>
+    <string name="rename_hint">Yeni ad</string>
+
+    <!-- The weather's names -->
+    <string name="temperature">Sıcaklık</string>
+    <string name="wind_speed">Rüzgâr hızı</string>
+    <string name="pressure">Basınç</string>
+    <string name="precipitation">Yağış</string>
+    <string name="humidity">Nem</string>
+    <string name="distance">Mesafe</string>
+    <string name="geomagnetic">Jeomanyetik aktivite</string>
+    <string name="kp_index">K-indeksi</string>
+    <string name="sunrise">Gün doğumu</string>
+    <string name="sunset">Gün batımı</string>
+    <string name="no_data">Tahmin verisi yok</string>
+
+    <!-- The settings -->
+    <string name="pref_language">Dil</string>
+    <string name="pref_units">Birimler</string>
+    <string name="pref_update_period">Hava durumu güncellemesi</string>
+    <string name="pref_24_hour">24 saat biçimi</string>
+    <string name="pref_gps">GPS kullan</string>
+    <string name="pref_weather_parameters">Hava durumu ayrıntıları</string>
+    <string name="pref_current_location">Favorilerde mevcut konum</string>
+    <string name="pref_only_strong_wind">Yalnızca kuvvetli rüzgâr</string>
+    <string name="pref_notification">Hava durumu bildirimi</string>
+    <string name="notification_enabled">Bildirimi göster</string>
+    <string name="version">Sürüm</string>
+
+    <!-- The place of the widgets, the earthquake widget and the notification -->
+    <string name="place_title">Konum</string>
+    <string name="place_automatic">Otomatik algıla</string>
+    <string name="place_not_chosen">Seçilmedi</string>
+    <string name="no_place_message">Konum seçilmedi</string>
+    <string name="no_place_choose">Seç</string>
+    <string name="no_place_automatic">Cihaz konumunu kullan</string>
+
+    <!-- The widgets -->
+    <string name="background">Arka plan</string>
+    <string name="widget_transparency">Saydamlık</string>
+    <string name="widget_current_weather">Şu anki hava</string>
+    <string name="widget_clock_app">Saat uygulaması</string>
+    <string name="widget_clock_app_none">Seçilmedi</string>
+    <string name="widget_refreshing">Güncelleniyor…</string>
+    <string name="widget_refreshed">Güncellendi</string>
+    <string name="widget_place_needed">Konum seçin</string>
+
+    <!-- The wind: %1$s the speed, %2$s its unit, %3$s the direction it blows from -->
+    <string name="widget_wind">%1$s %2$s, %3$s</string>
+    <string name="widget_wind_up_to">en fazla %1$s %2$s</string>
+    <string name="wind_phrase">Rüzgâr %1$s %2$s, %3$s</string>
+    <string name="wind_phrase_no_direction">Rüzgâr %1$s %2$s</string>
+
+    <!-- The city page's local date and time: %1$s the short weekday, %2$d the day, %3$s the month, %4$s the time -->
+    <string name="details_date_time">%2$d %3$s %1$s, %4$s</string>
+
+    <!-- The date under a chart widget's clock: SimpleDateFormat patterns, read with the app's locale -->
+    <string name="widget_clock_date">d MMM ccc</string>
+    <string name="widget_clock_date_two_lines">ccc\nd MMM</string>
+
+    <!-- The most places the favourites keep, R.integer.max_favorites -->
+    <plurals name="favorites_limit">
+        <item quantity="one">Favorilere en fazla %d konum eklenebilir</item>
+        <item quantity="other">Favorilere en fazla %d konum eklenebilir</item>
+    </plurals>
+    <!-- The words that follow a number, which the callers' texts put before them: Lint's ImpliedQuantity, which
+         wants the number in each text itself, doesn't apply -->
+    <plurals name="days" tools:ignore="ImpliedQuantity">
+        <item quantity="one">gün</item>
+        <item quantity="other">gün</item>
+    </plurals>
+    <plurals name="miles" tools:ignore="ImpliedQuantity">
+        <item quantity="one">mil</item>
+        <item quantity="other">mil</item>
+    </plurals>
+    <plurals name="mph" tools:ignore="ImpliedQuantity">
+        <item quantity="one">mil/sa</item>
+        <item quantity="other">mil/sa</item>
+    </plurals>
+    <plurals name="knots" tools:ignore="ImpliedQuantity">
+        <item quantity="one">knot</item>
+        <item quantity="other">knot</item>
+    </plurals>
+    <plurals name="earthquakes_counted" tools:ignore="ImpliedQuantity">
+        <item quantity="one">deprem</item>
+        <item quantity="other">deprem</item>
+    </plurals>
+</resources>

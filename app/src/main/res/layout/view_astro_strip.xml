@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Moon's and the Sun's place and moment, pinned on glass over the top of the tab while it scrolls under them -->
+<org.meteosphere.ui.glass.GlassStrip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/astroStrip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingTop="6dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="12dp">
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="12dp">
+        <include layout="@layout/view_astro_place"/>
+    </FrameLayout>
+    <include layout="@layout/view_astro_time"/>
+</org.meteosphere.ui.glass.GlassStrip>

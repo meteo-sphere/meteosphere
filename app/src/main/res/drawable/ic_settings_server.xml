@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A settings row's icon: the glyph on a disc of its group's hue -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_teal_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:pathData="M5.5,4h13a1.5,1.5 0 0,1 1.5,1.5v3a1.5,1.5 0 0,1 -1.5,1.5h-13a1.5,1.5 0 0,1 -1.5,-1.5v-3a1.5,1.5 0 0,1 1.5,-1.5z"
+                android:strokeColor="@color/settings_icon_teal"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.7"/>
+            <path
+                android:pathData="M5.5,14h13a1.5,1.5 0 0,1 1.5,1.5v3a1.5,1.5 0 0,1 -1.5,1.5h-13a1.5,1.5 0 0,1 -1.5,-1.5v-3a1.5,1.5 0 0,1 1.5,-1.5z"
+                android:strokeColor="@color/settings_icon_teal"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.7"/>
+            <path
+                android:fillColor="@color/settings_icon_teal"
+                android:pathData="M8,6a1,1 0 1,0 0,2a1,1 0 1,0 0,-2z"/>
+            <path
+                android:fillColor="@color/settings_icon_teal"
+                android:pathData="M8,16a1,1 0 1,0 0,2a1,1 0 1,0 0,-2z"/>
+        </vector>
+    </item>
+</layer-list>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- What the launcher shows of a widget until the app has drawn it: the dark glass, a spinner and the app's logo -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/widget_glass_inset"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_widget_dark"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/accent_material_light"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/widget_logo_height"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/widget_logo_right"
+        android:layout_marginBottom="@dimen/widget_logo_bottom"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_on_dark"/>
+</FrameLayout>

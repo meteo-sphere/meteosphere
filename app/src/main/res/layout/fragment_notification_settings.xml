@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The weather notification's settings in one rounded group: whether it is shown, the current location or a place
+     picked for it, its background and the next hours; the group's segments and the values are set in code -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llNotificationOn"
+            style="@style/SettingsRow">
+            <TextView
+                style="@style/SettingsRow.Title"
+                android:text="@string/notification_enabled"/>
+            <!-- The screen keeps the switches' states itself, also when it is made again: their own would come back
+                 over its values -->
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/swNotificationOn"
+                style="@style/SettingsRow.Switch"
+                android:saveEnabled="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llNotificationAutoLocation"
+            style="@style/SettingsRow">
+            <LinearLayout style="@style/SettingsRow.Texts">
+                <TextView
+                    style="@style/SettingsRow.Title"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0"
+                    android:text="@string/place_title"/>
+                <TextView
+                    android:id="@+id/tvNotificationAutoLocation"
+                    style="@style/SettingsRow.Summary"
+                    android:text="@string/place_automatic"/>
+            </LinearLayout>
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/swNotificationAutoLocation"
+                style="@style/SettingsRow.Switch"
+                android:saveEnabled="false"/>
+        </LinearLayout>
+        <!-- Its height is set in code: none while the current location is on -->
+        <LinearLayout
+            android:id="@+id/llNotificationLocation"
+            style="@style/SettingsRow">
+            <LinearLayout style="@style/SettingsRow.Texts">
+                <TextView
+                    style="@style/SettingsRow.Title"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0"
+                    android:text="@string/place_title"/>
+                <TextView
+                    android:id="@+id/tvNotificationLocation"
+                    style="@style/SettingsRow.Summary"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llNotificationLook"
+            style="@style/SettingsRow">
+            <LinearLayout style="@style/SettingsRow.Texts">
+                <TextView
+                    style="@style/SettingsRow.Title"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0"
+                    android:text="@string/background"/>
+                <TextView
+                    android:id="@+id/tvNotificationLook"
+                    style="@style/SettingsRow.Summary"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llNotificationForecast"
+            style="@style/SettingsRow">
+            <LinearLayout style="@style/SettingsRow.Texts">
+                <TextView
+                    style="@style/SettingsRow.Title"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0"
+                    android:text="@string/pref_statusbar_notification_forecast_title"/>
+                <TextView
+                    style="@style/SettingsRow.Summary"
+                    android:text="@string/pref_statusbar_notification_forecast_summary"/>
+            </LinearLayout>
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/swNotificationForecast"
+                style="@style/SettingsRow.Switch"
+                android:saveEnabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

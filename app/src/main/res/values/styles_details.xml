@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="DetailsCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:background">@drawable/bg_details_card</item>
+        <item name="android:backgroundTint">@color/details_sky_card_day</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DetailsCardTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:drawableTint">@color/details_sky_text_dim</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/details_sky_text_dim</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="DetailsHeaderText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/details_sky_text</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+
+    <!-- The city page's header, the favourites' cards and the nearby places' first card over the sky: a deeper shadow,
+         chosen, the white readable over its bright clouds -->
+    <style name="DetailsSkyHeaderText" parent="DetailsHeaderText">
+        <item name="android:shadowColor">#73000000</item>
+        <item name="android:shadowRadius">8</item>
+    </style>
+
+    <style name="DetailsSmallLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/details_sky_text_dim</item>
+    </style>
+
+    <style name="DetailsTimeValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/details_sky_text</item>
+    </style>
+
+    <style name="AppTheme.Details">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/details_window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="29">false</item>
+        <item name="android:enforceStatusBarContrast" tools:targetApi="29">false</item>
+    </style>
+    <!-- The pictures of the Sun: black behind clear system bars -->
+    <style name="AppTheme.SunNow" parent="AppTheme.Details">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drawn by tools/weather_icons.py -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="48dp"
+    android:viewportWidth="64"
+    android:viewportHeight="48">
+    <group
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:translateX="6.4"
+        android:translateY="-0.6">
+        <path
+            android:pathData="M34.15 16.5 L37.3 16.5 M30.59 25.09 L32.82 27.32 M22 28.65 L22 31.8 M13.41 25.09 L11.18 27.32 M9.85 16.5 L6.7 16.5 M13.41 7.91 L11.18 5.68 M22 4.35 L22 1.2 M30.59 7.91 L32.82 5.68"
+            android:strokeColor="#F2A900"
+            android:strokeWidth="2.6"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M13 16.5 A9 9 0 1 0 31 16.5 A9 9 0 1 0 13 16.5 Z"
+            android:fillColor="#F2A900" />
+        <path
+            android:pathData="M27.24 46 A9.24 9.24 0 0 1 26.74 27.53 A12.6 12.6 0 0 1 49.93 24.19 A10.92 10.92 0 0 1 49.08 46 Z"
+            android:fillColor="#C3CEDB" />
+    </group>
+    <path
+        android:pathData="M32.25 33 L24.75 41.25 L30.3 41.25 L27 48 L36.75 38.7 L31.2 38.7 L34.8 33 Z"
+        android:fillColor="#F2A900" />
+    <path
+        android:pathData="M18 37.6 L14 46"
+        android:strokeColor="#1E88E5"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+</vector>

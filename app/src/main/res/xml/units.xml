@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The units, each saved as the number of its choice; the main list's summary names them in this order too. No
+     defaults: none is saved until the user chooses the units, which are the app language's own till then -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:entries="@array/temperature_units"
+        android:entryValues="@array/temperature_unit_values"
+        android:key="@string/key_temperature_unit"
+        android:title="@string/temperature"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:entries="@array/wind_units"
+        android:entryValues="@array/wind_unit_values"
+        android:key="@string/key_wind_unit"
+        android:title="@string/wind_speed"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:entries="@array/pressure_units"
+        android:entryValues="@array/pressure_unit_values"
+        android:key="@string/key_pressure_unit"
+        android:title="@string/pressure"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:entries="@array/distance_units"
+        android:entryValues="@array/distance_unit_values"
+        android:key="@string/key_distance_unit"
+        android:title="@string/distance"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true"/>
+    <ListPreference
+        android:entries="@array/precipitation_units"
+        android:entryValues="@array/precipitation_unit_values"
+        android:key="@string/key_precipitation_unit"
+        android:title="@string/precipitation"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true"/>
+</PreferenceScreen>

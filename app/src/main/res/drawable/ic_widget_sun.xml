@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Sun of the Sun widget: a disk with eight rays; tinted where used -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M6,12A6,6 0 1,0 18,12A6,6 0 1,0 6,12Z"/>
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:pathData="M20.1,12L22.5,12M17.73,17.73L19.42,19.42M12,20.1L12,22.5M6.27,17.73L4.58,19.42M3.9,12L1.5,12M6.27,6.27L4.58,4.58M12,3.9L12,1.5M17.73,6.27L19.42,4.58"/>
+</vector>

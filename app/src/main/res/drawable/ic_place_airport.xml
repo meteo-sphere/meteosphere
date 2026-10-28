@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- An airport among the places: drawn black, tinted where it shows -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="58dp"
+    android:height="50dp"
+    android:viewportWidth="58"
+    android:viewportHeight="50">
+    <group
+        android:translateX="-8"
+        android:translateY="5">
+        <path
+            android:pathData="M60.311,17.543H43.413L25.429-3.983h-4.115l11.011,21.526h-12.88L13.511,7.519l-1.718-0.681l2.241,12.236l-2.239,12.389l1.718-0.231l5.933-8.894h12.878L21.314,43.983h4.115l17.984-21.645h16.898c2.151,0,3.896-0.245,3.896-2.399C64.207,17.788,62.462,17.543,60.311,17.543z"
+            android:fillColor="#FF000000" />
+    </group>
+</vector>

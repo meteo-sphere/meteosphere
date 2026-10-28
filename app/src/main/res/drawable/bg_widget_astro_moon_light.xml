@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The disk behind the icon of the Moon's rise and set in the widget with the light background, as the Sun and Moon tabs have it -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#D9E3F6"/>
+</shape>

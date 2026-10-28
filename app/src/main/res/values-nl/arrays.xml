@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>Server</item>
+        <item>Op het apparaat</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>Zoals het systeem</item>
+        <item>Weerhemel</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>Nieuwe maan</item>
+        <item>Wassende sikkel</item>
+        <item>Eerste kwartier</item>
+        <item>Wassende maan</item>
+        <item>Volle maan</item>
+        <item>Afnemende maan</item>
+        <item>Laatste kwartier</item>
+        <item>Afnemende sikkel</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>Uit</item>
+        <item>M6 en hoger</item>
+        <item>M6,5 en hoger</item>
+        <item>M7 en hoger</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>Uit</item>
+        <item>Binnen 300 km</item>
+        <item>Binnen 500 km</item>
+        <item>Binnen 1.000 km</item>
+        <item>Binnen 2.000 km</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>Uit</item>
+        <item>Volle maan</item>
+        <item>Nieuwe en volle maan</item>
+        <item>Alle vier fasen</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>Ram</item>
+        <item>Stier</item>
+        <item>Tweelingen</item>
+        <item>Kreeft</item>
+        <item>Leeuw</item>
+        <item>Maagd</item>
+        <item>Weegschaal</item>
+        <item>Schorpioen</item>
+        <item>Boogschutter</item>
+        <item>Steenbok</item>
+        <item>Waterman</item>
+        <item>Vissen</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>Zon in Ram</item>
+        <item>Zon in Stier</item>
+        <item>Zon in Tweelingen</item>
+        <item>Zon in Kreeft</item>
+        <item>Zon in Leeuw</item>
+        <item>Zon in Maagd</item>
+        <item>Zon in Weegschaal</item>
+        <item>Zon in Schorpioen</item>
+        <item>Zon in Boogschutter</item>
+        <item>Zon in Steenbok</item>
+        <item>Zon in Waterman</item>
+        <item>Zon in Vissen</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>Lente-equinox</item>
+        <item>Zomerzonnewende</item>
+        <item>Herfstequinox</item>
+        <item>Winterzonnewende</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>Totale zonsverduistering</item>
+        <item>Ringvormige zonsverduistering</item>
+        <item>Hybride zonsverduistering</item>
+        <item>Gedeeltelijke zonsverduistering</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>Totale maansverduistering</item>
+        <item>Gedeeltelijke maansverduistering</item>
+        <item>Halfschaduw-maansverduistering</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>Uit</item>
+        <item>Alle verduisteringen</item>
+        <item>Alleen hier zichtbaar</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>ten noorden</item>
+        <item>ten noordoosten</item>
+        <item>ten oosten</item>
+        <item>ten zuidoosten</item>
+        <item>ten zuiden</item>
+        <item>ten zuidwesten</item>
+        <item>ten westen</item>
+        <item>ten noordwesten</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>groen</item>
+        <item>geel</item>
+        <item>oranje</item>
+        <item>rood</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>Systeem</item>
+        <item>Licht</item>
+        <item>Donker</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>Nieuwe maan</item>
+        <item>Eerste kw.</item>
+        <item>Volle maan</item>
+        <item>Laatste kw.</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>op zondag</item>
+        <item>op maandag</item>
+        <item>op dinsdag</item>
+        <item>op woensdag</item>
+        <item>op donderdag</item>
+        <item>op vrijdag</item>
+        <item>op zaterdag</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>Regen</item>
+        <item>Sneeuw</item>
+        <item>Natte sneeuw</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>Rustig</item>
+        <item>Onrustig</item>
+        <item>Storm</item>
+        <item>Zware storm</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>Zo</item>
+        <item>Ma</item>
+        <item>Di</item>
+        <item>Wo</item>
+        <item>Do</item>
+        <item>Vr</item>
+        <item>Za</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>januari</item>
+        <item>februari</item>
+        <item>maart</item>
+        <item>april</item>
+        <item>mei</item>
+        <item>juni</item>
+        <item>juli</item>
+        <item>augustus</item>
+        <item>september</item>
+        <item>oktober</item>
+        <item>november</item>
+        <item>december</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>jan</item>
+        <item>feb</item>
+        <item>mrt</item>
+        <item>apr</item>
+        <item>mei</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>aug</item>
+        <item>sep</item>
+        <item>okt</item>
+        <item>nov</item>
+        <item>dec</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>Windstil</item>
+        <item>N</item>
+        <item>NO</item>
+        <item>O</item>
+        <item>ZO</item>
+        <item>Z</item>
+        <item>ZW</item>
+        <item>W</item>
+        <item>NW</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>m/s</item>
+        <item>km/u</item>
+        <item>mph</item>
+        <item>knopen</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>mmHg</item>
+        <item>hPa</item>
+        <item>mbar</item>
+        <item>inHg</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>km</item>
+        <item>mijl</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>mm</item>
+        <item>inch</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>Automatisch</item>
+        <item>Elke 15 minuten</item>
+        <item>Elke 30 minuten</item>
+        <item>Elk uur</item>
+        <item>Elke 2 uur</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>Donker</item>
+        <item>Licht</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>Per uur</item>
+        <item>Per dag</item>
+    </string-array>
+</resources>

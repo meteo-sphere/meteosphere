@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The widgets' dark glass, as ChartWidget draws the chart widgets': the surface, the light from above, and an edge
+     brighter at the top, from a gradient the surface covers but for its outer 1dp -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/widget_glass_dark"/>
+            <corners android:radius="@dimen/widget_background_corner"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:endColor="@color/widget_glass_dark_edge_bottom"
+                android:startColor="@color/widget_glass_dark_edge_top"/>
+            <corners android:radius="@dimen/widget_background_corner"/>
+        </shape>
+    </item>
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape>
+            <solid android:color="@color/widget_glass_dark"/>
+            <corners android:radius="@dimen/widget_background_corner_inner"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:centerColor="@android:color/transparent"
+                android:centerY="0.7"
+                android:endColor="@android:color/transparent"
+                android:startColor="@color/widget_glass_dark_highlight"/>
+            <corners android:radius="@dimen/widget_background_corner"/>
+        </shape>
+    </item>
+</layer-list>

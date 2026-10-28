@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>リモートサーバー</item>
+        <item>端末上</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>システムと同じ</item>
+        <item>天気の空</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>新月</item>
+        <item>三日月</item>
+        <item>上弦の月</item>
+        <item>十三夜月</item>
+        <item>満月</item>
+        <item>寝待月</item>
+        <item>下弦の月</item>
+        <item>有明月</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>オフ</item>
+        <item>M6以上</item>
+        <item>M6.5以上</item>
+        <item>M7以上</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>オフ</item>
+        <item>300 km以内</item>
+        <item>500 km以内</item>
+        <item>1,000 km以内</item>
+        <item>2,000 km以内</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>オフ</item>
+        <item>満月</item>
+        <item>新月と満月</item>
+        <item>新月・上弦・満月・下弦</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>おひつじ座</item>
+        <item>おうし座</item>
+        <item>ふたご座</item>
+        <item>かに座</item>
+        <item>しし座</item>
+        <item>おとめ座</item>
+        <item>てんびん座</item>
+        <item>さそり座</item>
+        <item>いて座</item>
+        <item>やぎ座</item>
+        <item>みずがめ座</item>
+        <item>うお座</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>太陽がおひつじ座へ</item>
+        <item>太陽がおうし座へ</item>
+        <item>太陽がふたご座へ</item>
+        <item>太陽がかに座へ</item>
+        <item>太陽がしし座へ</item>
+        <item>太陽がおとめ座へ</item>
+        <item>太陽がてんびん座へ</item>
+        <item>太陽がさそり座へ</item>
+        <item>太陽がいて座へ</item>
+        <item>太陽がやぎ座へ</item>
+        <item>太陽がみずがめ座へ</item>
+        <item>太陽がうお座へ</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>春分</item>
+        <item>夏至</item>
+        <item>秋分</item>
+        <item>冬至</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>皆既日食</item>
+        <item>金環日食</item>
+        <item>金環皆既日食</item>
+        <item>部分日食</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>皆既月食</item>
+        <item>部分月食</item>
+        <item>半影月食</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>オフ</item>
+        <item>すべての日食・月食</item>
+        <item>ここから見えるもののみ</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>北方向</item>
+        <item>北東方向</item>
+        <item>東方向</item>
+        <item>南東方向</item>
+        <item>南方向</item>
+        <item>南西方向</item>
+        <item>西方向</item>
+        <item>北西方向</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>緑</item>
+        <item>黄</item>
+        <item>オレンジ</item>
+        <item>赤</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>端末の設定に従う</item>
+        <item>ライト</item>
+        <item>ダーク</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>新月</item>
+        <item>上弦</item>
+        <item>満月</item>
+        <item>下弦</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>日曜日</item>
+        <item>月曜日</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>雨</item>
+        <item>雪</item>
+        <item>みぞれ</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>静穏</item>
+        <item>やや活発</item>
+        <item>磁気嵐</item>
+        <item>強い磁気嵐</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>日</item>
+        <item>月</item>
+        <item>火</item>
+        <item>水</item>
+        <item>木</item>
+        <item>金</item>
+        <item>土</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>無風</item>
+        <item>北</item>
+        <item>北東</item>
+        <item>東</item>
+        <item>南東</item>
+        <item>南</item>
+        <item>南西</item>
+        <item>西</item>
+        <item>北西</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>ノット</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>mmHg</item>
+        <item>hPa</item>
+        <item>mbar</item>
+        <item>inHg</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>km</item>
+        <item>マイル</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>mm</item>
+        <item>インチ</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>自動</item>
+        <item>15分ごと</item>
+        <item>30分ごと</item>
+        <item>1時間ごと</item>
+        <item>2時間ごと</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>ダーク</item>
+        <item>ライト</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>1時間ごと</item>
+        <item>日別</item>
+    </string-array>
+</resources>

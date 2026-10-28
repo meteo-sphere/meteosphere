@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_language">ru</string>
+    <string name="app_name">Meteosphere</string>
+    <string name="search_failed">Нет связи, поиск не удался</string>
+    <string name="already_in_favorites">Уже в избранном</string>
+    <string name="pref_only_strong_wind_summary">Отображать в списках местоположений только ветер со скоростью от %1$s %2$s.</string>
+    <string name="pref_live_sky">Анимированная погода</string>
+    <string name="pref_live_sky_summary">Облака плывут, идут дождь и снег. Расходует больше батареи</string>
+    <string name="pref_category_experimental">Экспериментальные функции</string>
+    <string name="pref_statistics">Статистика</string>
+    <string name="stats_on_device">На этом устройстве</string>
+    <string name="stats_on_server">На сервере</string>
+    <string name="stats_today">сегодня</string>
+    <string name="stats_max">макс</string>
+    <string name="stats_min">мин</string>
+    <string name="stats_loading">Загрузка…</string>
+    <string name="stats_failed">Не удалось загрузить статистику сервера</string>
+    <string name="stats_no_requests">Запросов ещё не было</string>
+    <string name="stats_note">Запросы к источникам данных за сутки, сутки по UTC</string>
+    <string name="pref_statusbar_notification_forecast_title">Прогноз по часам</string>
+    <string name="pref_statusbar_notification_forecast_summary">В раскрытом уведомлении</string>
+    <string name="nearby_you_are_here">Вы здесь</string>
+    <string name="tab_favorites">Избранное</string>
+    <string name="tab_nearby">Поблизости</string>
+    <string name="weather_widget_settings">Виджет Meteosphere</string>
+    <string name="updated_time">Обновлено %2$d %1$s, %3$s</string>
+    <string name="widget_settings_show_wind">Ветер</string>
+    <string name="widget_settings_show_precipitation">Осадки</string>
+    <string name="widget_settings_group_show">На виджете</string>
+    <string name="widget_settings_group_look">Оформление</string>
+    <string name="widget_settings_group_clock">Часы</string>
+    <string name="widget_settings_city">Город</string>
+    <string name="pref_category_general">Основные</string>
+    <string name="pref_category_display">Отображение</string>
+    <string name="pref_category_location">Местоположение</string>
+    <string name="pref_category_notifications">Уведомления</string>
+    <string name="pref_data_provider">Источник данных</string>
+    <string name="pref_weather_source">Прогноз погоды</string>
+    <string name="pref_foreca_key">Ключ Foreca API</string>
+    <string name="foreca_key_message">Foreca выдаёт ключ API на %s после регистрации</string>
+    <string name="foreca_key_hint">Ключ</string>
+    <string name="foreca_key_checking">Проверка ключа…</string>
+    <string name="foreca_key_refused">Foreca не приняла этот ключ</string>
+    <string name="foreca_key_unchecked">Не удалось проверить ключ, нет связи с Foreca</string>
+    <string name="foreca_key_busy">Foreca сейчас не может проверить ключ</string>
+    <string name="moon">Луна</string>
+    <string name="moon_label">Освещённость луны, %</string>
+    <string name="earthquakes">Землетрясения</string>
+    <string name="earthquakes_period_day">Сутки</string>
+    <string name="earthquakes_period_week">Неделя</string>
+    <string name="earthquakes_period_month">Месяц</string>
+    <string name="earthquakes_sort_time">По времени</string>
+    <string name="earthquakes_sort_distance">По расстоянию</string>
+    <string name="earthquakes_empty">Нет землетрясений M5+ за этот период</string>
+    <string name="earthquakes_error">Не удалось загрузить данные USGS</string>
+    <string name="earthquakes_saved">Нет связи, показан сохранённый список</string>
+    <string name="tab_earthquakes">Землетрясения</string>
+    <string name="earthquakes_ago_now">сейчас</string>
+    <string name="earthquakes_ago_minutes">%d мин</string>
+    <string name="earthquakes_ago_hours">%d ч</string>
+    <string name="earthquakes_ago_days">%d дн</string>
+    <string name="pref_earthquake_alerts_world">Сильные землетрясения в мире</string>
+    <string name="pref_earthquake_alerts_nearby">Землетрясения M5+ рядом с моими пунктами</string>
+    <string name="earthquake_alert_title">Землетрясение M %s</string>
+    <string name="earthquake_alert_details">Подробнее</string>
+    <string name="earthquake_alerts_denied">Уведомления для Meteosphere запрещены в настройках Android</string>
+    <string name="pref_main_tabs">Вкладки</string>
+    <string name="pref_moon_phase_alerts">Фазы луны</string>
+    <string name="moon_alert_today">Сегодня в %s</string>
+    <string name="moon_alert_tonight">Этой ночью в %s</string>
+    <string name="moon_rise">Восход</string>
+    <string name="moon_set">Заход</string>
+    <string name="moon_next_phases">Ближайшие фазы</string>
+    <string name="moon_by_day">По дням</string>
+    <string name="moon_tile_age">Возраст</string>
+    <string name="moon_age_days">%s дня</string>
+    <string name="moon_until_new">до новолуния %1$d %2$s</string>
+    <string name="moon_new_today">новолуние сегодня</string>
+    <string name="moon_illumination_change">%1$s за сутки</string>
+    <string name="moon_illuminated">освещено</string>
+    <string name="moon_month_title">Освещённость на месяц</string>
+    <string name="moon_perigee">Перигей</string>
+    <string name="moon_apogee">Апогей</string>
+    <string name="moon_supermoon">суперлуние</string>
+    <string name="moon_distance_km">%s км</string>
+    <string name="moon_sign_until">до %s</string>
+    <string name="moon_phase_at">%1$s в %2$s</string>
+    <string name="tab_sun">Солнце</string>
+    <string name="sun_polar_day">Полярный день</string>
+    <string name="sun_polar_night">Полярная ночь</string>
+    <string name="duration_hours_minutes">%1$d ч %2$d мин</string>
+    <string name="duration_minutes_seconds">%1$d мин %2$d с</string>
+    <string name="duration_seconds">%d с</string>
+    <string name="eclipse_visible">Видно здесь: %1$s – %2$s</string>
+    <string name="eclipse_visible_covered">Видно здесь: %1$s – %2$s, закрыто %3$s</string>
+    <string name="eclipse_not_visible">Не видно здесь</string>
+    <string name="eclipse_alert_visible">видно здесь</string>
+    <string name="eclipse_alert_visible_covered">видно здесь, закрыто %s</string>
+    <string name="eclipse_alert_not_visible">не видно здесь</string>
+    <string name="pref_eclipse_alerts">Затмения</string>
+    <string name="sun_seasons_title">Солнцестояния и равноденствия</string>
+    <string name="solar_eclipses_title">Солнечные затмения</string>
+    <string name="lunar_eclipses_title">Лунные затмения</string>
+    <string name="sun_year_title">Восход и заход за год</string>
+    <string name="sun_signs_title">Знаки зодиака</string>
+    <string name="sun_next_event">Следующее событие</string>
+    <string name="sun_now">Солнце сейчас</string>
+    <string name="sun_now_taken">снимок SDO в %s</string>
+    <string name="sun_now_frame">снимок %s</string>
+    <string name="sun_now_loading">Загрузка…</string>
+    <string name="sun_now_offline">Нет связи с Helioviewer</string>
+    <string name="sun_now_failed">Не удалось загрузить снимок. Нажмите, чтобы повторить</string>
+    <string name="sun_now_day_ago">−24 ч</string>
+    <string name="sun_now_half_day_ago">−12 ч</string>
+    <string name="sun_now_now">сейчас</string>
+    <string name="sun_now_play">Показать сутки</string>
+    <string name="sun_now_pause">Пауза</string>
+    <string name="sun_now_time">Время снимка</string>
+    <string name="sun_channel_corona">Корона</string>
+    <string name="sun_channel_loops">Петли</string>
+    <string name="sun_channel_prominences">Протуберанцы</string>
+    <string name="sun_channel_flares">Вспышки</string>
+    <string name="sun_channel_spots">Пятна</string>
+    <string name="sun_channel_magnetic">Магнитное поле</string>
+    <string name="sun_channel_ejections">Выбросы</string>
+    <string name="sun_channel_corona_about">Горячая корона, около 1,5 млн °C: активные области светятся, корональные дыры тёмные</string>
+    <string name="sun_channel_loops_about">Тихая корона и магнитные петли над активными областями, около 600 000 °C</string>
+    <string name="sun_channel_prominences_about">Хромосфера, около 50 000 °C: протуберанцы на краю и волокна на диске</string>
+    <string name="sun_channel_flares_about">Самая горячая плазма вспышек, до 10 млн °C</string>
+    <string name="sun_channel_spots_about">Видимый свет: фотосфера и солнечные пятна</string>
+    <string name="sun_channel_magnetic_about">Магнитограмма: белое и чёрное — две полярности поля у поверхности</string>
+    <string name="sun_channel_ejections_about">Коронограф SOHO: диск закрыт, видны внешняя корона и выбросы плазмы</string>
+    <string name="sun_event_in_days">через %1$d %2$s</string>
+    <string name="sun_event_today">сегодня</string>
+    <string name="section_expanded">Развёрнуто</string>
+    <string name="section_collapsed">Свёрнуто</string>
+    <string name="sun_tile_day_length">Долгота дня</string>
+    <string name="sun_tile_noon">Полдень</string>
+    <string name="sun_tile_twilight">Сумерки</string>
+    <string name="sun_tile_sign">Знак зодиака</string>
+    <string name="sun_noon_height">Солнце на %s°</string>
+    <string name="sun_tile_since_yesterday">%s за сутки</string>
+    <string name="sun_in_days">%1$s · через %2$d %3$s</string>
+    <string name="earthquake_title">Землетрясение</string>
+    <string name="earthquake_magnitude_scale">магнитуда %s</string>
+    <string name="earthquake_time">Время</string>
+    <string name="earthquake_depth">Глубина</string>
+    <string name="earthquake_magnitude">Магнитуда</string>
+    <string name="earthquake_utc">UTC %1$s · %2$s</string>
+    <string name="earthquake_depth_shallow">мелкофокусное</string>
+    <string name="earthquake_depth_intermediate">промежуточное</string>
+    <string name="earthquake_depth_deep">глубокофокусное</string>
+    <string name="earthquake_scale_moment">моментная</string>
+    <string name="earthquake_scale_body">по объёмным волнам</string>
+    <string name="earthquake_scale_surface">по поверхностным волнам</string>
+    <string name="earthquake_scale_local">локальная</string>
+    <string name="earthquake_scale_duration">по длительности</string>
+    <string name="earthquake_tsunami">Информация о цунами</string>
+    <string name="earthquake_pager">PAGER: %s</string>
+    <string name="earthquake_felt">Ощутили %d</string>
+    <string name="earthquake_open_usgs">Открыть на USGS</string>
+    <string name="earthquake_ago_now">только что</string>
+    <string name="earthquake_ago_minutes">%d мин назад</string>
+    <string name="earthquake_ago_hours">%d ч назад</string>
+    <string name="earthquake_ago_days">%1$d %2$s назад</string>
+    <string name="earthquakes_summary_day">За сутки</string>
+    <string name="earthquake_widget_settings">Виджет землетрясений</string>
+    <string name="earthquake_widget_period">Период</string>
+    <string name="earthquake_widget_show">Показывать</string>
+    <string name="earthquake_widget_show_latest">Последние</string>
+    <string name="earthquake_widget_show_strongest">Сильнейшие</string>
+    <string name="sun_widget_settings">Виджет Солнца</string>
+    <string name="moon_widget_settings">Виджет Луны</string>
+    <!-- The zodiac sign next in the Sun and Moon widgets, its date and time on the line below -->
+    <string name="astro_widget_next_sign">%s с</string>
+    <string name="earthquakes_summary_week">За неделю</string>
+    <string name="earthquakes_summary_month">За месяц</string>
+    <string name="earthquakes_count">%1$d %2$s M5+</string>
+    <string name="earthquakes_today">Сегодня</string>
+    <string name="earthquakes_yesterday">Вчера, %s</string>
+    <string name="earthquakes_yesterday_short">вчера, %s</string>
+    <string name="earthquakes_today_at">Сегодня, %s</string>
+    <string name="earthquakes_legend_day">за сутки</string>
+    <string name="astro_time_back">Назад</string>
+    <string name="astro_time_forward">Вперёд</string>
+    <string name="astro_time_now">Вернуть текущее время</string>
+    <string name="astro_day_strip_hint">Дважды коснитесь графика, чтобы вернуть текущее время</string>
+    <string name="pref_theme">Тема</string>
+
+    <!-- City details -->
+    <string name="details_now">Сейчас</string>
+    <string name="details_now_lc">сейчас</string>
+    <string name="details_today">Сегодня</string>
+    <string name="details_tomorrow">Завтра</string>
+    <string name="details_today_lc">сегодня</string>
+    <string name="details_tomorrow_lc">завтра</string>
+    <string name="details_feels_like">Ощущается как %s</string>
+    <string name="details_summary_day_max">Днём до %s</string>
+    <string name="details_summary_night_min">Ночью до %s</string>
+    <string name="details_summary_wind">Ветер %1$s, %2$s</string>
+    <string name="details_precipitation_now_until">%1$s до %2$s</string>
+    <string name="details_precipitation_now">%1$s идёт сейчас</string>
+    <string name="details_precipitation_from">%1$s %2$s</string>
+    <string name="details_precipitation_on_day">%1$s %2$s</string>
+    <string name="details_precipitation_none">Без осадков в ближайшие дни</string>
+    <string name="details_precipitation_today">За сегодня</string>
+    <string name="details_precipitation_next">Далее: %1$s %2$s</string>
+    <string name="details_precipitation_week_none">Неделя без осадков</string>
+    <string name="details_wind">Ветер</string>
+    <string name="details_wind_strong">Сильный ветер %s</string>
+    <string name="details_wind_strong_label">сильный ветер</string>
+    <string name="details_quakes_loading">Загрузка…</string>
+    <string name="details_quakes_no_data">Нет данных USGS</string>
+    <string name="details_quakes_day_none">За сутки M5+ не было</string>
+    <string name="details_quakes_strongest_day">Сильнейшее за сутки</string>
+    <string name="details_wind_today_max">Сегодня до %s</string>
+    <string name="details_magnetic">Магнитное поле</string>
+    <string name="details_kp_storm">Магнитная буря %s</string>
+    <string name="details_warmer">Завтра теплее на %s</string>
+    <string name="details_colder">Завтра холоднее на %s</string>
+    <string name="details_sun_sets">Солнце зайдёт %s</string>
+    <string name="details_sun_rises">Солнце взойдёт %s</string>
+    <string name="details_at_today">сегодня в %s</string>
+    <string name="details_at_tomorrow">завтра в %s</string>
+    <string name="details_at_day">%1$s в %2$s</string>
+    <string name="details_dew_point">Точка росы %s</string>
+    <string name="details_pressure_rising">Растёт</string>
+    <string name="details_pressure_falling">Падает</string>
+    <string name="details_pressure_steady">Стабильно</string>
+    <string name="details_polar_day">полярный день</string>
+    <string name="details_polar_night">полярная ночь</string>
+    <string name="details_sun_title">Солнце · день %s</string>
+    <string name="details_moon_illuminated">Освещено %s</string>
+    <string name="details_moon_today_at">%1$s сегодня в %2$s</string>
+    <string name="details_moon_tomorrow">%s завтра</string>
+    <string name="details_moon_in_days">%1$s через %2$d %3$s</string>
+    <string name="details_daily_title">Прогноз по дням</string>
+    <string name="details_daily_more">Подробно</string>
+    <string name="details_daily_less">Кратко</string>
+    <string name="details_locations">Пункты</string>
+    <string name="details_more_options">Ещё</string>
+    <string name="earthquakes_map_world">Весь мир</string>
+    <string name="format_weekday_day">%1$s, %2$d</string>
+    <string name="format_weekday_day_month">%1$s, %2$d %3$s</string>
+    <string name="city_time_already">%1$s, уже %2$s</string>
+    <string name="city_time_still">%1$s, еще %2$s</string>
+    <string name="sentence">"%s. "</string>
+    <string name="details_row_label">%1$s, %2$s</string>
+    <string name="list_separator">", "</string>
+
+    <!-- Forecast for today and tomorrow -->
+    <string name="pref_daily_forecast">Прогноз на сегодня и завтра</string>
+    <string name="pref_daily_forecast_off">Выключено</string>
+    <string name="daily_forecast_today">Сегодня · %s</string>
+    <string name="daily_forecast_tomorrow">Завтра · %s</string>
+    <string name="daily_forecast_storm">Магнитная буря, К-индекс %d</string>
+    <string name="daily_forecast_precipitation">%1$s %2$s</string>
+    <string name="daily_forecast_from_to">с %1$s до %2$s</string>
+    <string name="daily_forecast_from">с %s</string>
+    <string name="daily_forecast_and">%1$s и %2$s</string>
+    <string name="daily_forecast_precipitation_breaks">%1$s с перерывами %2$s</string>
+
+    <!-- The places' menus and messages -->
+    <string name="favorites_add">Добавить в избранное</string>
+    <string name="favorites_remove">Убрать из избранного</string>
+    <string name="favorites_added">Добавлено в избранное</string>
+    <string name="favorites_removed">Убрано из избранного</string>
+    <string name="rename_place">Переименовать</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_all">Удалить все</string>
+    <string name="search">Поиск</string>
+    <string name="settings">Настройки</string>
+    <string name="favorites_empty">В избранном пока ничего нет. Чтобы добавить пункт, нажмите + справа внизу</string>
+    <string name="favorites_header">Сохранённые пункты</string>
+    <string name="current_location">Текущее местоположение</string>
+    <string name="airport">Аэропорт</string>
+
+    <!-- The nearby tab and the search -->
+    <string name="nearby_header">Другие пункты поблизости</string>
+    <string name="nearby_failed">Не удалось загрузить пункты поблизости</string>
+    <string name="nearby_permission_needed">Чтобы показать пункты рядом с вами, приложению нужен доступ к местоположению устройства</string>
+    <string name="nearby_permission_ask">Разрешить доступ</string>
+    <string name="nearby_permission_settings">Открыть настройки</string>
+    <string name="distance_under_km">меньше 1 км</string>
+    <string name="distance_under_mile">меньше 1 мили</string>
+    <string name="search_hint">Город или населённый пункт</string>
+    <string name="search_type_more">Введите хотя бы две буквы</string>
+    <string name="search_nothing_found">Ничего не найдено</string>
+
+    <!-- The rename screen -->
+    <string name="rename_title">Переименовать пункт</string>
+    <string name="rename_hint">Новое название</string>
+
+    <!-- The weather's names -->
+    <string name="temperature">Температура</string>
+    <string name="wind_speed">Скорость ветра</string>
+    <string name="pressure">Давление</string>
+    <string name="precipitation">Осадки</string>
+    <string name="humidity">Влажность</string>
+    <string name="distance">Расстояние</string>
+    <string name="geomagnetic">Геомагнитная обстановка</string>
+    <string name="kp_index">К-индекс</string>
+    <string name="sunrise">Восход</string>
+    <string name="sunset">Заход</string>
+    <string name="no_data">Нет данных прогноза</string>
+
+    <!-- The settings -->
+    <string name="pref_language">Язык</string>
+    <string name="pref_units">Единицы измерения</string>
+    <string name="pref_update_period">Обновление погоды</string>
+    <string name="pref_24_hour">24-часовой формат</string>
+    <string name="pref_gps">Использовать GPS</string>
+    <string name="pref_weather_parameters">Параметры погоды</string>
+    <string name="pref_current_location">Текущее местоположение в избранном</string>
+    <string name="pref_only_strong_wind">Только сильный ветер</string>
+    <string name="pref_notification">Уведомление о погоде</string>
+    <string name="notification_enabled">Показывать уведомление</string>
+    <string name="version">Версия</string>
+
+    <!-- The place of the widgets, the earthquake widget and the notification -->
+    <string name="place_title">Местоположение</string>
+    <string name="place_automatic">Определять автоматически</string>
+    <string name="place_not_chosen">Не выбрано</string>
+    <string name="no_place_message">Пункт не выбран</string>
+    <string name="no_place_choose">Выбрать</string>
+    <string name="no_place_automatic">По местоположению</string>
+
+    <!-- The widgets -->
+    <string name="background">Фон</string>
+    <string name="widget_transparency">Прозрачность</string>
+    <string name="widget_current_weather">Текущая погода</string>
+    <string name="widget_clock_app">Приложение часов</string>
+    <string name="widget_clock_app_none">Не выбрано</string>
+    <string name="widget_refreshing">Обновление…</string>
+    <string name="widget_refreshed">Обновлено</string>
+    <string name="widget_place_needed">Выберите пункт</string>
+
+    <!-- The wind: %1$s the speed, %2$s its unit, %3$s the direction it blows from -->
+    <string name="widget_wind">%1$s %2$s, %3$s</string>
+    <string name="widget_wind_up_to">до %1$s %2$s</string>
+    <string name="wind_phrase">Ветер %1$s %2$s, %3$s</string>
+    <string name="wind_phrase_no_direction">Ветер %1$s %2$s</string>
+
+    <!-- The city page's local date and time: %1$s the short weekday, %2$d the day, %3$s the month, %4$s the time -->
+    <string name="details_date_time">%1$s, %2$d %3$s, %4$s</string>
+
+    <!-- The date under a chart widget's clock: SimpleDateFormat patterns, read with the app's locale -->
+    <string name="widget_clock_date">ccc, d MMM</string>
+    <string name="widget_clock_date_two_lines">ccc\nd MMM</string>
+
+    <!-- The most places the favourites keep, R.integer.max_favorites -->
+    <plurals name="favorites_limit">
+        <item quantity="one">В избранном может быть максимум %d пункт</item>
+        <item quantity="few">В избранном может быть максимум %d пункта</item>
+        <item quantity="many">В избранном может быть максимум %d пунктов</item>
+        <item quantity="other">В избранном может быть максимум %d пункта</item>
+    </plurals>
+    <!-- The words that follow a number, which the callers' texts put before them: Lint's ImpliedQuantity, which
+         wants the number in each text itself, doesn't apply -->
+    <plurals name="days" tools:ignore="ImpliedQuantity">
+        <item quantity="one">день</item>
+        <item quantity="few">дня</item>
+        <item quantity="many">дней</item>
+        <item quantity="other">дня</item>
+    </plurals>
+    <plurals name="miles" tools:ignore="ImpliedQuantity">
+        <item quantity="one">миля</item>
+        <item quantity="few">мили</item>
+        <item quantity="many">миль</item>
+        <item quantity="other">мили</item>
+    </plurals>
+    <plurals name="mph" tools:ignore="ImpliedQuantity">
+        <item quantity="one">миля/ч</item>
+        <item quantity="few">мили/ч</item>
+        <item quantity="many">миль/ч</item>
+        <item quantity="other">мили/ч</item>
+    </plurals>
+    <plurals name="knots" tools:ignore="ImpliedQuantity">
+        <item quantity="one">узел</item>
+        <item quantity="few">узла</item>
+        <item quantity="many">узлов</item>
+        <item quantity="other">узла</item>
+    </plurals>
+    <plurals name="earthquakes_counted" tools:ignore="ImpliedQuantity">
+        <item quantity="one">землетрясение</item>
+        <item quantity="few">землетрясения</item>
+        <item quantity="many">землетрясений</item>
+        <item quantity="other">землетрясений</item>
+    </plurals>
+</resources>

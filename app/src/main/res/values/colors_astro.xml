@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Sun's amber and the Moon's silver of the sun and moon tabs: the color of icons and lines, a container for
+     disks and pills, and the text on it. The light theme takes deeper colors and opaque containers, so they keep
+     their contrast on the light surfaces. -->
+<resources>
+    <color name="astro_sun">#F09300</color>
+    <color name="astro_sun_container">#FFE3A8</color>
+    <color name="astro_on_sun_container">#6E4600</color>
+    <color name="astro_sunset">#E65C00</color>
+    <color name="astro_sunset_container">#FFDBC6</color>
+    <color name="astro_moon">#4D6B9E</color>
+    <color name="astro_moon_container">#D9E3F6</color>
+    <color name="astro_on_moon_container">#2C4A7A</color>
+    <!-- The line of the day picked on the charts on the light theme: the deep accent, as black is too harsh on the light surface -->
+    <color name="astro_sun_selection">#B87000</color>
+    <color name="astro_moon_selection">#4D6B9E</color>
+    <!-- The moon pictures' share of their sky disk on the light theme: a thin rim of night sky -->
+    <item name="moon_sky_share" format="float" type="dimen">0.91</item>
+    <!-- The Sun and Moon widgets pick their colors by their own dark or light background, not by the app's theme:
+         the dark ones as values-night has them, the light ones as above -->
+    <color name="astro_widget_sun_dark">#FFB300</color>
+    <color name="astro_widget_sunset_dark">#EF6C00</color>
+    <color name="astro_widget_moon_dark">#AEBFDD</color>
+    <color name="astro_widget_sun_light">#F09300</color>
+    <color name="astro_widget_sunset_light">#E65C00</color>
+    <color name="astro_widget_moon_light">#4D6B9E</color>
+</resources>

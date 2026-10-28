@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Leo: the glyph of Noto Sans Symbols (SIL Open Font License), outlined to the weight of the other icons; tinted where used -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="0.6"
+        android:strokeLineJoin="round"
+        android:pathData="M7.87,9.28Q7.61,8.46 7.61,7.47Q7.61,5.11 9.07,3.55Q10.53,2 12.91,2Q15.31,2 16.76,3.66Q18.21,5.33 18.21,8.1Q18.21,9.52 17.89,11.04Q17.58,12.56 16.64,14.86Q15.69,17.17 15.69,18.6Q15.69,19.45 16.14,19.92Q16.59,20.39 17.31,20.39Q18.03,20.39 18.55,20.09L19.06,21.49Q18.17,22 17.08,22Q15.67,22 14.85,21.1Q14.02,20.21 14.02,18.62Q14.02,16.65 15.3,13.77Q16.57,10.89 16.57,8.18Q16.57,6.02 15.51,4.73Q14.44,3.45 12.8,3.45Q11.21,3.45 10.23,4.52Q9.26,5.59 9.26,7.45Q9.26,8.41 9.5,9.18Q10.99,9.39 11.96,10.52Q12.93,11.66 12.93,13.13Q12.93,14.78 11.75,15.95Q10.58,17.13 8.93,17.13Q7.28,17.13 6.11,15.95Q4.94,14.78 4.94,13.13Q4.94,11.8 5.75,10.72Q6.56,9.65 7.87,9.28ZM11.31,13.13Q11.31,12.16 10.6,11.46Q9.89,10.75 8.93,10.75Q7.98,10.75 7.27,11.47Q6.56,12.18 6.56,13.13Q6.56,14.09 7.27,14.8Q7.97,15.5 8.93,15.5Q9.9,15.5 10.61,14.8Q11.31,14.1 11.31,13.13Z"/>
+</vector>

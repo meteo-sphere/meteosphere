@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stats_open_meteo">#ABC8F4</color>
+    <color name="stats_open_meteo_geocoding">#5E8FD0</color>
+    <color name="stats_foreca">#4DB6AC</color>
+    <color name="stats_noaa">#F2C266</color>
+    <color name="stats_geonames">#B39DDB</color>
+    <color name="stats_usgs">#7FC79A</color>
+    <color name="stats_helioviewer">#E08C9C</color>
+    <color name="stats_other">#8D9199</color>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The earthquakes' period chips, rounded and sized as the place chip and the moment's pill -->
+    <style name="Widget.Meteo.QuakePeriodChip" parent="Widget.Material3.Chip.Filter">
+        <item name="shapeAppearance">@style/ShapeAppearance.Meteo.AstroPlace</item>
+        <item name="chipMinHeight">34dp</item>
+        <item name="chipStrokeWidth">@dimen/control_stroke</item>
+    </style>
+
+    <!-- The earthquakes' sort buttons, a pill as tall as the chips -->
+    <style name="Widget.Meteo.QuakeToggle" parent="Widget.Material3.Button.OutlinedButton.Icon">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:minHeight">34dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">18dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Meteo.AstroPlace</item>
+        <item name="strokeWidth">@dimen/control_stroke</item>
+    </style>
+
+    <!-- The earthquakes' cards: the map, the summary and each day's -->
+    <style name="Widget.Meteo.QuakeCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainer</item>
+    </style>
+</resources>

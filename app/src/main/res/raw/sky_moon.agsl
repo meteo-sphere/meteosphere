@@ -1,0 +1,86 @@
+// The moon over the night's sky, drawn at full size over the clouds by SkyShaders from Android 13, as it is seen from
+// the place: its nearside from NASA's LRO map (the CGI Moon Kit, public domain), lit as much as its phase angle says
+// from the side its bright limb points to, its north turned as it is seen there. Its light is added to the frame's,
+// as much as the clouds and the mist in front of it let through, as SkyRenderer's frame says: the clouds' own light
+// is already there, and the night sky behind it is all but black; laid over them instead, its dark side hid the thin,
+// moonlit clouds before it. Both as the frame's compose pass made it a photograph: the moon's light muted as its
+// colours are, and the sum's highlights as soft, short of white; added to them as they were, it burned out white
+// behind a moonlit cloud. The stills draw it the same way, in sky_overlay.frag.
+
+// The nearside, 256 x 256: longitude -90 to 90 degrees across, latitude 90 to -90 down
+uniform shader moonMap;
+// SkyRenderer's frame: the sky on top, a pixel of the output at its place times the scale; how far one sees through
+// the clouds, grey, below it, down by the offset
+uniform shader clouds;
+uniform float2 cloudsScale;
+uniform float cloudsOffset;
+// The output in pixels, and the part of the 2:3 sky it shows: left, top, width, height, 0 to 1
+uniform float2 size;
+uniform float4 view;
+// Where the moon stands on the sky, 0 to 1
+uniform float2 body;
+// Its phase angle, 0 full to pi new, and where its bright limb and its north point, from the vertical toward the left
+uniform float3 disc;
+
+const float MOON_RADIUS = 0.031;
+const float MAP_SIZE = 256.0;
+// As SkyRenderer's: where the horizon lies down the 2:3 sky, and the angle a unit of its height spans
+const float HORIZON = 0.45;
+const float SPAN = 1.0;
+
+float3 ray(float2 f) {
+    float e = (HORIZON - f.y) * SPAN;
+    float u = (f.x - 0.5) * 0.6667 * SPAN;
+    return normalize(float3(u, sin(e), cos(e)));
+}
+
+// The compose pass's photograph: muted, a little more contrast but where it is dark; its soft highlights apart
+float3 graded(float3 col) {
+    float lum = dot(col, float3(0.2126, 0.7152, 0.0722));
+    col = mix(float3(lum), col, 0.85);
+    return mix(col, (col - 0.5) * 1.12 + float3(0.5, 0.5, 0.48), smoothstep(0.08, 0.35, lum));
+}
+
+float3 shoulder(float3 col) {
+    return mix(col, 0.72 + 0.16 * (1.0 - exp(-(col - 0.72) * 5.0)), step(0.72, col));
+}
+
+// What a colour was before its soft highlights
+float3 unshoulder(float3 col) {
+    return mix(col, 0.72 - log(max(1.0 - (col - 0.72) / 0.16, 0.0001)) / 5.0, step(0.72, col));
+}
+
+half4 main(float2 xy) {
+    float2 f = view.xy + xy / size * view.zw;
+    float3 rd = ray(f);
+    float3 bd = ray(body);
+    // Across the disc: right and up on the screen
+    float3 right = normalize(cross(float3(0.0, 1.0, 0.0), bd));
+    float3 up = cross(bd, right);
+    float2 local = float2(dot(rd - bd, right), dot(rd - bd, up)) / MOON_RADIUS;
+    float r2 = dot(local, local);
+    if (r2 >= 1.0) {
+        return half4(0.0);
+    }
+    // The sphere's normal toward the viewer, and the sun's direction from the moon: toward the bright limb, as far
+    // round from the viewer as the phase angle
+    float3 n = float3(local, sqrt(1.0 - r2));
+    float2 limb = float2(-sin(disc.y), cos(disc.y));
+    float3 sun = float3(limb * sin(disc.x), cos(disc.x));
+    float lit = smoothstep(-0.04, 0.04, dot(n, sun));
+    // The point of its surface: its east and north on the screen as its north is turned
+    float2 north = float2(-sin(disc.z), cos(disc.z));
+    float2 east = float2(cos(disc.z), sin(disc.z));
+    float lat = asin(clamp(dot(local, north), -1.0, 1.0));
+    float lon = atan(dot(local, east), n.z);
+    float2 uv = float2(0.5 + lon / 3.14159265, 0.5 - lat / 3.14159265) * MAP_SIZE;
+    float3 albedo = float3(moonMap.eval(clamp(uv, float2(0.5), float2(MAP_SIZE - 0.5))).rgb);
+    // Its dark side faintly in earthshine, as the clouds' compose drew it
+    float3 moon = float3(0.96, 0.95, 0.9) * albedo * (0.06 + 0.94 * lit);
+    float2 at = xy * cloudsScale;
+    float through = float(clouds.eval(float2(at.x, cloudsOffset + at.y)).r);
+    float3 frame = float3(clouds.eval(at).rgb);
+    float3 c = shoulder(unshoulder(frame) + graded(moon) * through);
+    float edge = smoothstep(1.0, 0.9, r2);
+    return half4(half3(c * edge), half(edge));
+}

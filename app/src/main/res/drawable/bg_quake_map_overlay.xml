@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Under the legend and the button over the map: a veil of the card's colour, so they read over land and dots in
+     either theme -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/quake_map_veil" />
+    <corners android:radius="18dp" />
+</shape>

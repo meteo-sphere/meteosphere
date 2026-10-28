@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Sun widget: its sign, and its rise and set at the place -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="40dp"
+    android:resizeMode="horizontal"
+    android:targetCellWidth="4"
+    android:targetCellHeight="1"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/widget_loading"
+    android:previewImage="@drawable/widget_picker_sun"
+    android:configure="org.meteosphere.ui.widgets.settings.AstroWidgetSettingsActivity"
+    android:widgetFeatures="reconfigurable"
+    android:widgetCategory="home_screen"/>

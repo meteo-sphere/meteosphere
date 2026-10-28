@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The dark theme's Sun and Moon colors: bright on faint washes of themselves -->
+<resources>
+    <color name="astro_sun">#FFB300</color>
+    <color name="astro_sun_container">#33FFB300</color>
+    <color name="astro_on_sun_container">#FFB300</color>
+    <color name="astro_sunset">#EF6C00</color>
+    <color name="astro_sunset_container">#33EF6C00</color>
+    <color name="astro_moon">#AEBFDD</color>
+    <color name="astro_moon_container">#33AEBFDD</color>
+    <color name="astro_on_moon_container">#AEBFDD</color>
+    <!-- The line of the day picked on the charts on the dark theme: the text color -->
+    <color name="astro_sun_selection">@color/m3_on_surface</color>
+    <color name="astro_moon_selection">@color/m3_on_surface</color>
+    <!-- The moon pictures' share of their sky disk on the dark theme: the sky disk blends into the surface -->
+    <item name="moon_sky_share" format="float" type="dimen">0.86</item>
+</resources>

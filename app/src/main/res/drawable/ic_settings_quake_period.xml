@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A widget setting's icon, the earthquakes' period: a calendar on a disc of its group's hue -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_red_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:pathData="M6.5,5.5h11a2,2 0 0,1 2,2v10.5a2,2 0 0,1 -2,2h-11a2,2 0 0,1 -2,-2v-10.5a2,2 0 0,1 2,-2zM4.5,10h15M8.5,3.5v4M15.5,3.5v4"
+                android:strokeColor="@color/settings_icon_red"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.6"/>
+        </vector>
+    </item>
+</layer-list>

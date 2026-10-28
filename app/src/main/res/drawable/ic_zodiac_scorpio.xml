@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Scorpio: the glyph of Noto Sans Symbols (SIL Open Font License), outlined to the weight of the other icons; tinted where used -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="0.6"
+        android:strokeLineJoin="round"
+        android:pathData="M15.03,13.89Q15.03,16.85 15.67,17.94Q16.31,19.02 17.84,19.02L18.84,19.02L18.42,17.4L21.42,19.7L18.42,22L18.84,20.39L17.84,20.39Q15.43,20.39 14.46,18.88Q13.48,17.37 13.48,13.89L13.48,6.02Q13.48,5.23 13.31,4.42Q13.13,3.62 12.83,3.12Q12.21,3.64 11.2,5.26Q10.18,6.88 10.08,7.57L10.08,17.78L8.53,17.78L8.53,6.35Q8.53,5.54 8.37,4.73Q8.22,3.91 7.87,3.12Q7.26,3.64 6.24,5.26Q5.23,6.88 5.13,7.57L5.13,17.78L3.59,17.78L3.59,6.18Q3.59,4.61 2.58,2L3.76,2Q4.4,2.96 5,5.07Q5.29,4.5 6.02,3.54Q6.75,2.57 7.34,2L8.65,2Q9.04,2.57 9.4,3.47Q9.77,4.36 9.9,5.07Q10.2,4.48 10.96,3.54Q11.71,2.59 12.34,2L13.64,2Q14.38,3.01 14.7,4.01Q15.03,5.01 15.03,6.11L15.03,13.89Z"/>
+</vector>

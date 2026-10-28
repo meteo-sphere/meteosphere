@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_language">fr</string>
+    <string name="app_name">Meteosphere</string>
+    <string name="search_failed">Pas de connexion, la recherche a échoué</string>
+    <string name="already_in_favorites">Déjà dans les favoris</string>
+    <string name="pref_only_strong_wind_summary">Afficher dans la liste des lieux uniquement le vent de %1$s %2$s ou plus.</string>
+    <string name="pref_live_sky">Météo animée</string>
+    <string name="pref_live_sky_summary">Les nuages défilent, la pluie et la neige tombent. Consomme plus de batterie</string>
+    <string name="pref_category_experimental">Fonctionnalités expérimentales</string>
+    <string name="pref_statistics">Statistiques</string>
+    <string name="stats_on_device">Sur cet appareil</string>
+    <string name="stats_on_server">Sur le serveur</string>
+    <string name="stats_today">auj.</string>
+    <string name="stats_max">max</string>
+    <string name="stats_min">min</string>
+    <string name="stats_loading">Chargement…</string>
+    <string name="stats_failed">Impossible de charger les statistiques du serveur</string>
+    <string name="stats_no_requests">Aucune requête pour l\'instant</string>
+    <string name="stats_note">Requêtes aux sources de données par jour, jours UTC</string>
+    <string name="pref_statusbar_notification_forecast_title">Prévisions horaires</string>
+    <string name="pref_statusbar_notification_forecast_summary">Dans la notification développée</string>
+    <string name="nearby_you_are_here">Vous êtes ici</string>
+    <string name="tab_favorites">Favoris</string>
+    <string name="tab_nearby">À proximité</string>
+    <string name="weather_widget_settings">Widget Meteosphere</string>
+    <string name="updated_time">Actualisé le %2$d %1$s à %3$s</string>
+    <string name="widget_settings_show_wind">Vent</string>
+    <string name="widget_settings_show_precipitation">Précipitations</string>
+    <string name="widget_settings_group_show">Sur le widget</string>
+    <string name="widget_settings_group_look">Apparence</string>
+    <string name="widget_settings_group_clock">Horloge</string>
+    <string name="widget_settings_city">Ville</string>
+    <string name="pref_category_general">Général</string>
+    <string name="pref_category_display">Affichage</string>
+    <string name="pref_category_location">Localisation</string>
+    <string name="pref_category_notifications">Notifications</string>
+    <string name="pref_data_provider">Source des données</string>
+    <string name="pref_weather_source">Prévisions météo</string>
+    <string name="pref_foreca_key">Clé API Foreca</string>
+    <string name="foreca_key_message">Foreca fournit la clé API sur %s après inscription</string>
+    <string name="foreca_key_hint">Clé</string>
+    <string name="foreca_key_checking">Vérification de la clé…</string>
+    <string name="foreca_key_refused">Foreca n\'a pas accepté cette clé</string>
+    <string name="foreca_key_unchecked">Impossible de vérifier la clé, pas de connexion à Foreca</string>
+    <string name="foreca_key_busy">Foreca ne peut pas vérifier la clé pour l\'instant</string>
+    <string name="moon">Lune</string>
+    <string name="moon_label">Illumination de la Lune, %</string>
+    <string name="earthquakes">Séismes</string>
+    <string name="earthquakes_period_day">Jour</string>
+    <string name="earthquakes_period_week">Semaine</string>
+    <string name="earthquakes_period_month">Mois</string>
+    <string name="earthquakes_sort_time">Par date</string>
+    <string name="earthquakes_sort_distance">Par distance</string>
+    <string name="earthquakes_empty">Aucun séisme M5+ sur cette période</string>
+    <string name="earthquakes_error">Impossible de charger les données USGS</string>
+    <string name="earthquakes_saved">Pas de connexion, liste enregistrée affichée</string>
+    <string name="tab_earthquakes">Séismes</string>
+    <string name="earthquakes_ago_now">à l\'instant</string>
+    <string name="earthquakes_ago_minutes">%d min</string>
+    <string name="earthquakes_ago_hours">%d h</string>
+    <string name="earthquakes_ago_days">%d j</string>
+    <string name="pref_earthquake_alerts_world">Séismes forts dans le monde</string>
+    <string name="pref_earthquake_alerts_nearby">Séismes M5+ près de mes lieux</string>
+    <string name="earthquake_alert_title">Séisme M %s</string>
+    <string name="earthquake_alert_details">Détails</string>
+    <string name="earthquake_alerts_denied">Les notifications de Meteosphere sont désactivées dans les paramètres Android</string>
+    <string name="pref_main_tabs">Onglets</string>
+    <string name="pref_moon_phase_alerts">Phases de la Lune</string>
+    <string name="moon_alert_today">Aujourd\'hui à %s</string>
+    <string name="moon_alert_tonight">Cette nuit à %s</string>
+    <string name="moon_rise">Lever</string>
+    <string name="moon_set">Coucher</string>
+    <string name="moon_next_phases">Prochaines phases</string>
+    <string name="moon_by_day">Jour par jour</string>
+    <string name="moon_tile_age">Âge</string>
+    <string name="moon_age_days">%s jours</string>
+    <string name="moon_until_new">nouvelle lune dans %1$d %2$s</string>
+    <string name="moon_new_today">nouvelle lune aujourd\'hui</string>
+    <string name="moon_illumination_change">%1$s en un jour</string>
+    <string name="moon_illuminated">illuminée</string>
+    <string name="moon_month_title">Illumination sur le mois</string>
+    <string name="moon_perigee">Périgée</string>
+    <string name="moon_apogee">Apogée</string>
+    <string name="moon_supermoon">super lune</string>
+    <string name="moon_distance_km">%s km</string>
+    <string name="moon_sign_until">jusqu\'au %s</string>
+    <string name="moon_phase_at">%1$s à %2$s</string>
+    <string name="tab_sun">Soleil</string>
+    <string name="sun_polar_day">Jour polaire</string>
+    <string name="sun_polar_night">Nuit polaire</string>
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="duration_minutes_seconds">%1$d min %2$d s</string>
+    <string name="duration_seconds">%d s</string>
+    <string name="eclipse_visible">Visible ici : %1$s – %2$s</string>
+    <string name="eclipse_visible_covered">Visible ici : %1$s – %2$s, occultation %3$s</string>
+    <string name="eclipse_not_visible">Non visible ici</string>
+    <string name="eclipse_alert_visible">visible ici</string>
+    <string name="eclipse_alert_visible_covered">visible ici, occultation %s</string>
+    <string name="eclipse_alert_not_visible">non visible ici</string>
+    <string name="pref_eclipse_alerts">Éclipses</string>
+    <string name="sun_seasons_title">Solstices et équinoxes</string>
+    <string name="solar_eclipses_title">Éclipses solaires</string>
+    <string name="lunar_eclipses_title">Éclipses lunaires</string>
+    <string name="sun_year_title">Lever et coucher sur l\'année</string>
+    <string name="sun_signs_title">Signes du zodiaque</string>
+    <string name="sun_next_event">Prochain événement</string>
+    <string name="sun_now">Le Soleil en direct</string>
+    <string name="sun_now_taken">Image SDO à %s</string>
+    <string name="sun_now_frame">image de %s</string>
+    <string name="sun_now_loading">Chargement…</string>
+    <string name="sun_now_offline">Pas de connexion à Helioviewer</string>
+    <string name="sun_now_failed">Impossible de charger l\'image. Appuyez pour réessayer</string>
+    <string name="sun_now_day_ago">−24 h</string>
+    <string name="sun_now_half_day_ago">−12 h</string>
+    <string name="sun_now_now">maintenant</string>
+    <string name="sun_now_play">Lire la journée</string>
+    <string name="sun_now_pause">Pause</string>
+    <string name="sun_now_time">Heure de l\'image</string>
+    <string name="sun_channel_corona">Couronne</string>
+    <string name="sun_channel_loops">Boucles</string>
+    <string name="sun_channel_prominences">Protubérances</string>
+    <string name="sun_channel_flares">Éruptions</string>
+    <string name="sun_channel_spots">Taches</string>
+    <string name="sun_channel_magnetic">Champ magnétique</string>
+    <string name="sun_channel_ejections">Éjections</string>
+    <string name="sun_channel_corona_about">La couronne chaude, environ 1,5 million de °C : les régions actives brillent, les trous coronaux sont sombres</string>
+    <string name="sun_channel_loops_about">La couronne calme et les boucles magnétiques au-dessus des régions actives, environ 600 000 °C</string>
+    <string name="sun_channel_prominences_about">La chromosphère, environ 50 000 °C : protubérances au bord et filaments sur le disque</string>
+    <string name="sun_channel_flares_about">Le plasma le plus chaud des éruptions, jusqu\'à 10 millions de °C</string>
+    <string name="sun_channel_spots_about">Lumière visible : la photosphère et ses taches solaires</string>
+    <string name="sun_channel_magnetic_about">Magnétogramme : le blanc et le noir sont les deux polarités du champ à la surface</string>
+    <string name="sun_channel_ejections_about">Coronographe de SOHO : le disque est masqué, on voit la couronne externe et les éjections de plasma</string>
+    <string name="sun_event_in_days">dans %1$d %2$s</string>
+    <string name="sun_event_today">aujourd\'hui</string>
+    <string name="section_expanded">Développé</string>
+    <string name="section_collapsed">Réduit</string>
+    <string name="sun_tile_day_length">Durée du jour</string>
+    <string name="sun_tile_noon">Midi solaire</string>
+    <string name="sun_tile_twilight">Crépuscule civil</string>
+    <string name="sun_tile_sign">Signe zodiacal</string>
+    <string name="sun_noon_height">Soleil à %s°</string>
+    <string name="sun_tile_since_yesterday">%s depuis hier</string>
+    <string name="sun_in_days">%1$s · dans %2$d %3$s</string>
+    <string name="earthquake_title">Séisme</string>
+    <string name="earthquake_magnitude_scale">magnitude %s</string>
+    <string name="earthquake_time">Heure</string>
+    <string name="earthquake_depth">Profondeur</string>
+    <string name="earthquake_magnitude">Magnitude</string>
+    <string name="earthquake_utc">UTC %1$s · %2$s</string>
+    <string name="earthquake_depth_shallow">superficiel</string>
+    <string name="earthquake_depth_intermediate">intermédiaire</string>
+    <string name="earthquake_depth_deep">profond</string>
+    <string name="earthquake_scale_moment">de moment</string>
+    <string name="earthquake_scale_body">des ondes de volume</string>
+    <string name="earthquake_scale_surface">des ondes de surface</string>
+    <string name="earthquake_scale_local">locale</string>
+    <string name="earthquake_scale_duration">de durée</string>
+    <string name="earthquake_tsunami">Infos tsunami</string>
+    <string name="earthquake_pager">PAGER : %s</string>
+    <string name="earthquake_felt">Ressenti par %d</string>
+    <string name="earthquake_open_usgs">Voir sur USGS</string>
+    <string name="earthquake_ago_now">à l\'instant</string>
+    <string name="earthquake_ago_minutes">il y a %d min</string>
+    <string name="earthquake_ago_hours">il y a %d h</string>
+    <string name="earthquake_ago_days">il y a %1$d %2$s</string>
+    <string name="earthquakes_summary_day">24 dernières heures</string>
+    <string name="earthquake_widget_settings">Widget Séismes</string>
+    <string name="earthquake_widget_period">Période</string>
+    <string name="earthquake_widget_show">Afficher</string>
+    <string name="earthquake_widget_show_latest">Les plus récents</string>
+    <string name="earthquake_widget_show_strongest">Les plus forts</string>
+    <string name="sun_widget_settings">Widget Soleil</string>
+    <string name="moon_widget_settings">Widget Lune</string>
+    <!-- The zodiac sign next in the Sun and Moon widgets, its date and time on the line below -->
+    <string name="astro_widget_next_sign">%s dès le</string>
+    <string name="earthquakes_summary_week">7 derniers jours</string>
+    <string name="earthquakes_summary_month">30 derniers jours</string>
+    <string name="earthquakes_count">%1$d %2$s M5+</string>
+    <string name="earthquakes_today">Aujourd\'hui</string>
+    <string name="earthquakes_yesterday">Hier, %s</string>
+    <string name="earthquakes_yesterday_short">hier, %s</string>
+    <string name="earthquakes_today_at">Aujourd\'hui, %s</string>
+    <string name="earthquakes_legend_day">dernières 24 h</string>
+    <string name="astro_time_back">Reculer</string>
+    <string name="astro_time_forward">Avancer</string>
+    <string name="astro_time_now">Retour au présent</string>
+    <string name="astro_day_strip_hint">Appuyez deux fois sur le graphique pour revenir à l\'heure actuelle</string>
+    <string name="pref_theme">Thème</string>
+
+    <!-- City details -->
+    <string name="details_now">Maintenant</string>
+    <string name="details_now_lc">maintenant</string>
+    <string name="details_today">Aujourd\'hui</string>
+    <string name="details_tomorrow">Demain</string>
+    <string name="details_today_lc">aujourd\'hui</string>
+    <string name="details_tomorrow_lc">demain</string>
+    <string name="details_feels_like">Ressenti %s</string>
+    <string name="details_summary_day_max">Maximum %s l\'après-midi</string>
+    <string name="details_summary_night_min">Minimum %s la nuit</string>
+    <string name="details_summary_wind">Vent %1$s, %2$s</string>
+    <string name="details_precipitation_now_until">%1$s jusqu\'à %2$s</string>
+    <string name="details_precipitation_now">%1$s en ce moment</string>
+    <string name="details_precipitation_from">%1$s %2$s</string>
+    <string name="details_precipitation_on_day">%1$s %2$s</string>
+    <string name="details_precipitation_none">Pas de précipitations ces prochains jours</string>
+    <string name="details_precipitation_today">Aujourd\'hui</string>
+    <string name="details_precipitation_next">Ensuite : %1$s %2$s</string>
+    <string name="details_precipitation_week_none">Semaine sèche</string>
+    <string name="details_wind">Vent</string>
+    <string name="details_wind_strong">Vent fort %s</string>
+    <string name="details_wind_strong_label">vent fort</string>
+    <string name="details_quakes_loading">Chargement…</string>
+    <string name="details_quakes_no_data">Pas de données USGS</string>
+    <string name="details_quakes_day_none">Aucun M5+ en 24 heures</string>
+    <string name="details_quakes_strongest_day">Le plus fort en 24 heures</string>
+    <string name="details_wind_today_max">Jusqu\'à %s aujourd\'hui</string>
+    <string name="details_magnetic">Champ magnétique</string>
+    <string name="details_kp_storm">Orage magnétique %s</string>
+    <string name="details_warmer">Demain plus chaud de %s</string>
+    <string name="details_colder">Demain plus froid de %s</string>
+    <string name="details_sun_sets">Le soleil se couche %s</string>
+    <string name="details_sun_rises">Le soleil se lève %s</string>
+    <string name="details_at_today">aujourd\'hui à %s</string>
+    <string name="details_at_tomorrow">demain à %s</string>
+    <string name="details_at_day">%1$s à %2$s</string>
+    <string name="details_dew_point">Point de rosée %s</string>
+    <string name="details_pressure_rising">En hausse</string>
+    <string name="details_pressure_falling">En baisse</string>
+    <string name="details_pressure_steady">Stable</string>
+    <string name="details_polar_day">jour polaire</string>
+    <string name="details_polar_night">nuit polaire</string>
+    <string name="details_sun_title">Soleil · jour de %s</string>
+    <string name="details_moon_illuminated">Illuminée à %s</string>
+    <string name="details_moon_today_at">%1$s aujourd\'hui à %2$s</string>
+    <string name="details_moon_tomorrow">%s demain</string>
+    <string name="details_moon_in_days">%1$s dans %2$d %3$s</string>
+    <string name="details_daily_title">Prévisions quotidiennes</string>
+    <string name="details_daily_more">Plus</string>
+    <string name="details_daily_less">Moins</string>
+    <string name="details_locations">Lieux</string>
+    <string name="details_more_options">Plus d\'options</string>
+    <string name="earthquakes_map_world">Monde entier</string>
+    <string name="format_weekday_day">%1$s %2$d</string>
+    <string name="format_weekday_day_month">%1$s %2$d %3$s</string>
+    <string name="city_time_already">%1$s, déjà %2$s</string>
+    <string name="city_time_still">%1$s, encore %2$s</string>
+    <string name="sentence">"%s. "</string>
+    <string name="details_row_label">%1$s, %2$s</string>
+    <string name="list_separator">", "</string>
+
+    <!-- Forecast for today and tomorrow -->
+    <string name="pref_daily_forecast">Prévisions pour aujourd\'hui et demain</string>
+    <string name="pref_daily_forecast_off">Désactivé</string>
+    <string name="daily_forecast_today">Aujourd\'hui · %s</string>
+    <string name="daily_forecast_tomorrow">Demain · %s</string>
+    <string name="daily_forecast_storm">Orage magnétique, indice K %d</string>
+    <string name="daily_forecast_precipitation">%1$s %2$s</string>
+    <string name="daily_forecast_from_to">de %1$s à %2$s</string>
+    <string name="daily_forecast_from">à partir de %s</string>
+    <string name="daily_forecast_and">%1$s et %2$s</string>
+    <string name="daily_forecast_precipitation_breaks">%1$s par intermittence %2$s</string>
+
+    <!-- The places' menus and messages -->
+    <string name="favorites_add">Ajouter aux favoris</string>
+    <string name="favorites_remove">Retirer des favoris</string>
+    <string name="favorites_added">Ajouté aux favoris</string>
+    <string name="favorites_removed">Retiré des favoris</string>
+    <string name="rename_place">Renommer</string>
+    <string name="delete">Supprimer</string>
+    <string name="delete_all">Tout supprimer</string>
+    <string name="search">Rechercher</string>
+    <string name="settings">Paramètres</string>
+    <string name="favorites_empty">Aucun favori pour l\'instant. Pour ajouter un lieu, appuyez sur + en bas à droite</string>
+    <string name="favorites_header">Lieux enregistrés</string>
+    <string name="current_location">Position actuelle</string>
+    <string name="airport">Aéroport</string>
+
+    <!-- The nearby tab and the search -->
+    <string name="nearby_header">Autres lieux à proximité</string>
+    <string name="nearby_failed">Impossible de charger les lieux à proximité</string>
+    <string name="nearby_permission_needed">Pour afficher les lieux près de vous, l\'application a besoin d\'accéder à la position de l\'appareil</string>
+    <string name="nearby_permission_ask">Autoriser l\'accès</string>
+    <string name="nearby_permission_settings">Ouvrir les paramètres</string>
+    <string name="distance_under_km">moins de 1 km</string>
+    <string name="distance_under_mile">moins de 1 mile</string>
+    <string name="search_hint">Ville ou localité</string>
+    <string name="search_type_more">Saisissez au moins deux lettres</string>
+    <string name="search_nothing_found">Aucun résultat</string>
+
+    <!-- The rename screen -->
+    <string name="rename_title">Renommer le lieu</string>
+    <string name="rename_hint">Nouveau nom</string>
+
+    <!-- The weather's names -->
+    <string name="temperature">Température</string>
+    <string name="wind_speed">Vitesse du vent</string>
+    <string name="pressure">Pression</string>
+    <string name="precipitation">Précipitations</string>
+    <string name="humidity">Humidité</string>
+    <string name="distance">Distance</string>
+    <string name="geomagnetic">Activité géomagnétique</string>
+    <string name="kp_index">Indice K</string>
+    <string name="sunrise">Lever</string>
+    <string name="sunset">Coucher</string>
+    <string name="no_data">Pas de données de prévision</string>
+
+    <!-- The settings -->
+    <string name="pref_language">Langue</string>
+    <string name="pref_units">Unités</string>
+    <string name="pref_update_period">Actualisation de la météo</string>
+    <string name="pref_24_hour">Format 24 heures</string>
+    <string name="pref_gps">Utiliser le GPS</string>
+    <string name="pref_weather_parameters">Données météo</string>
+    <string name="pref_current_location">Position actuelle dans les favoris</string>
+    <string name="pref_only_strong_wind">Vent fort uniquement</string>
+    <string name="pref_notification">Notification météo</string>
+    <string name="notification_enabled">Afficher la notification</string>
+    <string name="version">Version</string>
+
+    <!-- The place of the widgets, the earthquake widget and the notification -->
+    <string name="place_title">Lieu</string>
+    <string name="place_automatic">Détecter automatiquement</string>
+    <string name="place_not_chosen">Non choisi</string>
+    <string name="no_place_message">Aucun lieu choisi</string>
+    <string name="no_place_choose">Choisir</string>
+    <string name="no_place_automatic">Utiliser la position</string>
+
+    <!-- The widgets -->
+    <string name="background">Arrière-plan</string>
+    <string name="widget_transparency">Transparence</string>
+    <string name="widget_current_weather">Météo actuelle</string>
+    <string name="widget_clock_app">Application d\'horloge</string>
+    <string name="widget_clock_app_none">Aucune</string>
+    <string name="widget_refreshing">Actualisation…</string>
+    <string name="widget_refreshed">Actualisé</string>
+    <string name="widget_place_needed">Choisissez un lieu</string>
+
+    <!-- The wind: %1$s the speed, %2$s its unit, %3$s the direction it blows from -->
+    <string name="widget_wind">%1$s %2$s, %3$s</string>
+    <string name="widget_wind_up_to">jusqu\'à %1$s %2$s</string>
+    <string name="wind_phrase">Vent %1$s %2$s, %3$s</string>
+    <string name="wind_phrase_no_direction">Vent %1$s %2$s</string>
+
+    <!-- The city page's local date and time: %1$s the short weekday, %2$d the day, %3$s the month, %4$s the time -->
+    <string name="details_date_time">%1$s %2$d %3$s, %4$s</string>
+
+    <!-- The date under a chart widget's clock: SimpleDateFormat patterns, read with the app's locale -->
+    <string name="widget_clock_date">ccc d MMM</string>
+    <string name="widget_clock_date_two_lines">ccc\nd MMM</string>
+
+    <!-- The most places the favourites keep, R.integer.max_favorites -->
+    <plurals name="favorites_limit">
+        <item quantity="one">Les favoris peuvent contenir au plus %d lieu</item>
+        <item quantity="many">Les favoris peuvent contenir au plus %d lieux</item>
+        <item quantity="other">Les favoris peuvent contenir au plus %d lieux</item>
+    </plurals>
+    <!-- The words that follow a number, which the callers' texts put before them: Lint's ImpliedQuantity, which
+         wants the number in each text itself, doesn't apply -->
+    <plurals name="days" tools:ignore="ImpliedQuantity">
+        <item quantity="one">jour</item>
+        <item quantity="many">jours</item>
+        <item quantity="other">jours</item>
+    </plurals>
+    <plurals name="miles" tools:ignore="ImpliedQuantity">
+        <item quantity="one">mile</item>
+        <item quantity="many">miles</item>
+        <item quantity="other">miles</item>
+    </plurals>
+    <plurals name="mph" tools:ignore="ImpliedQuantity">
+        <item quantity="one">mph</item>
+        <item quantity="many">mph</item>
+        <item quantity="other">mph</item>
+    </plurals>
+    <plurals name="knots" tools:ignore="ImpliedQuantity">
+        <item quantity="one">nœud</item>
+        <item quantity="many">nœuds</item>
+        <item quantity="other">nœuds</item>
+    </plurals>
+    <plurals name="earthquakes_counted" tools:ignore="ImpliedQuantity">
+        <item quantity="one">séisme</item>
+        <item quantity="many">séismes</item>
+        <item quantity="other">séismes</item>
+    </plurals>
+</resources>

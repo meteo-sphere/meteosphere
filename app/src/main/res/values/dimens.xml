@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="place_icon_padding">3dp</dimen>
+    <dimen name="empty_text_side">50dp</dimen>
+    <dimen name="favorites_header_height">48dp</dimen>
+    <dimen name="favorites_spacer">80dp</dimen>
+    <dimen name="place_name_text_size">17dp</dimen>
+    <!-- The floating toolbar of the main screen's tabs over the navigation bar, the add button above it, and the room
+         the pages' lists keep at their end to scroll clear of both -->
+    <dimen name="tab_bar_margin">12dp</dimen>
+    <dimen name="tab_bar_fab_margin">92dp</dimen>
+    <dimen name="tab_bar_space">88dp</dimen>
+    <!-- Settings rows in rounded groups: the groups set in from the screen's sides, their outer corners round, the
+         inner ones only softened, and a thin gap between the rows -->
+    <dimen name="settings_list_margin">16dp</dimen>
+    <dimen name="settings_list_top">8dp</dimen>
+    <dimen name="settings_list_bottom">24dp</dimen>
+    <dimen name="settings_row_height">64dp</dimen>
+    <dimen name="settings_row_corner_outer">24dp</dimen>
+    <dimen name="settings_row_corner_inner">6dp</dimen>
+    <dimen name="settings_row_gap">2dp</dimen>
+    <dimen name="settings_group_gap">16dp</dimen>
+    <!-- A favourite's card, its sky drawn at half of it -->
+    <dimen name="city_card_height">108dp</dimen>
+    <!-- The nearest town's card over the nearby places, its sky drawn at half of it too -->
+    <dimen name="nearby_hero_height">196dp</dimen>
+    <!-- The thin outline of the controls over the tabs: the place, the moment, the order and the periods -->
+    <dimen name="control_stroke">0.6dp</dimen>
+    <!-- The text of the hourly card from its edge: the summary and the day over the hours -->
+    <dimen name="details_card_text_inset">18dp</dimen>
+</resources>

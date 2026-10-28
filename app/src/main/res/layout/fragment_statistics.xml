@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The requests a day to the data sources from this device and from the server -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/statsDevice"
+            layout="@layout/stats_section"/>
+        <include
+            android:id="@+id/statsServer"
+            layout="@layout/stats_section"/>
+        <TextView
+            style="@style/SettingsRow.Summary"
+            android:paddingStart="12dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/stats_note"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

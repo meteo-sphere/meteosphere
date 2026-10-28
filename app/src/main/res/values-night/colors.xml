@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The lower panel of the weather details on the dark theme, as it always was: light text on the weather's color -->
+<resources>
+    <!-- The seismogram before the earthquakes' summary, red as the widget's strongest -->
+    <color name="quake_summary_icon">@color/earthquake_widget_strongest_dark</color>
+    <!-- The location on the earthquakes' maps, lighter over the dark land -->
+    <color name="quake_map_place">#4A86E8</color>
+    <!-- No veil over a night's card on the dark page -->
+    <color name="city_card_night_veil">#00000000</color>
+    <!-- The logo's "sphere" over the dark page -->
+    <color name="logo_sphere">@color/logo_sphere_on_dark</color>
+    <color name="notification_text">#E3E3E3</color>
+    <color name="notification_text_secondary">#C4C7C5</color>
+    <color name="notification_separator">#33E3E3E3</color>
+</resources>

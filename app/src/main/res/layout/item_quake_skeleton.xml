@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Under the waiting map while the earthquakes' list is on its way: the summary and a day of lines as shapes -->
+<org.meteosphere.ui.quakes.QuakeSkeletonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

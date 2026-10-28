@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_language">zh-Hant</string>
+    <string name="app_name">Meteosphere</string>
+    <string name="search_failed">無網路連線，搜尋失敗</string>
+    <string name="already_in_favorites">已在收藏中</string>
+    <string name="pref_only_strong_wind_summary">地點清單中只顯示 %1$s %2$s 以上的風。</string>
+    <string name="pref_live_sky">動態天氣</string>
+    <string name="pref_live_sky_summary">雲朵飄動，雨雪飄落。耗電較多</string>
+    <string name="pref_category_experimental">實驗性功能</string>
+    <string name="pref_statistics">統計</string>
+    <string name="stats_on_device">本裝置</string>
+    <string name="stats_on_server">伺服器</string>
+    <string name="stats_today">今天</string>
+    <string name="stats_max">最大</string>
+    <string name="stats_min">最小</string>
+    <string name="stats_loading">載入中…</string>
+    <string name="stats_failed">無法載入伺服器統計</string>
+    <string name="stats_no_requests">尚無請求</string>
+    <string name="stats_note">每天向資料來源發出的請求（依 UTC 日期）</string>
+    <string name="pref_statusbar_notification_forecast_title">每小時預報</string>
+    <string name="pref_statusbar_notification_forecast_summary">展開通知時顯示</string>
+    <string name="nearby_you_are_here">您在這裡</string>
+    <string name="tab_favorites">收藏</string>
+    <string name="tab_nearby">附近</string>
+    <string name="weather_widget_settings">Meteosphere 小工具</string>
+    <string name="updated_time">%1$s%2$d日 %3$s更新</string>
+    <string name="widget_settings_show_wind">風</string>
+    <string name="widget_settings_show_precipitation">降水</string>
+    <string name="widget_settings_group_show">小工具顯示內容</string>
+    <string name="widget_settings_group_look">外觀</string>
+    <string name="widget_settings_group_clock">時鐘</string>
+    <string name="widget_settings_city">城市</string>
+    <string name="pref_category_general">一般</string>
+    <string name="pref_category_display">顯示</string>
+    <string name="pref_category_location">位置</string>
+    <string name="pref_category_notifications">通知</string>
+    <string name="pref_data_provider">資料提供者</string>
+    <string name="pref_weather_source">天氣預報來源</string>
+    <string name="pref_foreca_key">Foreca API 金鑰</string>
+    <string name="foreca_key_message">註冊後可在 %s 取得 Foreca API 金鑰</string>
+    <string name="foreca_key_hint">金鑰</string>
+    <string name="foreca_key_checking">正在檢查金鑰…</string>
+    <string name="foreca_key_refused">Foreca 未接受此金鑰</string>
+    <string name="foreca_key_unchecked">無法檢查金鑰，未能連線至 Foreca</string>
+    <string name="foreca_key_busy">Foreca 目前無法檢查金鑰</string>
+    <string name="moon">月亮</string>
+    <string name="moon_label">月亮照明度（%）</string>
+    <string name="earthquakes">地震</string>
+    <string name="earthquakes_period_day">24 小時</string>
+    <string name="earthquakes_period_week">7 天</string>
+    <string name="earthquakes_period_month">30 天</string>
+    <string name="earthquakes_sort_time">依時間</string>
+    <string name="earthquakes_sort_distance">依距離</string>
+    <string name="earthquakes_empty">此期間沒有 M5+ 地震</string>
+    <string name="earthquakes_error">無法載入 USGS 資料</string>
+    <string name="earthquakes_saved">無網路連線，顯示已儲存的清單</string>
+    <string name="tab_earthquakes">地震</string>
+    <string name="earthquakes_ago_now">剛剛</string>
+    <string name="earthquakes_ago_minutes">%d 分鐘</string>
+    <string name="earthquakes_ago_hours">%d 小時</string>
+    <string name="earthquakes_ago_days">%d 天</string>
+    <string name="pref_earthquake_alerts_world">全球強震</string>
+    <string name="pref_earthquake_alerts_nearby">我的地點附近的 M5+ 地震</string>
+    <string name="earthquake_alert_title">規模 %s 地震</string>
+    <string name="earthquake_alert_details">詳情</string>
+    <string name="earthquake_alerts_denied">Android 設定中未允許 Meteosphere 傳送通知</string>
+    <string name="pref_main_tabs">分頁</string>
+    <string name="pref_moon_phase_alerts">月相</string>
+    <string name="moon_alert_today">今天 %s</string>
+    <string name="moon_alert_tonight">今晚 %s</string>
+    <string name="moon_rise">月出</string>
+    <string name="moon_set">月落</string>
+    <string name="moon_next_phases">近期月相</string>
+    <string name="moon_by_day">每日</string>
+    <string name="moon_tile_age">月齡</string>
+    <string name="moon_age_days">%s 天</string>
+    <string name="moon_until_new">%1$d %2$s後新月</string>
+    <string name="moon_new_today">今天新月</string>
+    <string name="moon_illumination_change">一天內 %1$s</string>
+    <string name="moon_illuminated">被照亮</string>
+    <string name="moon_month_title">一個月內的照明度</string>
+    <string name="moon_perigee">近地點</string>
+    <string name="moon_apogee">遠地點</string>
+    <string name="moon_supermoon">超級月亮</string>
+    <string name="moon_distance_km">%s 公里</string>
+    <string name="moon_sign_until">至 %s</string>
+    <string name="moon_phase_at">%2$s %1$s</string>
+    <string name="tab_sun">太陽</string>
+    <string name="sun_polar_day">極晝</string>
+    <string name="sun_polar_night">極夜</string>
+    <string name="duration_hours_minutes">%1$d 小時 %2$d 分</string>
+    <string name="duration_minutes_seconds">%1$d 分 %2$d 秒</string>
+    <string name="duration_seconds">%d 秒</string>
+    <string name="eclipse_visible">本地可見：%1$s – %2$s</string>
+    <string name="eclipse_visible_covered">本地可見：%1$s – %2$s，遮蔽 %3$s</string>
+    <string name="eclipse_not_visible">本地不可見</string>
+    <string name="eclipse_alert_visible">本地可見</string>
+    <string name="eclipse_alert_visible_covered">本地可見，遮蔽 %s</string>
+    <string name="eclipse_alert_not_visible">本地不可見</string>
+    <string name="pref_eclipse_alerts">日食和月食</string>
+    <string name="sun_seasons_title">二分二至</string>
+    <string name="solar_eclipses_title">日食</string>
+    <string name="lunar_eclipses_title">月食</string>
+    <string name="sun_year_title">全年日出日落</string>
+    <string name="sun_signs_title">黃道十二宮</string>
+    <string name="sun_next_event">下一個天象</string>
+    <string name="sun_now">即時太陽</string>
+    <string name="sun_now_taken">SDO 拍攝於 %s</string>
+    <string name="sun_now_frame">拍攝於 %s</string>
+    <string name="sun_now_loading">正在載入…</string>
+    <string name="sun_now_offline">無法連線至 Helioviewer</string>
+    <string name="sun_now_failed">無法載入影像，輕觸即可重試</string>
+    <string name="sun_now_day_ago">−24 小時</string>
+    <string name="sun_now_half_day_ago">−12 小時</string>
+    <string name="sun_now_now">現在</string>
+    <string name="sun_now_play">播放全天</string>
+    <string name="sun_now_pause">暫停</string>
+    <string name="sun_now_time">影像時間</string>
+    <string name="sun_channel_corona">日冕</string>
+    <string name="sun_channel_loops">冕環</string>
+    <string name="sun_channel_prominences">日珥</string>
+    <string name="sun_channel_flares">閃焰</string>
+    <string name="sun_channel_spots">黑子</string>
+    <string name="sun_channel_magnetic">磁場</string>
+    <string name="sun_channel_ejections">日冕拋射</string>
+    <string name="sun_channel_corona_about">熾熱的日冕，約 150 萬 °C：活動區明亮，冕洞呈暗色</string>
+    <string name="sun_channel_loops_about">寧靜日冕和活動區上方的磁環，約 60 萬 °C</string>
+    <string name="sun_channel_prominences_about">色球層，約 5 萬 °C：邊緣的日珥和日面上的暗條</string>
+    <string name="sun_channel_flares_about">閃焰中最熾熱的電漿，高達 1000 萬 °C</string>
+    <string name="sun_channel_spots_about">可見光：光球層及其上的太陽黑子</string>
+    <string name="sun_channel_magnetic_about">磁圖：白色和黑色代表日面磁場的兩種極性</string>
+    <string name="sun_channel_ejections_about">SOHO 日冕儀：日面被遮蔽，可見外層日冕和拋射出的電漿</string>
+    <string name="sun_event_in_days">%1$d %2$s後</string>
+    <string name="sun_event_today">今天</string>
+    <string name="section_expanded">已展開</string>
+    <string name="section_collapsed">已收合</string>
+    <string name="sun_tile_day_length">晝長</string>
+    <string name="sun_tile_noon">正午</string>
+    <string name="sun_tile_twilight">民用曙暮光</string>
+    <string name="sun_tile_sign">星座</string>
+    <string name="sun_noon_height">太陽高度 %s°</string>
+    <string name="sun_tile_since_yesterday">較昨日 %s</string>
+    <string name="sun_in_days">%1$s · %2$d %3$s後</string>
+    <string name="earthquake_title">地震</string>
+    <string name="earthquake_magnitude_scale">規模 %s</string>
+    <string name="earthquake_time">時間</string>
+    <string name="earthquake_depth">深度</string>
+    <string name="earthquake_magnitude">規模</string>
+    <string name="earthquake_utc">UTC %1$s · %2$s</string>
+    <string name="earthquake_depth_shallow">淺源</string>
+    <string name="earthquake_depth_intermediate">中源</string>
+    <string name="earthquake_depth_deep">深源</string>
+    <string name="earthquake_scale_moment">矩規模</string>
+    <string name="earthquake_scale_body">體波規模</string>
+    <string name="earthquake_scale_surface">面波規模</string>
+    <string name="earthquake_scale_local">近震規模</string>
+    <string name="earthquake_scale_duration">持續時間規模</string>
+    <string name="earthquake_tsunami">海嘯資訊</string>
+    <string name="earthquake_pager">PAGER %s警報</string>
+    <string name="earthquake_felt">%d 人有感</string>
+    <string name="earthquake_open_usgs">在 USGS 網站查看</string>
+    <string name="earthquake_ago_now">剛剛</string>
+    <string name="earthquake_ago_minutes">%d 分鐘前</string>
+    <string name="earthquake_ago_hours">%d 小時前</string>
+    <string name="earthquake_ago_days">%1$d %2$s前</string>
+    <string name="earthquakes_summary_day">過去 24 小時</string>
+    <string name="earthquake_widget_settings">地震小工具</string>
+    <string name="earthquake_widget_period">時間範圍</string>
+    <string name="earthquake_widget_show">顯示</string>
+    <string name="earthquake_widget_show_latest">最新</string>
+    <string name="earthquake_widget_show_strongest">最強</string>
+    <string name="sun_widget_settings">太陽小工具</string>
+    <string name="moon_widget_settings">月亮小工具</string>
+    <!-- The zodiac sign next in the Sun and Moon widgets, its date and time on the line below -->
+    <string name="astro_widget_next_sign">進入%s</string>
+    <string name="earthquakes_summary_week">過去 7 天</string>
+    <string name="earthquakes_summary_month">過去 30 天</string>
+    <string name="earthquakes_count">M5+ %2$s %1$d 次</string>
+    <string name="earthquakes_today">今天</string>
+    <string name="earthquakes_yesterday">昨天，%s</string>
+    <string name="earthquakes_yesterday_short">昨天，%s</string>
+    <string name="earthquakes_today_at">今天，%s</string>
+    <string name="earthquakes_legend_day">24 小時內</string>
+    <string name="astro_time_back">後退</string>
+    <string name="astro_time_forward">前進</string>
+    <string name="astro_time_now">回到現在</string>
+    <string name="astro_day_strip_hint">輕觸兩下圖表，即可回到目前時間</string>
+    <string name="pref_theme">主題</string>
+
+    <!-- City details -->
+    <string name="details_now">現在</string>
+    <string name="details_now_lc">現在</string>
+    <string name="details_today">今天</string>
+    <string name="details_tomorrow">明天</string>
+    <string name="details_today_lc">今天</string>
+    <string name="details_tomorrow_lc">明天</string>
+    <string name="details_feels_like">體感 %s</string>
+    <string name="details_summary_day_max">白天最高 %s</string>
+    <string name="details_summary_night_min">夜間最低 %s</string>
+    <string name="details_summary_wind">%1$s風 %2$s</string>
+    <string name="details_precipitation_now_until">%1$s持續至 %2$s</string>
+    <string name="details_precipitation_now">現在有%1$s</string>
+    <string name="details_precipitation_from">%2$s 有%1$s</string>
+    <string name="details_precipitation_on_day">%2$s有%1$s</string>
+    <string name="details_precipitation_none">未來幾天無降水</string>
+    <string name="details_precipitation_today">今天</string>
+    <string name="details_precipitation_next">下次：%1$s %2$s</string>
+    <string name="details_precipitation_week_none">未來一週無降水</string>
+    <string name="details_wind">風</string>
+    <string name="details_wind_strong">%s有強風</string>
+    <string name="details_wind_strong_label">強風</string>
+    <string name="details_quakes_loading">正在載入…</string>
+    <string name="details_quakes_no_data">無 USGS 資料</string>
+    <string name="details_quakes_day_none">24 小時內無 M5+ 地震</string>
+    <string name="details_quakes_strongest_day">24 小時內最強</string>
+    <string name="details_wind_today_max">今天最大 %s</string>
+    <string name="details_magnetic">地磁</string>
+    <string name="details_kp_storm">%s有地磁暴</string>
+    <string name="details_warmer">明天升溫 %s</string>
+    <string name="details_colder">明天降溫 %s</string>
+    <string name="details_sun_sets">%s 日落</string>
+    <string name="details_sun_rises">%s 日出</string>
+    <string name="details_at_today">今天 %s</string>
+    <string name="details_at_tomorrow">明天 %s</string>
+    <string name="details_at_day">%1$s %2$s</string>
+    <string name="details_dew_point">露點 %s</string>
+    <string name="details_pressure_rising">上升</string>
+    <string name="details_pressure_falling">下降</string>
+    <string name="details_pressure_steady">平穩</string>
+    <string name="details_polar_day">極晝</string>
+    <string name="details_polar_night">極夜</string>
+    <string name="details_sun_title">太陽 · 晝長 %s</string>
+    <string name="details_moon_illuminated">照明度 %s</string>
+    <string name="details_moon_today_at">今天 %2$s %1$s</string>
+    <string name="details_moon_tomorrow">明天%s</string>
+    <string name="details_moon_in_days">%2$d %3$s後%1$s</string>
+    <string name="details_daily_title">每日預報</string>
+    <string name="details_daily_more">詳細</string>
+    <string name="details_daily_less">簡略</string>
+    <string name="details_locations">地點</string>
+    <string name="details_more_options">更多選項</string>
+    <string name="earthquakes_map_world">全球</string>
+    <string name="format_weekday_day">%2$d日%1$s</string>
+    <string name="format_weekday_day_month">%3$s%2$d日%1$s</string>
+    <string name="city_time_already">%1$s，已是%2$s</string>
+    <string name="city_time_still">%1$s，仍是%2$s</string>
+    <string name="sentence">%s。</string>
+    <string name="details_row_label">%1$s（%2$s）</string>
+    <string name="list_separator">，</string>
+
+    <!-- Forecast for today and tomorrow -->
+    <string name="pref_daily_forecast">今明兩天天氣預報</string>
+    <string name="pref_daily_forecast_off">關閉</string>
+    <string name="daily_forecast_today">今天 · %s</string>
+    <string name="daily_forecast_tomorrow">明天 · %s</string>
+    <string name="daily_forecast_storm">地磁暴，K 指數 %d</string>
+    <string name="daily_forecast_precipitation">%2$s有%1$s</string>
+    <string name="daily_forecast_from_to">%1$s至%2$s</string>
+    <string name="daily_forecast_from">%s起</string>
+    <string name="daily_forecast_and">%1$s和%2$s</string>
+    <string name="daily_forecast_precipitation_breaks">%2$s有間歇性%1$s</string>
+
+    <!-- The places' menus and messages -->
+    <string name="favorites_add">加入收藏</string>
+    <string name="favorites_remove">從收藏中移除</string>
+    <string name="favorites_added">已加入收藏</string>
+    <string name="favorites_removed">已從收藏中移除</string>
+    <string name="rename_place">重新命名</string>
+    <string name="delete">刪除</string>
+    <string name="delete_all">全部刪除</string>
+    <string name="search">搜尋</string>
+    <string name="settings">設定</string>
+    <string name="favorites_empty">還沒有收藏。輕觸右下角的 + 即可新增地點</string>
+    <string name="favorites_header">已儲存的地點</string>
+    <string name="current_location">目前位置</string>
+    <string name="airport">機場</string>
+
+    <!-- The nearby tab and the search -->
+    <string name="nearby_header">附近的其他地點</string>
+    <string name="nearby_failed">無法載入附近的地點</string>
+    <string name="nearby_permission_needed">如要顯示您附近的地點，應用程式需要存取裝置的位置資訊</string>
+    <string name="nearby_permission_ask">允許存取</string>
+    <string name="nearby_permission_settings">開啟設定</string>
+    <string name="distance_under_km">不到 1 公里</string>
+    <string name="distance_under_mile">不到 1 英里</string>
+    <string name="search_hint">城市或地點</string>
+    <string name="search_type_more">請至少輸入兩個字</string>
+    <string name="search_nothing_found">找不到結果</string>
+
+    <!-- The rename screen -->
+    <string name="rename_title">重新命名地點</string>
+    <string name="rename_hint">新名稱</string>
+
+    <!-- The weather's names -->
+    <string name="temperature">溫度</string>
+    <string name="wind_speed">風速</string>
+    <string name="pressure">氣壓</string>
+    <string name="precipitation">降水</string>
+    <string name="humidity">濕度</string>
+    <string name="distance">距離</string>
+    <string name="geomagnetic">地磁活動</string>
+    <string name="kp_index">K 指數</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="no_data">暫無預報資料</string>
+
+    <!-- The settings -->
+    <string name="pref_language">語言</string>
+    <string name="pref_units">單位</string>
+    <string name="pref_update_period">天氣更新</string>
+    <string name="pref_24_hour">24 小時制</string>
+    <string name="pref_gps">使用 GPS</string>
+    <string name="pref_weather_parameters">天氣參數</string>
+    <string name="pref_current_location">在收藏中顯示目前位置</string>
+    <string name="pref_only_strong_wind">僅顯示強風</string>
+    <string name="pref_notification">天氣通知</string>
+    <string name="notification_enabled">顯示通知</string>
+    <string name="version">版本</string>
+
+    <!-- The place of the widgets, the earthquake widget and the notification -->
+    <string name="place_title">地點</string>
+    <string name="place_automatic">自動定位</string>
+    <string name="place_not_chosen">未選擇</string>
+    <string name="no_place_message">尚未選擇地點</string>
+    <string name="no_place_choose">選擇</string>
+    <string name="no_place_automatic">使用裝置位置</string>
+
+    <!-- The widgets -->
+    <string name="background">背景</string>
+    <string name="widget_transparency">透明度</string>
+    <string name="widget_current_weather">目前天氣</string>
+    <string name="widget_clock_app">時鐘應用程式</string>
+    <string name="widget_clock_app_none">未選擇</string>
+    <string name="widget_refreshing">正在更新…</string>
+    <string name="widget_refreshed">已更新</string>
+    <string name="widget_place_needed">請選擇地點</string>
+
+    <!-- The wind: %1$s the speed, %2$s its unit, %3$s the direction it blows from -->
+    <string name="widget_wind">%3$s風 %1$s %2$s</string>
+    <string name="widget_wind_up_to">最大 %1$s %2$s</string>
+    <string name="wind_phrase">%3$s風 %1$s %2$s</string>
+    <string name="wind_phrase_no_direction">風速 %1$s %2$s</string>
+
+    <!-- The city page's local date and time: %1$s the short weekday, %2$d the day, %3$s the month, %4$s the time -->
+    <string name="details_date_time">%3$s%2$d日%1$s %4$s</string>
+
+    <!-- The date under a chart widget's clock: SimpleDateFormat patterns, read with the app's locale -->
+    <string name="widget_clock_date">M月d日 ccc</string>
+    <string name="widget_clock_date_two_lines">ccc\nM月d日</string>
+
+    <!-- The most places the favourites keep, R.integer.max_favorites -->
+    <plurals name="favorites_limit">
+        <item quantity="other">收藏最多可儲存 %d 個地點</item>
+    </plurals>
+    <!-- The words that follow a number, which the callers' texts put before them: Lint's ImpliedQuantity, which
+         wants the number in each text itself, doesn't apply -->
+    <plurals name="days" tools:ignore="ImpliedQuantity">
+        <item quantity="other">天</item>
+    </plurals>
+    <plurals name="miles" tools:ignore="ImpliedQuantity">
+        <item quantity="other">英里</item>
+    </plurals>
+    <plurals name="mph" tools:ignore="ImpliedQuantity">
+        <item quantity="other">英里/小時</item>
+    </plurals>
+    <plurals name="knots" tools:ignore="ImpliedQuantity">
+        <item quantity="other">節</item>
+    </plurals>
+    <plurals name="earthquakes_counted" tools:ignore="ImpliedQuantity">
+        <item quantity="other">地震</item>
+    </plurals>
+</resources>

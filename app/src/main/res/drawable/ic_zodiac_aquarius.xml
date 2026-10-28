@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aquarius: the glyph of Noto Sans Symbols (SIL Open Font License), outlined to the weight of the other icons; tinted where used -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="0.6"
+        android:strokeLineJoin="round"
+        android:pathData="M20.32,10.93L18.88,8.29L14.61,10.93L13.15,8.29L8.87,10.93L7.42,8.29L3.14,10.93L2.45,9.66L8.03,6.33L9.39,8.91L13.67,6.24L15.13,8.91L19.41,6.24L21.55,10.2L20.32,10.93ZM20.32,17.76L18.88,15.12L14.61,17.76L13.15,15.12L8.87,17.76L7.42,15.12L3.14,17.76L2.45,16.49L8.03,13.17L9.39,15.73L13.67,13.07L15.13,15.73L19.41,13.07L21.55,17.03L20.32,17.76Z"/>
+</vector>

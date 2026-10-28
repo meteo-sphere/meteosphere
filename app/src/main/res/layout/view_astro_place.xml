@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The location of the Moon, Sun and Earthquakes tabs: a chip opening the list to choose from, as tall and rounded
+     as the moment's pill beside it and with its text -->
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chipAstroPlace"
+    style="@style/Widget.Material3.Chip.Assist"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxWidth="240dp"
+    android:textAppearance="?attr/textAppearanceLabelLarge"
+    app:chipMinHeight="34dp"
+    app:chipStrokeWidth="@dimen/control_stroke"
+    app:shapeAppearance="@style/ShapeAppearance.Meteo.AstroPlace"
+    app:chipIcon="@drawable/ic_place"
+    app:chipIconTint="?attr/colorOnSurface"
+    app:chipIconVisible="true"
+    app:closeIcon="@drawable/ic_arrow_drop_down"
+    app:closeIconTint="?attr/colorOnSurfaceVariant"
+    app:closeIconVisible="true"/>

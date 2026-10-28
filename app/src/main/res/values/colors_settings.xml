@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Settings as grouped rows: white rows on a tinted page by day, lighter rows on the dark page by night -->
+    <color name="settings_page">@color/m3_surface_container</color>
+    <color name="settings_row">@color/m3_surface_container_lowest</color>
+    <!-- The round icons of the settings: a hue per group, the glyph on a pale disc of it -->
+    <color name="settings_icon_blue">#1D5FA8</color>
+    <color name="settings_icon_blue_bg">#D6E3FF</color>
+    <color name="settings_icon_teal">#00696F</color>
+    <color name="settings_icon_teal_bg">#C4ECEF</color>
+    <color name="settings_icon_purple">#5F4B99</color>
+    <color name="settings_icon_purple_bg">#E8DDFF</color>
+    <color name="settings_icon_green">#2C6A3F</color>
+    <color name="settings_icon_green_bg">#C8EBD0</color>
+    <color name="settings_icon_orange">#94431A</color>
+    <color name="settings_icon_orange_bg">#FFDBC9</color>
+    <color name="settings_icon_red">#A8302B</color>
+    <color name="settings_icon_red_bg">#FFDAD6</color>
+    <color name="settings_icon_yellow">#735C00</color>
+    <color name="settings_icon_yellow_bg">#F8E19A</color>
+</resources>

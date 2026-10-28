@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>Server remoto</item>
+        <item>Sul dispositivo</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>Come il sistema</item>
+        <item>Cielo del meteo</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>Luna nuova</item>
+        <item>Falce crescente</item>
+        <item>Primo quarto</item>
+        <item>Gibbosa crescente</item>
+        <item>Luna piena</item>
+        <item>Gibbosa calante</item>
+        <item>Ultimo quarto</item>
+        <item>Falce calante</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>Disattivato</item>
+        <item>M6 e oltre</item>
+        <item>M6,5 e oltre</item>
+        <item>M7 e oltre</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>Disattivato</item>
+        <item>Entro 300 km</item>
+        <item>Entro 500 km</item>
+        <item>Entro 1000 km</item>
+        <item>Entro 2000 km</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>Disattivato</item>
+        <item>Luna piena</item>
+        <item>Luna nuova e piena</item>
+        <item>Tutte e quattro le fasi</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>Ariete</item>
+        <item>Toro</item>
+        <item>Gemelli</item>
+        <item>Cancro</item>
+        <item>Leone</item>
+        <item>Vergine</item>
+        <item>Bilancia</item>
+        <item>Scorpione</item>
+        <item>Sagittario</item>
+        <item>Capricorno</item>
+        <item>Acquario</item>
+        <item>Pesci</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>Sole in Ariete</item>
+        <item>Sole in Toro</item>
+        <item>Sole in Gemelli</item>
+        <item>Sole in Cancro</item>
+        <item>Sole in Leone</item>
+        <item>Sole in Vergine</item>
+        <item>Sole in Bilancia</item>
+        <item>Sole in Scorpione</item>
+        <item>Sole in Sagittario</item>
+        <item>Sole in Capricorno</item>
+        <item>Sole in Acquario</item>
+        <item>Sole in Pesci</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>Equinozio di primavera</item>
+        <item>Solstizio d\'estate</item>
+        <item>Equinozio d\'autunno</item>
+        <item>Solstizio d\'inverno</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>Eclissi solare totale</item>
+        <item>Eclissi solare anulare</item>
+        <item>Eclissi solare ibrida</item>
+        <item>Eclissi solare parziale</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>Eclissi lunare totale</item>
+        <item>Eclissi lunare parziale</item>
+        <item>Eclissi lunare di penombra</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>Disattivato</item>
+        <item>Tutte le eclissi</item>
+        <item>Solo visibili qui</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>a nord</item>
+        <item>a nord-est</item>
+        <item>a est</item>
+        <item>a sud-est</item>
+        <item>a sud</item>
+        <item>a sud-ovest</item>
+        <item>a ovest</item>
+        <item>a nord-ovest</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>verde</item>
+        <item>giallo</item>
+        <item>arancione</item>
+        <item>rosso</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>Come il dispositivo</item>
+        <item>Chiaro</item>
+        <item>Scuro</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>Luna nuova</item>
+        <item>Primo q.</item>
+        <item>Luna piena</item>
+        <item>Ultimo q.</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>domenica</item>
+        <item>lunedì</item>
+        <item>martedì</item>
+        <item>mercoledì</item>
+        <item>giovedì</item>
+        <item>venerdì</item>
+        <item>sabato</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>Pioggia</item>
+        <item>Neve</item>
+        <item>Nevischio</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>Calmo</item>
+        <item>Instabile</item>
+        <item>Tempesta</item>
+        <item>Forte tempesta</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>Do</item>
+        <item>Lu</item>
+        <item>Ma</item>
+        <item>Me</item>
+        <item>Gi</item>
+        <item>Ve</item>
+        <item>Sa</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>gennaio</item>
+        <item>febbraio</item>
+        <item>marzo</item>
+        <item>aprile</item>
+        <item>maggio</item>
+        <item>giugno</item>
+        <item>luglio</item>
+        <item>agosto</item>
+        <item>settembre</item>
+        <item>ottobre</item>
+        <item>novembre</item>
+        <item>dicembre</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>gen</item>
+        <item>feb</item>
+        <item>mar</item>
+        <item>apr</item>
+        <item>mag</item>
+        <item>giu</item>
+        <item>lug</item>
+        <item>ago</item>
+        <item>set</item>
+        <item>ott</item>
+        <item>nov</item>
+        <item>dic</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>Calma</item>
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SO</item>
+        <item>O</item>
+        <item>NO</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>nodi</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>mmHg</item>
+        <item>hPa</item>
+        <item>mbar</item>
+        <item>inHg</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>km</item>
+        <item>miglia</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>mm</item>
+        <item>pollici</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>Automatico</item>
+        <item>Ogni 15 minuti</item>
+        <item>Ogni 30 minuti</item>
+        <item>Ogni ora</item>
+        <item>Ogni 2 ore</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>Scuro</item>
+        <item>Chiaro</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>Orarie</item>
+        <item>Giornaliere</item>
+    </string-array>
+</resources>

@@ -1,0 +1,181 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "generated": 1790858996000,
+  "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=5&starttime=2026-09-24T00:00:00&orderby=time",
+  "title": "USGS Earthquakes",
+  "status": 200,
+  "api": "2.7.0",
+  "count": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 5.3,
+    "place": "0 km NNE of Yōkaichiba, Japan",
+    "time": 1790857631864,
+    "updated": 1790858881620,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tytg",
+    "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000tytg&format=geojson",
+    "felt": 4,
+    "cdi": 3.4,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 434,
+    "net": "us",
+    "code": "6000tytg",
+    "ids": ",us6000tytg,",
+    "sources": ",us,",
+    "types": ",dyfi,origin,phase-data,",
+    "nst": 97,
+    "dmin": 2.072,
+    "rms": 0.76,
+    "gap": 119,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 5.3 - 0 km NNE of Yōkaichiba, Japan"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     140.5507,
+     35.7025,
+     41.649
+    ]
+   },
+   "id": "us6000tytg"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 5.2,
+    "place": "Balleny Islands region",
+    "time": 1790752036005,
+    "updated": 1790754131040,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyik",
+    "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000tyik&format=geojson",
+    "felt": null,
+    "cdi": null,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 416,
+    "net": "us",
+    "code": "6000tyik",
+    "ids": ",us6000tyik,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": 27,
+    "dmin": 14.433,
+    "rms": 1.18,
+    "gap": 81,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 5.2 - Balleny Islands region"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     171.414,
+     -63.5619,
+     10
+    ]
+   },
+   "id": "us6000tyik"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 5.4,
+    "place": "231 km WSW of Port McNeill, Canada",
+    "time": 1790570481639,
+    "updated": 1790706725040,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty2u",
+    "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000ty2u&format=geojson",
+    "felt": 3,
+    "cdi": 1,
+    "mmi": 0,
+    "alert": "green",
+    "status": "reviewed",
+    "tsunami": 1,
+    "sig": 449,
+    "net": "us",
+    "code": "6000ty2u",
+    "ids": ",us6000ty2u,attm2513,",
+    "sources": ",us,at,",
+    "types": ",dyfi,impact-link,losspager,moment-tensor,origin,phase-data,shakemap,",
+    "nst": 40,
+    "dmin": 1.461,
+    "rms": 1.07,
+    "gap": 175,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 5.4 - 231 km WSW of Port McNeill, Canada"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -130.2208,
+     50.0527,
+     10
+    ]
+   },
+   "id": "us6000ty2u"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 6.6,
+    "place": "80 km ENE of Tadine, New Caledonia",
+    "time": 1790371383309,
+    "updated": 1790458207826,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txpi",
+    "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000txpi&format=geojson",
+    "felt": 11,
+    "cdi": 6.9,
+    "mmi": 5.672,
+    "alert": "green",
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 678,
+    "net": "us",
+    "code": "6000txpi",
+    "ids": ",pt26268000,us6000txpi,usauto6000txpi,",
+    "sources": ",pt,us,usauto,",
+    "types": ",dyfi,ground-failure,internal-moment-tensor,losspager,moment-tensor,origin,phase-data,shakemap,",
+    "nst": 102,
+    "dmin": 1.696,
+    "rms": 0.82,
+    "gap": 35,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 6.6 - 80 km ENE of Tadine, New Caledonia"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     168.61,
+     -21.2982,
+     10
+    ]
+   },
+   "id": "us6000txpi"
+  }
+ ],
+ "bbox": [
+  -174.0813,
+  -63.5619,
+  8,
+  174.0792,
+  82.6385,
+  103.838
+ ]
+}

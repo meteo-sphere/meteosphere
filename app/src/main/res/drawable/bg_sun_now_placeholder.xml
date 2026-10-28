@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Where the Sun's disc will be on the card of the Sun now, while its picture loads -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:inset="12dp">
+    <shape android:shape="oval">
+        <solid android:color="#1FFFFFFF"/>
+    </shape>
+</inset>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A settings row's icon: the glyph on a disc of its group's hue -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_teal_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:pathData="M7,7.5a4.5,4.5 0 1,0 0,9a4.5,4.5 0 1,0 0,-9z"
+                android:strokeColor="@color/settings_icon_teal"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.7"/>
+            <path
+                android:pathData="M11.5,12h9M17.5,12v3.5M20.5,12v4"
+                android:strokeColor="@color/settings_icon_teal"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.7"/>
+        </vector>
+    </item>
+</layer-list>

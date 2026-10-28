@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 app theme; follows the system light/dark setting. Colors come from colors_m3.xml. -->
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/m3_primary</item>
+        <item name="colorOnPrimary">@color/m3_on_primary</item>
+        <item name="colorPrimaryContainer">@color/m3_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/m3_on_primary_container</item>
+        <item name="colorPrimaryInverse">@color/m3_inverse_primary</item>
+        <item name="colorPrimaryFixed">@color/m3_primary_fixed</item>
+        <item name="colorPrimaryFixedDim">@color/m3_primary_fixed_dim</item>
+        <item name="colorOnPrimaryFixed">@color/m3_on_primary_fixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/m3_on_primary_fixed_variant</item>
+        <item name="colorSecondary">@color/m3_secondary</item>
+        <item name="colorOnSecondary">@color/m3_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/m3_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/m3_on_secondary_container</item>
+        <item name="colorSecondaryFixed">@color/m3_secondary_fixed</item>
+        <item name="colorSecondaryFixedDim">@color/m3_secondary_fixed_dim</item>
+        <item name="colorOnSecondaryFixed">@color/m3_on_secondary_fixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/m3_on_secondary_fixed_variant</item>
+        <item name="colorTertiary">@color/m3_tertiary</item>
+        <item name="colorOnTertiary">@color/m3_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/m3_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/m3_on_tertiary_container</item>
+        <item name="colorTertiaryFixed">@color/m3_tertiary_fixed</item>
+        <item name="colorTertiaryFixedDim">@color/m3_tertiary_fixed_dim</item>
+        <item name="colorOnTertiaryFixed">@color/m3_on_tertiary_fixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/m3_on_tertiary_fixed_variant</item>
+        <item name="colorError">@color/m3_error</item>
+        <item name="colorOnError">@color/m3_on_error</item>
+        <item name="colorErrorContainer">@color/m3_error_container</item>
+        <item name="colorOnErrorContainer">@color/m3_on_error_container</item>
+        <item name="android:colorBackground">@color/m3_background</item>
+        <item name="colorOnBackground">@color/m3_on_background</item>
+        <item name="colorSurface">@color/m3_surface</item>
+        <item name="colorOnSurface">@color/m3_on_surface</item>
+        <item name="colorSurfaceVariant">@color/m3_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/m3_on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/m3_inverse_surface</item>
+        <item name="colorOnSurfaceInverse">@color/m3_inverse_on_surface</item>
+        <item name="colorOutline">@color/m3_outline</item>
+        <item name="colorOutlineVariant">@color/m3_outline_variant</item>
+        <item name="colorSurfaceBright">@color/m3_surface_bright</item>
+        <item name="colorSurfaceDim">@color/m3_surface_dim</item>
+        <item name="colorSurfaceContainerLowest">@color/m3_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/m3_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/m3_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/m3_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/m3_surface_container_highest</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.Meteo.AlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Meteo.MaterialAlertDialog</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.Meteo</item>
+        <item name="toolbarStyle">@style/Widget.Meteo.Toolbar</item>
+        <!-- Regular-weight row titles, as in M3 lists and settings. -->
+        <item name="android:textAppearanceListItem">?attr/textAppearanceBodyLarge</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme"/>
+
+    <style name="AppTheme.Splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <!-- The widgets' settings: the home screen's wallpaper behind the screen, seen only through the window over the
+         preview; the page's colour elsewhere, under the navigation bar too. WidgetSettingsActivity makes the window
+         translucent, as an opaque background would leave it opaque. -->
+    <style name="AppTheme.WidgetSettings">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@color/settings_page</item>
+    </style>
+
+    <!-- Gives plain AppCompat AlertDialogs the M3 look of MaterialAlertDialogBuilder. -->
+    <style name="ThemeOverlay.Meteo.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:windowBackground">@drawable/m3_alert_dialog_background</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.Meteo.Title.Text</item>
+    </style>
+
+    <style name="ThemeOverlay.Meteo.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.Meteo.Title.Text</item>
+    </style>
+
+    <!-- A dialog's window is first measured narrow; a one-line title cut off then is shrunk for good by its
+         DialogTitle. Room for a second line keeps every title at the headline's size. -->
+    <style name="MaterialAlertDialog.Meteo.Title.Text" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <!-- The settings as rows in rounded groups, each row with its round icon -->
+    <style name="PreferenceThemeOverlay.Meteo" parent="PreferenceThemeOverlay">
+        <item name="preferenceStyle">@style/Preference.Meteo</item>
+        <item name="dialogPreferenceStyle">@style/Preference.Meteo.DialogPreference</item>
+        <item name="switchPreferenceCompatStyle">@style/Preference.Meteo.SwitchPreferenceCompat</item>
+        <item name="preferenceCategoryStyle">@style/Preference.Meteo.Category</item>
+    </style>
+
+    <style name="Preference.Meteo" parent="Preference.Material">
+        <item name="android:layout">@layout/preference_segmented</item>
+    </style>
+
+    <style name="Preference.Meteo.DialogPreference" parent="Preference.DialogPreference.Material">
+        <item name="android:layout">@layout/preference_segmented</item>
+    </style>
+
+    <style name="Preference.Meteo.SwitchPreferenceCompat" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:layout">@layout/preference_segmented</item>
+        <item name="widgetLayout">@layout/preference_widget_material_switch</item>
+    </style>
+
+    <style name="Preference.Meteo.Category" parent="Preference.Category.Material">
+        <item name="android:layout">@layout/preference_category_segmented</item>
+    </style>
+
+    <style name="Widget.Meteo.Toolbar" parent="Widget.Material3.Toolbar.Surface">
+        <item name="titleTextAppearance">?attr/textAppearanceTitleLarge</item>
+    </style>
+
+    <!-- Always flat on the surface: the screens aren't in a CoordinatorLayout, so lifting never followed the scroll
+         and only left the bar tinted after the activity was recreated, like on a change of the theme -->
+    <style name="Widget.Meteo.AppBarLayout" parent="Widget.Material3.AppBarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="liftOnScroll">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+</resources>

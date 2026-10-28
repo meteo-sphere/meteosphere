@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A widget's setting as the app's settings have them: a round icon, the title over its summary and a switch, on a
+     segment of its group; filled in code -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/settings_row_height"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <ImageView
+        android:id="@+id/ivRowIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+        <TextView
+            android:id="@+id/tvRowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="@color/settings_row_title_text"/>
+        <TextView
+            android:id="@+id/tvRowSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="4"
+            android:textAlignment="viewStart"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/settings_row_summary_text"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <!-- Every row has it, hidden where it isn't a switch, and they share the id: the system would give them all the
+         last one's state when the screen is made again, so the screens keep their switches' states themselves -->
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/swRow"
+        android:saveEnabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"/>
+</LinearLayout>

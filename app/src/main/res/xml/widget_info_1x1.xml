@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The weather widget 1x1: the icon and the temperature -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="40dp"
+    android:minHeight="40dp"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/widget_loading"
+    android:previewImage="@drawable/widget_picker_1x1"
+    android:configure="org.meteosphere.ui.widgets.settings.WeatherWidgetSettingsActivity"
+    android:widgetFeatures="reconfigurable"
+    android:widgetCategory="home_screen"/>

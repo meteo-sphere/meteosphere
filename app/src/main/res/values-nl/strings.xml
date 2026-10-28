@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_language">nl</string>
+    <string name="app_name">Meteosphere</string>
+    <string name="search_failed">Geen verbinding, zoeken mislukt</string>
+    <string name="already_in_favorites">Staat al in favorieten</string>
+    <string name="pref_only_strong_wind_summary">Alleen wind vanaf %1$s %2$s tonen in de lijst met locaties.</string>
+    <string name="pref_live_sky">Geanimeerd weer</string>
+    <string name="pref_live_sky_summary">Wolken drijven, regen en sneeuw vallen. Verbruikt meer batterij</string>
+    <string name="pref_category_experimental">Experimentele functies</string>
+    <string name="pref_statistics">Statistieken</string>
+    <string name="stats_on_device">Op dit apparaat</string>
+    <string name="stats_on_server">Op de server</string>
+    <string name="stats_today">vandaag</string>
+    <string name="stats_max">max</string>
+    <string name="stats_min">min</string>
+    <string name="stats_loading">Laden…</string>
+    <string name="stats_failed">Kan de serverstatistieken niet laden</string>
+    <string name="stats_no_requests">Nog geen verzoeken</string>
+    <string name="stats_note">Verzoeken aan de databronnen per dag, dagen volgens UTC</string>
+    <string name="pref_statusbar_notification_forecast_title">Verwachting per uur</string>
+    <string name="pref_statusbar_notification_forecast_summary">Als de melding is uitgevouwen</string>
+    <string name="nearby_you_are_here">Je bent hier</string>
+    <string name="tab_favorites">Favorieten</string>
+    <string name="tab_nearby">In de buurt</string>
+    <string name="weather_widget_settings">Meteosphere-widget</string>
+    <string name="updated_time">Bijgewerkt %2$d %1$s, %3$s</string>
+    <string name="widget_settings_show_wind">Wind</string>
+    <string name="widget_settings_show_precipitation">Neerslag</string>
+    <string name="widget_settings_group_show">Op de widget</string>
+    <string name="widget_settings_group_look">Uiterlijk</string>
+    <string name="widget_settings_group_clock">Klok</string>
+    <string name="widget_settings_city">Stad</string>
+    <string name="pref_category_general">Algemeen</string>
+    <string name="pref_category_display">Weergave</string>
+    <string name="pref_category_location">Locatie</string>
+    <string name="pref_category_notifications">Meldingen</string>
+    <string name="pref_data_provider">Gegevensbron</string>
+    <string name="pref_weather_source">Weersverwachting</string>
+    <string name="pref_foreca_key">Foreca-API-sleutel</string>
+    <string name="foreca_key_message">Foreca verstrekt de API-sleutel na registratie op %s</string>
+    <string name="foreca_key_hint">Sleutel</string>
+    <string name="foreca_key_checking">Sleutel controleren…</string>
+    <string name="foreca_key_refused">Foreca heeft deze sleutel niet geaccepteerd</string>
+    <string name="foreca_key_unchecked">Kan de sleutel niet controleren, geen verbinding met Foreca</string>
+    <string name="foreca_key_busy">Foreca kan de sleutel nu niet controleren</string>
+    <string name="moon">Maan</string>
+    <string name="moon_label">Maanverlichting, %</string>
+    <string name="earthquakes">Aardbevingen</string>
+    <string name="earthquakes_period_day">Dag</string>
+    <string name="earthquakes_period_week">Week</string>
+    <string name="earthquakes_period_month">Maand</string>
+    <string name="earthquakes_sort_time">Op tijd</string>
+    <string name="earthquakes_sort_distance">Op afstand</string>
+    <string name="earthquakes_empty">Geen aardbevingen M5+ in deze periode</string>
+    <string name="earthquakes_error">Kan de USGS-gegevens niet laden</string>
+    <string name="earthquakes_saved">Geen verbinding, opgeslagen lijst wordt getoond</string>
+    <string name="tab_earthquakes">Aardbevingen</string>
+    <string name="earthquakes_ago_now">nu</string>
+    <string name="earthquakes_ago_minutes">%d min</string>
+    <string name="earthquakes_ago_hours">%d u</string>
+    <string name="earthquakes_ago_days">%d d</string>
+    <string name="pref_earthquake_alerts_world">Zware aardbevingen wereldwijd</string>
+    <string name="pref_earthquake_alerts_nearby">Aardbevingen M5+ bij mijn locaties</string>
+    <string name="earthquake_alert_title">Aardbeving M %s</string>
+    <string name="earthquake_alert_details">Details</string>
+    <string name="earthquake_alerts_denied">Meldingen voor Meteosphere zijn uitgeschakeld in de Android-instellingen</string>
+    <string name="pref_main_tabs">Tabbladen</string>
+    <string name="pref_moon_phase_alerts">Maanfasen</string>
+    <string name="moon_alert_today">Vandaag om %s</string>
+    <string name="moon_alert_tonight">Vannacht om %s</string>
+    <string name="moon_rise">Maanopkomst</string>
+    <string name="moon_set">Maanondergang</string>
+    <string name="moon_next_phases">Volgende fasen</string>
+    <string name="moon_by_day">Per dag</string>
+    <string name="moon_tile_age">Leeftijd</string>
+    <string name="moon_age_days">%s dagen</string>
+    <string name="moon_until_new">nieuwe maan: %1$d %2$s</string>
+    <string name="moon_new_today">vandaag nieuwe maan</string>
+    <string name="moon_illumination_change">%1$s per dag</string>
+    <string name="moon_illuminated">verlicht</string>
+    <string name="moon_month_title">Verlichting over de maand</string>
+    <string name="moon_perigee">Perigeum</string>
+    <string name="moon_apogee">Apogeum</string>
+    <string name="moon_supermoon">supermaan</string>
+    <string name="moon_distance_km">%s km</string>
+    <string name="moon_sign_until">tot %s</string>
+    <string name="moon_phase_at">%1$s om %2$s</string>
+    <string name="tab_sun">Zon</string>
+    <string name="sun_polar_day">Pooldag</string>
+    <string name="sun_polar_night">Poolnacht</string>
+    <string name="duration_hours_minutes">%1$d u %2$d min</string>
+    <string name="duration_minutes_seconds">%1$d min %2$d s</string>
+    <string name="duration_seconds">%d s</string>
+    <string name="eclipse_visible">Hier zichtbaar: %1$s – %2$s</string>
+    <string name="eclipse_visible_covered">Hier zichtbaar: %1$s – %2$s, %3$s bedekt</string>
+    <string name="eclipse_not_visible">Hier niet zichtbaar</string>
+    <string name="eclipse_alert_visible">hier zichtbaar</string>
+    <string name="eclipse_alert_visible_covered">hier zichtbaar, %s bedekt</string>
+    <string name="eclipse_alert_not_visible">hier niet zichtbaar</string>
+    <string name="pref_eclipse_alerts">Verduisteringen</string>
+    <string name="sun_seasons_title">Zonnewendes en equinoxen</string>
+    <string name="solar_eclipses_title">Zonsverduisteringen</string>
+    <string name="lunar_eclipses_title">Maansverduisteringen</string>
+    <string name="sun_year_title">Zonsopkomst en -ondergang over het jaar</string>
+    <string name="sun_signs_title">Dierenriemtekens</string>
+    <string name="sun_next_event">Volgende gebeurtenis</string>
+    <string name="sun_now">De zon nu</string>
+    <string name="sun_now_taken">SDO-opname van %s</string>
+    <string name="sun_now_frame">opname van %s</string>
+    <string name="sun_now_loading">Laden…</string>
+    <string name="sun_now_offline">Geen verbinding met Helioviewer</string>
+    <string name="sun_now_failed">Kan de afbeelding niet laden. Tik om opnieuw te proberen</string>
+    <string name="sun_now_day_ago">−24 u</string>
+    <string name="sun_now_half_day_ago">−12 u</string>
+    <string name="sun_now_now">nu</string>
+    <string name="sun_now_play">Dag afspelen</string>
+    <string name="sun_now_pause">Pauze</string>
+    <string name="sun_now_time">Opnametijd</string>
+    <string name="sun_channel_corona">Corona</string>
+    <string name="sun_channel_loops">Lussen</string>
+    <string name="sun_channel_prominences">Protuberansen</string>
+    <string name="sun_channel_flares">Zonnevlammen</string>
+    <string name="sun_channel_spots">Zonnevlekken</string>
+    <string name="sun_channel_magnetic">Magnetisch veld</string>
+    <string name="sun_channel_ejections">Uitbarstingen</string>
+    <string name="sun_channel_corona_about">De hete corona, ongeveer 1,5 miljoen °C: actieve gebieden gloeien, coronale gaten zijn donker</string>
+    <string name="sun_channel_loops_about">De rustige corona en magnetische lussen boven de actieve gebieden, ongeveer 600.000 °C</string>
+    <string name="sun_channel_prominences_about">De chromosfeer, ongeveer 50.000 °C: protuberansen aan de rand en filamenten op de schijf</string>
+    <string name="sun_channel_flares_about">Het heetste plasma van zonnevlammen, tot 10 miljoen °C</string>
+    <string name="sun_channel_spots_about">Zichtbaar licht: de fotosfeer en de zonnevlekken</string>
+    <string name="sun_channel_magnetic_about">Magnetogram: wit en zwart zijn de twee polariteiten van het veld aan het oppervlak</string>
+    <string name="sun_channel_ejections_about">Coronagraaf van SOHO: de schijf is afgedekt, de buitenste corona en plasma-uitbarstingen worden zichtbaar</string>
+    <string name="sun_event_in_days">over %1$d %2$s</string>
+    <string name="sun_event_today">vandaag</string>
+    <string name="section_expanded">Uitgevouwen</string>
+    <string name="section_collapsed">Samengevouwen</string>
+    <string name="sun_tile_day_length">Daglengte</string>
+    <string name="sun_tile_noon">Zonnemiddag</string>
+    <string name="sun_tile_twilight">Schemering</string>
+    <string name="sun_tile_sign">Sterrenbeeld</string>
+    <string name="sun_noon_height">Zonnehoogte %s°</string>
+    <string name="sun_tile_since_yesterday">%s sinds gisteren</string>
+    <string name="sun_in_days">%1$s · over %2$d %3$s</string>
+    <string name="earthquake_title">Aardbeving</string>
+    <string name="earthquake_magnitude_scale">magnitude %s</string>
+    <string name="earthquake_time">Tijd</string>
+    <string name="earthquake_depth">Diepte</string>
+    <string name="earthquake_magnitude">Magnitude</string>
+    <string name="earthquake_utc">UTC %1$s · %2$s</string>
+    <string name="earthquake_depth_shallow">ondiep</string>
+    <string name="earthquake_depth_intermediate">middeldiep</string>
+    <string name="earthquake_depth_deep">diep</string>
+    <string name="earthquake_scale_moment">momentmagnitude</string>
+    <string name="earthquake_scale_body">uit ruimtegolven</string>
+    <string name="earthquake_scale_surface">uit oppervlaktegolven</string>
+    <string name="earthquake_scale_local">lokale magnitude</string>
+    <string name="earthquake_scale_duration">uit signaalduur</string>
+    <string name="earthquake_tsunami">Tsunami-info</string>
+    <string name="earthquake_pager">PAGER: %s</string>
+    <string name="earthquake_felt">Gevoeld door %d</string>
+    <string name="earthquake_open_usgs">Openen bij USGS</string>
+    <string name="earthquake_ago_now">zojuist</string>
+    <string name="earthquake_ago_minutes">%d min geleden</string>
+    <string name="earthquake_ago_hours">%d u geleden</string>
+    <string name="earthquake_ago_days">%1$d %2$s geleden</string>
+    <string name="earthquakes_summary_day">Afgelopen dag</string>
+    <string name="earthquake_widget_settings">Aardbevingswidget</string>
+    <string name="earthquake_widget_period">Periode</string>
+    <string name="earthquake_widget_show">Tonen</string>
+    <string name="earthquake_widget_show_latest">Nieuwste</string>
+    <string name="earthquake_widget_show_strongest">Sterkste</string>
+    <string name="sun_widget_settings">Zonnewidget</string>
+    <string name="moon_widget_settings">Maanwidget</string>
+    <!-- The zodiac sign next in the Sun and Moon widgets, its date and time on the line below -->
+    <string name="astro_widget_next_sign">%s vanaf</string>
+    <string name="earthquakes_summary_week">Afgelopen week</string>
+    <string name="earthquakes_summary_month">Afgelopen maand</string>
+    <string name="earthquakes_count">%1$d %2$s M5+</string>
+    <string name="earthquakes_today">Vandaag</string>
+    <string name="earthquakes_yesterday">Gisteren, %s</string>
+    <string name="earthquakes_yesterday_short">gisteren, %s</string>
+    <string name="earthquakes_today_at">Vandaag, %s</string>
+    <string name="earthquakes_legend_day">afgelopen dag</string>
+    <string name="astro_time_back">Terug</string>
+    <string name="astro_time_forward">Vooruit</string>
+    <string name="astro_time_now">Terug naar nu</string>
+    <string name="astro_day_strip_hint">Dubbeltik op de grafiek om terug te gaan naar nu</string>
+    <string name="pref_theme">Thema</string>
+
+    <!-- City details -->
+    <string name="details_now">Nu</string>
+    <string name="details_now_lc">nu</string>
+    <string name="details_today">Vandaag</string>
+    <string name="details_tomorrow">Morgen</string>
+    <string name="details_today_lc">vandaag</string>
+    <string name="details_tomorrow_lc">morgen</string>
+    <string name="details_feels_like">Voelt als %s</string>
+    <string name="details_summary_day_max">\'s Middags tot %s</string>
+    <string name="details_summary_night_min">\'s Nachts tot %s</string>
+    <string name="details_summary_wind">Wind %1$s, %2$s</string>
+    <string name="details_precipitation_now_until">%1$s tot %2$s</string>
+    <string name="details_precipitation_now">%1$s nu</string>
+    <string name="details_precipitation_from">%1$s %2$s</string>
+    <string name="details_precipitation_on_day">%1$s %2$s</string>
+    <string name="details_precipitation_none">Geen neerslag de komende dagen</string>
+    <string name="details_precipitation_today">Vandaag</string>
+    <string name="details_precipitation_next">Daarna: %1$s %2$s</string>
+    <string name="details_precipitation_week_none">Droge week verwacht</string>
+    <string name="details_wind">Wind</string>
+    <string name="details_wind_strong">Harde wind %s</string>
+    <string name="details_wind_strong_label">harde wind</string>
+    <string name="details_quakes_loading">Laden…</string>
+    <string name="details_quakes_no_data">Geen USGS-gegevens</string>
+    <string name="details_quakes_day_none">Geen M5+ in 24 uur</string>
+    <string name="details_quakes_strongest_day">Sterkste in 24 uur</string>
+    <string name="details_wind_today_max">Vandaag tot %s</string>
+    <string name="details_magnetic">Magnetisch veld</string>
+    <string name="details_kp_storm">Magnetische storm %s</string>
+    <string name="details_warmer">Morgen %s warmer</string>
+    <string name="details_colder">Morgen %s kouder</string>
+    <string name="details_sun_sets">Zonsondergang %s</string>
+    <string name="details_sun_rises">Zonsopkomst %s</string>
+    <string name="details_at_today">vandaag om %s</string>
+    <string name="details_at_tomorrow">morgen om %s</string>
+    <string name="details_at_day">%1$s om %2$s</string>
+    <string name="details_dew_point">Dauwpunt %s</string>
+    <string name="details_pressure_rising">Stijgend</string>
+    <string name="details_pressure_falling">Dalend</string>
+    <string name="details_pressure_steady">Stabiel</string>
+    <string name="details_polar_day">pooldag</string>
+    <string name="details_polar_night">poolnacht</string>
+    <string name="details_sun_title">Zon · dag %s</string>
+    <string name="details_moon_illuminated">Verlicht %s</string>
+    <string name="details_moon_today_at">%1$s vandaag om %2$s</string>
+    <string name="details_moon_tomorrow">%s morgen</string>
+    <string name="details_moon_in_days">%1$s over %2$d %3$s</string>
+    <string name="details_daily_title">Verwachting per dag</string>
+    <string name="details_daily_more">Meer</string>
+    <string name="details_daily_less">Minder</string>
+    <string name="details_locations">Locaties</string>
+    <string name="details_more_options">Meer opties</string>
+    <string name="earthquakes_map_world">Hele wereld</string>
+    <string name="format_weekday_day">%1$s %2$d</string>
+    <string name="format_weekday_day_month">%1$s %2$d %3$s</string>
+    <string name="city_time_already">%1$s, al %2$s</string>
+    <string name="city_time_still">%1$s, nog %2$s</string>
+    <string name="sentence">"%s. "</string>
+    <string name="details_row_label">%1$s, %2$s</string>
+    <string name="list_separator">", "</string>
+
+    <!-- Forecast for today and tomorrow -->
+    <string name="pref_daily_forecast">Verwachting voor vandaag en morgen</string>
+    <string name="pref_daily_forecast_off">Uit</string>
+    <string name="daily_forecast_today">Vandaag · %s</string>
+    <string name="daily_forecast_tomorrow">Morgen · %s</string>
+    <string name="daily_forecast_storm">Magnetische storm, K-index %d</string>
+    <string name="daily_forecast_precipitation">%1$s %2$s</string>
+    <string name="daily_forecast_from_to">van %1$s tot %2$s</string>
+    <string name="daily_forecast_from">vanaf %s</string>
+    <string name="daily_forecast_and">%1$s en %2$s</string>
+    <string name="daily_forecast_precipitation_breaks">%1$s met tussenpozen %2$s</string>
+
+    <!-- The places' menus and messages -->
+    <string name="favorites_add">Toevoegen aan favorieten</string>
+    <string name="favorites_remove">Verwijderen uit favorieten</string>
+    <string name="favorites_added">Toegevoegd aan favorieten</string>
+    <string name="favorites_removed">Verwijderd uit favorieten</string>
+    <string name="rename_place">Naam wijzigen</string>
+    <string name="delete">Verwijderen</string>
+    <string name="delete_all">Alles verwijderen</string>
+    <string name="search">Zoeken</string>
+    <string name="settings">Instellingen</string>
+    <string name="favorites_empty">Nog geen favorieten. Tik rechtsonder op + om een locatie toe te voegen</string>
+    <string name="favorites_header">Opgeslagen locaties</string>
+    <string name="current_location">Huidige locatie</string>
+    <string name="airport">Luchthaven</string>
+
+    <!-- The nearby tab and the search -->
+    <string name="nearby_header">Andere locaties in de buurt</string>
+    <string name="nearby_failed">Kan de locaties in de buurt niet laden</string>
+    <string name="nearby_permission_needed">Om locaties bij jou in de buurt te tonen, heeft de app toegang tot de locatie van het apparaat nodig</string>
+    <string name="nearby_permission_ask">Toegang toestaan</string>
+    <string name="nearby_permission_settings">Instellingen openen</string>
+    <string name="distance_under_km">minder dan 1 km</string>
+    <string name="distance_under_mile">minder dan 1 mijl</string>
+    <string name="search_hint">Stad of plaats</string>
+    <string name="search_type_more">Typ minstens twee letters</string>
+    <string name="search_nothing_found">Niets gevonden</string>
+
+    <!-- The rename screen -->
+    <string name="rename_title">Locatie hernoemen</string>
+    <string name="rename_hint">Nieuwe naam</string>
+
+    <!-- The weather's names -->
+    <string name="temperature">Temperatuur</string>
+    <string name="wind_speed">Windsnelheid</string>
+    <string name="pressure">Luchtdruk</string>
+    <string name="precipitation">Neerslag</string>
+    <string name="humidity">Luchtvochtigheid</string>
+    <string name="distance">Afstand</string>
+    <string name="geomagnetic">Geomagnetische activiteit</string>
+    <string name="kp_index">K-index</string>
+    <string name="sunrise">Opkomst</string>
+    <string name="sunset">Ondergang</string>
+    <string name="no_data">Geen verwachting beschikbaar</string>
+
+    <!-- The settings -->
+    <string name="pref_language">Taal</string>
+    <string name="pref_units">Eenheden</string>
+    <string name="pref_update_period">Weer bijwerken</string>
+    <string name="pref_24_hour">24-uursnotatie</string>
+    <string name="pref_gps">GPS gebruiken</string>
+    <string name="pref_weather_parameters">Weergegevens</string>
+    <string name="pref_current_location">Huidige locatie in favorieten</string>
+    <string name="pref_only_strong_wind">Alleen harde wind</string>
+    <string name="pref_notification">Weermelding</string>
+    <string name="notification_enabled">Melding tonen</string>
+    <string name="version">Versie</string>
+
+    <!-- The place of the widgets, the earthquake widget and the notification -->
+    <string name="place_title">Locatie</string>
+    <string name="place_automatic">Automatisch bepalen</string>
+    <string name="place_not_chosen">Niet gekozen</string>
+    <string name="no_place_message">Geen locatie gekozen</string>
+    <string name="no_place_choose">Kiezen</string>
+    <string name="no_place_automatic">Locatie gebruiken</string>
+
+    <!-- The widgets -->
+    <string name="background">Achtergrond</string>
+    <string name="widget_transparency">Transparantie</string>
+    <string name="widget_current_weather">Huidig weer</string>
+    <string name="widget_clock_app">Klok-app</string>
+    <string name="widget_clock_app_none">Niet gekozen</string>
+    <string name="widget_refreshing">Bijwerken…</string>
+    <string name="widget_refreshed">Bijgewerkt</string>
+    <string name="widget_place_needed">Kies een locatie</string>
+
+    <!-- The wind: %1$s the speed, %2$s its unit, %3$s the direction it blows from -->
+    <string name="widget_wind">%1$s %2$s, %3$s</string>
+    <string name="widget_wind_up_to">tot %1$s %2$s</string>
+    <string name="wind_phrase">Wind %1$s %2$s, %3$s</string>
+    <string name="wind_phrase_no_direction">Wind %1$s %2$s</string>
+
+    <!-- The city page's local date and time: %1$s the short weekday, %2$d the day, %3$s the month, %4$s the time -->
+    <string name="details_date_time">%1$s %2$d %3$s, %4$s</string>
+
+    <!-- The date under a chart widget's clock: SimpleDateFormat patterns, read with the app's locale -->
+    <string name="widget_clock_date">ccc d MMM</string>
+    <string name="widget_clock_date_two_lines">ccc\nd MMM</string>
+
+    <!-- The most places the favourites keep, R.integer.max_favorites -->
+    <plurals name="favorites_limit">
+        <item quantity="one">Favorieten kunnen maximaal %d locatie bevatten</item>
+        <item quantity="other">Favorieten kunnen maximaal %d locaties bevatten</item>
+    </plurals>
+    <!-- The words that follow a number, which the callers' texts put before them: Lint's ImpliedQuantity, which
+         wants the number in each text itself, doesn't apply -->
+    <plurals name="days" tools:ignore="ImpliedQuantity">
+        <item quantity="one">dag</item>
+        <item quantity="other">dagen</item>
+    </plurals>
+    <plurals name="miles" tools:ignore="ImpliedQuantity">
+        <item quantity="one">mijl</item>
+        <item quantity="other">mijl</item>
+    </plurals>
+    <plurals name="mph" tools:ignore="ImpliedQuantity">
+        <item quantity="one">mph</item>
+        <item quantity="other">mph</item>
+    </plurals>
+    <plurals name="knots" tools:ignore="ImpliedQuantity">
+        <item quantity="one">knoop</item>
+        <item quantity="other">knopen</item>
+    </plurals>
+    <plurals name="earthquakes_counted" tools:ignore="ImpliedQuantity">
+        <item quantity="one">aardbeving</item>
+        <item quantity="other">aardbevingen</item>
+    </plurals>
+</resources>

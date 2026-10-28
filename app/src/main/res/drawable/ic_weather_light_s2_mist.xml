@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drawn by tools/weather_icons.py -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="48dp"
+    android:viewportWidth="64"
+    android:viewportHeight="48">
+    <path
+        android:pathData="M9 4 L55 4 M15.44 12 L55 12 M10.84 20 L48.56 20 M13.6 28 L55 28"
+        android:strokeColor="#97A3B2"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M24 38.01 L24 46.59 M27.72 40.16 L20.28 44.44 M27.72 44.45 L20.28 40.15"
+        android:strokeColor="#7FB2E0"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M40 39.81 L40 48.39 M43.72 41.95 L36.28 46.24 M43.72 46.24 L36.28 41.95"
+        android:strokeColor="#7FB2E0"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round" />
+</vector>

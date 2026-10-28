@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The earthquakes' map at the top of their list: the world with the earthquakes as dots and their legend, zoomed by
+     pinching or a double tap with a button back to the whole world, and under it the earthquake of the dot tapped -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Meteo.QuakeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <org.meteosphere.ui.quakes.QuakeMapView
+                android:id="@+id/quakeMapCompact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/llQuakeLegendCompact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_quake_map_overlay"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"/>
+            <ImageButton
+                android:id="@+id/btnQuakeMapWorld"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_quake_map_overlay"
+                android:contentDescription="@string/earthquakes_map_world"
+                android:padding="7dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_zoom_out"
+                android:tint="?attr/colorOnSurface"
+                android:visibility="gone"/>
+        </FrameLayout>
+        <include
+            android:id="@+id/rowQuakeMapCompactSelected"
+            layout="@layout/item_quake_summary_row"
+            android:visibility="gone"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

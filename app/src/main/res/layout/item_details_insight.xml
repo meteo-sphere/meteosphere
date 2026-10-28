@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A page of the insights carousel: what to expect, said in words, with its number on the right -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvInsightTitle"
+        style="@style/DetailsCardTitle"
+        tools:drawableStart="@drawable/ic_details_precipitation"
+        tools:text="Осадки" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="64dp"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp">
+
+        <TextView
+            android:id="@+id/tvInsightText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="2"
+            android:textColor="@color/details_sky_text"
+            android:textSize="16sp"
+            tools:text="Дождь в четверг" />
+
+        <TextView
+            android:id="@+id/tvInsightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/details_sky_text"
+            android:textSize="28sp"
+            tools:text="3,3 мм" />
+    </LinearLayout>
+</LinearLayout>

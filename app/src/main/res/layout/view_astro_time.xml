@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The moment of the Moon and Sun tabs: a date and a time segment, and once one is picked arrows around them and a
+     way back to now, each as wide as a finger. The date is in numbers, so every part keeps its width and stepping
+     moves nothing. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAstroTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/btnAstroTimePrev"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_chevron_left"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:contentDescription="@string/astro_time_back"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:padding="3dp"
+        android:background="@drawable/bg_astro_time"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvAstroDate"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?attr/textAppearanceLabelLarge"/>
+        <TextView
+            android:id="@+id/tvAstroTime"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?attr/textAppearanceLabelLarge"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnAstroTimeNext"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_chevron_right"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:contentDescription="@string/astro_time_forward"
+        android:visibility="gone"/>
+    <ImageButton
+        android:id="@+id/btnAstroTimeNow"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_replay"
+        android:tint="?attr/colorPrimary"
+        android:contentDescription="@string/astro_time_now"
+        android:visibility="gone"/>
+</LinearLayout>

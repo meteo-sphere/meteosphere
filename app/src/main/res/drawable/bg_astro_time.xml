@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The outline around the date and time segments -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="17dp"/>
+    <stroke android:width="@dimen/control_stroke" android:color="?attr/colorOutline"/>
+</shape>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A channel of the pictures of the Sun: its name after a small picture of the Sun in it, a pill as tall and as
+     finely outlined as the sun tab's place chip -->
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.Chip.Filter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:checkedIconVisible="false"
+    app:chipIconSize="24dp"
+    app:chipIconVisible="true"
+    app:chipMinHeight="34dp"
+    app:chipStartPadding="5dp"
+    app:chipStrokeWidth="@dimen/control_stroke"
+    app:shapeAppearance="@style/ShapeAppearance.Meteo.AstroPlace"/>

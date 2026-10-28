@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The place search: the info line, then the places. Its rows change at once, see PlaceSearchFragment; it doesn't
+     scroll nested, as a pull at its top would unfold the settings' folded title, and the focus it takes as the field
+     gives it up draws no highlight. The screens over it find it by its id -->
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:defaultFocusHighlightEnabled="false"
+    android:nestedScrollingEnabled="false"
+    android:scrollbars="vertical"
+    tools:targetApi="o" />

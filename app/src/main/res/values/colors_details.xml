@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The city details over the sky: translucent cards, a dark one over the day's sky, denser over its bright grey
+         overcast, and a light one at night -->
+    <color name="details_sky_card_day">#521E3044</color>
+    <color name="details_sky_card_overcast">#5E1E3044</color>
+    <color name="details_sky_card_night">#1FFFFFFF</color>
+    <color name="details_sky_text">#FFFFFFFF</color>
+    <color name="details_sky_text_dim">#B8FFFFFF</color>
+    <color name="details_sky_divider">#24FFFFFF</color>
+</resources>

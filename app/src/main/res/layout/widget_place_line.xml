@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A weather widget's line at the bottom: the refresh button, or a spinner in its place while the widget loads, and
+     the place. The button is a picture of its square, kept hidden while the spinner shows; the spinner is held to the
+     square's four edges, as a frame that wraps them would leave it its own size, and that size is made small so as
+     not to widen the square. The code pads the name to its line's height -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llPlace"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"/>
+        <ProgressBar
+            android:id="@+id/pbRefresh"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imvRefresh"
+            android:layout_alignTop="@id/imvRefresh"
+            android:layout_alignRight="@id/imvRefresh"
+            android:layout_alignBottom="@id/imvRefresh"
+            android:minWidth="0dp"
+            android:maxWidth="1dp"
+            android:minHeight="0dp"
+            android:maxHeight="1dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textSize="@dimen/widget_place_text"/>
+</LinearLayout>

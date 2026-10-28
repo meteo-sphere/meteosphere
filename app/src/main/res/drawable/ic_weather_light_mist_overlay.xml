@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drawn by tools/weather_icons.py -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="48dp"
+    android:viewportWidth="64"
+    android:viewportHeight="48">
+    <path
+        android:pathData="M6 38 L52 38 M14 44.5 L58 44.5"
+        android:strokeColor="#97A3B2"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+</vector>

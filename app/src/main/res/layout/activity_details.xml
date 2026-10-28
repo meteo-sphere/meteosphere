@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The city details: the sky fixed at the back, drawn live with the animated weather on, a page per city over
+     it, the clear bar with the cities at the bottom over a shade that keeps its buttons readable -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.meteosphere.ui.sky.SkyView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop" />
+
+    <org.meteosphere.ui.sky.SkyView
+        android:id="@+id/ivBackgroundNext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pagerCities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <org.meteosphere.ui.common.BottomScrimView
+        android:id="@+id/bottomScrim"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <ImageButton
+            android:id="@+id/btnCities"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_details_round_ripple"
+            android:contentDescription="@string/details_locations"
+            android:src="@drawable/ic_details_cities" />
+
+        <org.meteosphere.ui.details.PageDotsView
+            android:id="@+id/dotsCities"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_details_round_ripple"
+            android:contentDescription="@string/details_more_options"
+            android:src="@drawable/ic_more_vert"
+            android:tint="@color/details_sky_text" />
+    </LinearLayout>
+</FrameLayout>

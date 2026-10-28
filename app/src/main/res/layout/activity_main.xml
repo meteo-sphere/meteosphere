@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The main screen: the tabs or the search over them fill it, and the bar lies over their top, clear over the tabs
+     and glass over the search, see MainActivity -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/flMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <org.meteosphere.ui.glass.GlassStrip
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tbMain"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"/>
+    </org.meteosphere.ui.glass.GlassStrip>
+</FrameLayout>

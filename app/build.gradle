@@ -1,0 +1,123 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+// The server's address and the API keys stay out of git: wpr.url=... and foreca.token=... in local.properties
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { localProperties.load(it) }
+}
+// Without the server's address the build is the public one: the data is made right on the device, there are no
+// add-ons, and Foreca takes the key the user gives in the settings; the other keys aren't built in even when set
+def wprUrl = localProperties.getProperty('wpr.url', '')
+def privateProperty = { String name -> wprUrl.isEmpty() ? '' : localProperties.getProperty(name, '') }
+
+// The version as people see it, the only one to change for a release; the code Android compares versions by follows
+// from it, 1.2.3 being 10203
+def appVersion = '1.0.0'
+if (!(appVersion ==~ /\d+\.\d{1,2}\.\d{1,2}/)) {
+    throw new GradleException("The version ${appVersion} isn't major.minor.patch with the minor and the patch under 100")
+}
+def versionParts = appVersion.tokenize('.').collect { it as int }
+
+// meteosphere-debug.apk and meteosphere-release.apk rather than app-*.apk
+base {
+    archivesName = 'meteosphere'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+android {
+    namespace = 'org.meteosphere'
+    compileSdk = 37
+    // Java-only module: skip built-in Kotlin compilation and the implicit stdlib dependency.
+    enableKotlin = false
+
+    defaultConfig {
+        applicationId = 'org.meteosphere'
+        minSdk = 24
+        targetSdk = 37
+        versionCode = versionParts[0] * 10000 + versionParts[1] * 100 + versionParts[2]
+        versionName = appVersion
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+
+        testInstrumentationRunner = 'androidx.test.runner.AndroidJUnitRunner'
+
+        // The wpr server, empty in the public build
+        buildConfigField 'String', 'WPR_URL', "\"${wprUrl}\""
+        buildConfigField 'String', 'FORECA_TOKEN', "\"${privateProperty('foreca.token')}\""
+    }
+
+    buildTypes {
+        release {
+            // R8 shrinks and optimizes the code for a quicker cold start; the resources stay, as some are found by name
+            minifyEnabled = true
+            // Personal installs only: sign with the local debug key.
+            signingConfig = signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_25
+        targetCompatibility = JavaVersion.VERSION_25
+    }
+
+    lint {
+        abortOnError = false
+    }
+
+    testOptions {
+        // android.util.Log calls in the tested code do nothing
+        unitTests.returnDefaultValues = true
+        // TextsTest reads the texts from the resources themselves: without them as an input, a changed text alone
+        // would leave the tests up to date
+        unitTests.all {
+            inputs.dir('src/main/res')
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    androidResources {
+        // The app's own languages (R.array.language_codes); drop the libraries' other translations. The libraries keep
+        // Simplified Chinese in zh-rCN, Traditional in zh-rTW and zh-rHK; the app's Traditional is b+zh+Hant
+        localeFilters.addAll(['en', 'ru', 'uk', 'pl', 'de', 'fr', 'es', 'it', 'pt', 'tr', 'zh', 'zh-rCN', 'ja', 'nl', 'b+zh+Hant', 'zh-rTW', 'zh-rHK'])
+    }
+}
+
+dependencies {
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.core
+    implementation libs.androidx.fragment
+    implementation libs.androidx.preference
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.swiperefreshlayout
+    implementation libs.androidx.viewpager
+    implementation libs.androidx.work.runtime
+    implementation libs.material
+    testImplementation libs.junit
+    // The org.json of android.jar is a stub in unit tests
+    testImplementation libs.json
+    testImplementation libs.xmlpull
+    testImplementation libs.kxml2
+}
+
+// The add-ons, parts of the app kept outside its public code: addons=../folder,../other in local.properties, each
+// folder with its addon.gradle, relative to the project, which adds the names of its AddOn classes to addOns
+ext.addOns = []
+privateProperty('addons').split(',').each { String folder ->
+    if (!folder.trim().isEmpty()) {
+        apply from: new File(rootProject.file(folder.trim()), 'addon.gradle')
+    }
+}
+android.defaultConfig.buildConfigField 'String[]', 'ADD_ONS', "{${addOns.collect { "\"${it}\"" }.join(', ')}}"

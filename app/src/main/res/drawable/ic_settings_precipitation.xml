@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A widget setting's icon, the precipitation: a drop on a disc of its group's hue -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_teal_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:pathData="M12,3.5C9.2,7.4 6.5,10.6 6.5,14.2a5.5,5.5 0 0,0 11,0C17.5,10.6 14.8,7.4 12,3.5z"
+                android:strokeColor="@color/settings_icon_teal"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.7"/>
+        </vector>
+    </item>
+</layer-list>

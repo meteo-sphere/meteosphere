@@ -1,0 +1,109 @@
+// Rain and snow falling over the sky, drawn at full resolution over its clouds by SkyShaders from Android 13.
+// Three depths: far small drops or flakes, then nearer, longer and more blurred ones. Each pixel looks only into
+// its own cell of each depth's grid, so it stays cheap.
+
+// 256 x 256 value noise, repeating: two random numbers per cell
+uniform shader noise;
+uniform float2 size;
+uniform float time;
+// How hard it rains and snows, 0 to 1
+uniform float rain;
+uniform float snow;
+// How bright the drops are: dimmer at night
+uniform float brightness;
+// Where the rain and the snow fade out down the view, 0 its top to 1 its bottom: from x, gone at y; x below 0, nowhere
+uniform float2 rainFade;
+uniform float2 snowFade;
+
+// How much of the drops shows at a height of the view, 0 to 1
+float shown(float2 fade, float y) {
+    return fade.x < 0.0 ? 1.0 : 1.0 - clamp((y - fade.x) / max(fade.y - fade.x, 0.0001), 0.0, 1.0);
+}
+
+float2 random2(float2 cell) {
+    half4 t = noise.eval(fract(cell / 256.0) * 256.0 + 0.5);
+    return float2(t.r, t.g);
+}
+
+float rainDepth(float2 p, float depth) {
+    float cellW = mix(10.0, 40.0, depth);
+    float cellH = mix(70.0, 330.0, depth);
+    float len = mix(16.0, 150.0, depth);
+    float speed = mix(650.0, 1500.0, depth);
+    float width = mix(0.7, 2.4, depth);
+    float2 q = float2(p.x + p.y * 0.12, p.y - time * speed);
+    float2 cell = floor(q / float2(cellW, cellH));
+    float2 r = random2(cell + float2(depth * 61.0, 17.0));
+    if (r.x > mix(0.25, 0.95, rain)) {
+        return 0.0;
+    }
+    float2 local = q - cell * float2(cellW, cellH);
+    float x0 = cellW * (0.2 + 0.6 * r.y);
+    float y0 = (cellH - len) * fract(r.x * 7.31 + r.y * 3.17);
+    float along = (local.y - y0) / len;
+    if (along < 0.0 || along > 1.0) {
+        return 0.0;
+    }
+    float across = smoothstep(width, 0.0, abs(local.x - x0));
+    return across * along * mix(0.3, 0.13, depth);
+}
+
+// Snow at a depth from 0, far, to 1, near. Far flakes are tiny, dense and slow and fade into the haze; those a
+// third of the way in are in focus, small soft dots; nearer ones grow fast, falling faster and out of focus, soft
+// discs a little drawn out along their fall. All drift with a wind that comes and goes, each flake swaying on its
+// own.
+float snowDepth(float2 p, float depth, float wind) {
+    float cell = mix(16.0, 120.0, depth);
+    float speed = mix(28.0, 150.0, depth);
+    float radius = 0.6 + 9.0 * pow(depth, 2.2);
+    float defocus = max(depth - 0.35, 0.0);
+    float blur = mix(0.5, 1.0, depth) + 26.0 * defocus * defocus;
+    float alpha = mix(0.45, 0.85, smoothstep(0.0, 0.35, depth)) * mix(1.0, 0.32, smoothstep(0.35, 1.0, depth));
+    float2 q = float2(p.x + speed * wind, p.y - time * speed);
+    float2 c = floor(q / cell);
+    float2 r = random2(c + float2(depth * 47.0, 91.0));
+    if (r.x > mix(0.35, 0.95, snow)) {
+        return 0.0;
+    }
+    float r3 = fract(r.x * 13.7 + r.y * 7.1);
+    float2 center = (c + float2(0.15 + 0.7 * r.y, 0.15 + 0.7 * r3)) * cell;
+    float2 d = q - center;
+    d.y /= 1.0 + 0.35 * depth;
+    float size = radius * (0.6 + 0.8 * r3);
+    // Most pixels are far from their cell's flake: left before the sway's sines, which move it 0.17 cells at most
+    if (abs(d.y) > size + blur || abs(d.x) > size + blur + cell * 0.17) {
+        return 0.0;
+    }
+    d.x -= (sin(time * (0.7 + r.y) + r.x * 6.28) + 0.4 * sin(time * (1.9 + r3) + r.y * 6.28)) * cell * 0.12;
+    float dist = length(d);
+    if (dist > size + blur) {
+        return 0.0;
+    }
+    return smoothstep(size + blur, max(size - blur * 0.5, 0.0), dist) * alpha * (0.7 + 0.3 * r.y);
+}
+
+half4 main(float2 xy) {
+    // In the units of a sky 800 high, whatever the screen
+    float2 p = xy / size.y * 800.0;
+    float a = 0.0;
+    float y = xy.y / size.y;
+    float rainShown = shown(rainFade, y);
+    if (rain > 0.0 && rainShown > 0.0) {
+        float r = rainDepth(p, 0.0) + rainDepth(p, 0.5) + rainDepth(p, 1.0);
+        // The rain's mist toward the bottom
+        r += 0.12 * rain * smoothstep(0.35, 1.0, y);
+        a += r * rainShown;
+    }
+    float snowShown = shown(snowFade, y);
+    if (snow > 0.0 && snowShown > 0.0) {
+        // The wind's push so far: the integral of a gust speed of 0.35 + 0.25 sin(0.23 t) + 0.1 sin(0.61 t + 1.3)
+        float wind = 0.35 * time - 1.087 * cos(time * 0.23) - 0.164 * cos(time * 0.61 + 1.3);
+        float s = 0.0;
+        for (int i = 0; i < 5; i++) {
+            s += snowDepth(p, float(i) * 0.25, wind);
+        }
+        a += s * snowShown;
+    }
+    a = clamp(a * brightness, 0.0, 1.0);
+    return half4(a, a, a, a);
+}

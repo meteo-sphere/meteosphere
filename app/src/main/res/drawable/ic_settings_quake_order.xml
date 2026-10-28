@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A widget setting's icon, which earthquakes come first: lines shortening downwards on a disc of its group's hue -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_red_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:pathData="M4.5,6.5h15M4.5,12h10M4.5,17.5h5"
+                android:strokeColor="@color/settings_icon_red"
+                android:strokeLineCap="round"
+                android:strokeWidth="1.7"/>
+        </vector>
+    </item>
+</layer-list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="request_timeout_ms">30000</integer>
+    <integer name="min_update_period_s">300</integer>
+    <integer name="max_favorites">20</integer>
+    <!-- The slowest strong wind, m/s -->
+    <integer name="strong_wind_mps">7</integer>
+    <!-- A settings screen opening or closing fades through, the bar's title with it: the screen going fades out, then
+         the one coming fades in, while both move for the whole time -->
+    <integer name="settings_screen_fade_out">90</integer>
+    <integer name="settings_screen_fade_in">210</integer>
+    <integer name="settings_screen_change">300</integer>
+</resources>

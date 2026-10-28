@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A total or hybrid solar eclipse: the corona around the dark Moon on night sky, for the dark theme -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF2B3038"
+        android:pathData="M0,12A12,12 0 1,0 24,12A12,12 0 1,0 0,12Z"/>
+    <path
+        android:strokeColor="#FFFFF3C4"
+        android:strokeWidth="1.152"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M4.656,12A7.344,7.344 0 1,0 19.344,12A7.344,7.344 0 1,0 4.656,12Z"/>
+    <path
+        android:fillColor="#FF14161B"
+        android:pathData="M5.088,12A6.912,6.912 0 1,0 18.912,12A6.912,6.912 0 1,0 5.088,12Z"/>
+</vector>

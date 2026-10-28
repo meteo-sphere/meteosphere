@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- What the widgets' settings save for the dark glass and the light one, the glass' opacity put in its alpha, and
+         for the texts on them -->
+    <color name="widget_base_dark">#000000</color>
+    <color name="widget_base_light">#ffffff</color>
+    <color name="widget_base_text_dark">#ffffff</color>
+    <color name="widget_base_text_light">#000000</color>
+    <color name="widget_tap_area">#00ffffff</color>
+    <!-- The widgets' glass, as ChartWidget draws the chart widgets' and bg_widget_* the others': the surface,
+         the light from above it fades out by 70 % of the height, and its edge from the top to the bottom -->
+    <color name="widget_glass_dark">#1c2430</color>
+    <color name="widget_glass_dark_highlight">#17ffffff</color>
+    <color name="widget_glass_dark_edge_top">#3dffffff</color>
+    <color name="widget_glass_dark_edge_bottom">#0fffffff</color>
+    <color name="widget_glass_light">#f2f4f7</color>
+    <color name="widget_glass_light_highlight">#80ffffff</color>
+    <color name="widget_glass_light_edge_top">#0a000000</color>
+    <color name="widget_glass_light_edge_bottom">#1f000000</color>
+    <!-- The weather widgets' texts on the dark and the light glass: the values, the labels, and the lines between -->
+    <color name="widget_text_dark">#ffffff</color>
+    <color name="widget_text_dim_dark">#b8ffffff</color>
+    <color name="widget_divider_dark">#24ffffff</color>
+    <color name="widget_text_light">#1b1f26</color>
+    <color name="widget_text_dim_light">#a61b1f26</color>
+    <color name="widget_divider_light">#1f1b1f26</color>
+    <!-- The header of the earthquake widget on the dark and the light background -->
+    <color name="earthquake_widget_accent_dark">#A8C7FA</color>
+    <color name="earthquake_widget_accent_light">#0B57D0</color>
+    <!-- Its arrow up when it shows the strongest first -->
+    <color name="earthquake_widget_strongest_dark">#F2564B</color>
+    <color name="earthquake_widget_strongest_light">#C5221F</color>
+    <!-- The lower panel of the weather details on the light theme; values-night keeps it dark on the weather's color -->
+    <!-- The window the system shows while the details open: the default day weather color, as their lower panel -->
+    <color name="details_window_background">#073143</color>
+    <!-- The seismogram before the earthquakes' summary, red as the widget's strongest -->
+    <color name="quake_summary_icon">@color/earthquake_widget_strongest_light</color>
+    <!-- The location on the earthquakes' maps, a blue apart from the earthquakes' yellow to red -->
+    <color name="quake_map_place">#2E6BD1</color>
+    <!-- Over a night's card on the light page: its black sky softened to a blue -->
+    <color name="city_card_night_veil">#994A6FA5</color>
+    <!-- Behind the app's icon -->
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <!-- The logo's "sphere": the icon's blue, lighter over dark backgrounds -->
+    <color name="logo_sphere">#3D6FD8</color>
+    <color name="logo_sphere_on_dark">#6E95EC</color>
+    <!-- The notification's texts on the system's own card, as its own texts -->
+    <color name="notification_text">#1F1F1F</color>
+    <color name="notification_text_secondary">#5F6368</color>
+    <color name="notification_separator">#331F1F1F</color>
+</resources>

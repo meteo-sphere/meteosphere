@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>Віддалений сервер</item>
+        <item>На пристрої</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>Як у системі</item>
+        <item>Небо погоди</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>Новий місяць</item>
+        <item>Зростаючий серп</item>
+        <item>Перша чверть</item>
+        <item>Зростаючий місяць</item>
+        <item>Повний місяць</item>
+        <item>Спадний місяць</item>
+        <item>Остання чверть</item>
+        <item>Спадний серп</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>Не сповіщати</item>
+        <item>M6 і сильніші</item>
+        <item>M6,5 і сильніші</item>
+        <item>M7 і сильніші</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>Не сповіщати</item>
+        <item>Ближче 300 км</item>
+        <item>Ближче 500 км</item>
+        <item>Ближче 1000 км</item>
+        <item>Ближче 2000 км</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>Не сповіщати</item>
+        <item>Повний місяць</item>
+        <item>Новий і повний місяць</item>
+        <item>Усі чотири фази</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>Овен</item>
+        <item>Телець</item>
+        <item>Близнюки</item>
+        <item>Рак</item>
+        <item>Лев</item>
+        <item>Діва</item>
+        <item>Терези</item>
+        <item>Скорпіон</item>
+        <item>Стрілець</item>
+        <item>Козеріг</item>
+        <item>Водолій</item>
+        <item>Риби</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>Сонце в Овні</item>
+        <item>Сонце в Тельці</item>
+        <item>Сонце в Близнюках</item>
+        <item>Сонце в Раку</item>
+        <item>Сонце в Леві</item>
+        <item>Сонце в Діві</item>
+        <item>Сонце в Терезах</item>
+        <item>Сонце в Скорпіоні</item>
+        <item>Сонце в Стрільці</item>
+        <item>Сонце в Козерозі</item>
+        <item>Сонце у Водолії</item>
+        <item>Сонце в Рибах</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>Весняне рівнодення</item>
+        <item>Літнє сонцестояння</item>
+        <item>Осіннє рівнодення</item>
+        <item>Зимове сонцестояння</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>Повне сонячне затемнення</item>
+        <item>Кільцеподібне сонячне затемнення</item>
+        <item>Гібридне сонячне затемнення</item>
+        <item>Часткове сонячне затемнення</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>Повне місячне затемнення</item>
+        <item>Часткове місячне затемнення</item>
+        <item>Півтіньове місячне затемнення</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>Не сповіщати</item>
+        <item>Усі затемнення</item>
+        <item>Лише видимі тут</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>на північ</item>
+        <item>на північний схід</item>
+        <item>на схід</item>
+        <item>на південний схід</item>
+        <item>на південь</item>
+        <item>на південний захід</item>
+        <item>на захід</item>
+        <item>на північний захід</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>зелений</item>
+        <item>жовтий</item>
+        <item>помаранчевий</item>
+        <item>червоний</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>Як на пристрої</item>
+        <item>Світла</item>
+        <item>Темна</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>Молодик</item>
+        <item>Перша чв.</item>
+        <item>Повня</item>
+        <item>Остання чв.</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>у неділю</item>
+        <item>у понеділок</item>
+        <item>у вівторок</item>
+        <item>у середу</item>
+        <item>у четвер</item>
+        <item>у пʼятницю</item>
+        <item>у суботу</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>Дощ</item>
+        <item>Сніг</item>
+        <item>Мокрий сніг</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>Спокійно</item>
+        <item>Неспокійно</item>
+        <item>Буря</item>
+        <item>Сильна буря</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>Нд</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>січня</item>
+        <item>лютого</item>
+        <item>березня</item>
+        <item>квітня</item>
+        <item>травня</item>
+        <item>червня</item>
+        <item>липня</item>
+        <item>серпня</item>
+        <item>вересня</item>
+        <item>жовтня</item>
+        <item>листопада</item>
+        <item>грудня</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>січ</item>
+        <item>лют</item>
+        <item>бер</item>
+        <item>квіт</item>
+        <item>трав</item>
+        <item>черв</item>
+        <item>лип</item>
+        <item>серп</item>
+        <item>вер</item>
+        <item>жовт</item>
+        <item>лист</item>
+        <item>груд</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>Штиль</item>
+        <item>Пн</item>
+        <item>ПнСх</item>
+        <item>Сх</item>
+        <item>ПдСх</item>
+        <item>Пд</item>
+        <item>ПдЗх</item>
+        <item>Зх</item>
+        <item>ПнЗх</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>м/с</item>
+        <item>км/год</item>
+        <item>миль/год</item>
+        <item>вузли</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>мм рт. ст.</item>
+        <item>гПа</item>
+        <item>мбар</item>
+        <item>дюйм рт. ст.</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>км</item>
+        <item>милі</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>мм</item>
+        <item>дюйми</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>Автоматично</item>
+        <item>Кожні 15 хвилин</item>
+        <item>Кожні 30 хвилин</item>
+        <item>Щогодини</item>
+        <item>Кожні 2 години</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>Темне</item>
+        <item>Світле</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>По годинах</item>
+        <item>По днях</item>
+    </string-array>
+</resources>

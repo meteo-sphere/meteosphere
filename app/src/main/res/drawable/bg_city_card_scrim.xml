@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A shade over a favourite's sky under its white texts: from the left, where the name and the time are, and from the
+     bottom, where the weather is; the card sets how strong it is by how bright the sky is -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:centerX="0.55"
+                android:centerColor="#1A000000"
+                android:endColor="#0A000000"
+                android:startColor="#66000000" />
+        </shape>
+    </item>
+    <!-- Over the lower 60% of the 108dp card only, where it isn't clear: less to fill on every frame -->
+    <item
+        android:height="65dp"
+        android:gravity="bottom|fill_horizontal">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:centerY="0.75"
+                android:centerColor="#14000000"
+                android:endColor="#00000000"
+                android:startColor="#59000000" />
+        </shape>
+    </item>
+</layer-list>

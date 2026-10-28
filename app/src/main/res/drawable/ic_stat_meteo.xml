@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The app's icon in the status bar: its cloud with the seismogram bottom as one white line -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:scaleX="0.3873"
+        android:scaleY="0.3873"
+        android:translateX="-8.932"
+        android:translateY="-7.250">
+        <path
+            android:pathData="M39.44 66 A11.44 11.44 0 0 1 38.83 43.14 A15.6 15.6 0 0 1 67.53 39 A13.52 13.52 0 0 1 66.48 66 L61.61 66 L58.91 69.5 L55.66 57 L52.42 76 L49.17 61 L46.47 68 L44.31 66 L39.44 66 Z"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"/>
+    </group>
+</vector>

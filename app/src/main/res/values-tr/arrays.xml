@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>Uzak sunucu</item>
+        <item>Cihazda</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>Sistemdeki gibi</item>
+        <item>Hava durumu gökyüzü</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>Yeniay</item>
+        <item>Büyüyen hilal</item>
+        <item>İlk dördün</item>
+        <item>Büyüyen şişkin ay</item>
+        <item>Dolunay</item>
+        <item>Küçülen şişkin ay</item>
+        <item>Son dördün</item>
+        <item>Küçülen hilal</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>Kapalı</item>
+        <item>M6 ve üzeri</item>
+        <item>M6,5 ve üzeri</item>
+        <item>M7 ve üzeri</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>Kapalı</item>
+        <item>300 km içinde</item>
+        <item>500 km içinde</item>
+        <item>1000 km içinde</item>
+        <item>2000 km içinde</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>Kapalı</item>
+        <item>Dolunay</item>
+        <item>Yeniay ve dolunay</item>
+        <item>Dört ana evrenin tümü</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>Koç</item>
+        <item>Boğa</item>
+        <item>İkizler</item>
+        <item>Yengeç</item>
+        <item>Aslan</item>
+        <item>Başak</item>
+        <item>Terazi</item>
+        <item>Akrep</item>
+        <item>Yay</item>
+        <item>Oğlak</item>
+        <item>Kova</item>
+        <item>Balık</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>Güneş Koç burcunda</item>
+        <item>Güneş Boğa burcunda</item>
+        <item>Güneş İkizler burcunda</item>
+        <item>Güneş Yengeç burcunda</item>
+        <item>Güneş Aslan burcunda</item>
+        <item>Güneş Başak burcunda</item>
+        <item>Güneş Terazi burcunda</item>
+        <item>Güneş Akrep burcunda</item>
+        <item>Güneş Yay burcunda</item>
+        <item>Güneş Oğlak burcunda</item>
+        <item>Güneş Kova burcunda</item>
+        <item>Güneş Balık burcunda</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>İlkbahar ekinoksu</item>
+        <item>Yaz gündönümü</item>
+        <item>Sonbahar ekinoksu</item>
+        <item>Kış gündönümü</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>Tam Güneş tutulması</item>
+        <item>Halkalı Güneş tutulması</item>
+        <item>Hibrit Güneş tutulması</item>
+        <item>Parçalı Güneş tutulması</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>Tam Ay tutulması</item>
+        <item>Parçalı Ay tutulması</item>
+        <item>Yarı gölge Ay tutulması</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>Kapalı</item>
+        <item>Tüm tutulmalar</item>
+        <item>Yalnızca buradan görünenler</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>kuzeyde</item>
+        <item>kuzeydoğuda</item>
+        <item>doğuda</item>
+        <item>güneydoğuda</item>
+        <item>güneyde</item>
+        <item>güneybatıda</item>
+        <item>batıda</item>
+        <item>kuzeybatıda</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>yeşil</item>
+        <item>sarı</item>
+        <item>turuncu</item>
+        <item>kırmızı</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>Sistem varsayılanı</item>
+        <item>Açık</item>
+        <item>Koyu</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>Yeniay</item>
+        <item>İlk dördün</item>
+        <item>Dolunay</item>
+        <item>Son dördün</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>pazar günü</item>
+        <item>pazartesi günü</item>
+        <item>salı günü</item>
+        <item>çarşamba günü</item>
+        <item>perşembe günü</item>
+        <item>cuma günü</item>
+        <item>cumartesi günü</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>Yağmur</item>
+        <item>Kar</item>
+        <item>Sulu kar</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>Sakin</item>
+        <item>Hareketli</item>
+        <item>Fırtına</item>
+        <item>Kuvvetli fırtına</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>Pz</item>
+        <item>Pt</item>
+        <item>Sa</item>
+        <item>Ça</item>
+        <item>Pe</item>
+        <item>Cu</item>
+        <item>Ct</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>Ocak</item>
+        <item>Şubat</item>
+        <item>Mart</item>
+        <item>Nisan</item>
+        <item>Mayıs</item>
+        <item>Haziran</item>
+        <item>Temmuz</item>
+        <item>Ağustos</item>
+        <item>Eylül</item>
+        <item>Ekim</item>
+        <item>Kasım</item>
+        <item>Aralık</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>Oca</item>
+        <item>Şub</item>
+        <item>Mar</item>
+        <item>Nis</item>
+        <item>May</item>
+        <item>Haz</item>
+        <item>Tem</item>
+        <item>Ağu</item>
+        <item>Eyl</item>
+        <item>Eki</item>
+        <item>Kas</item>
+        <item>Ara</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>Rüzgârsız</item>
+        <item>K</item>
+        <item>KD</item>
+        <item>D</item>
+        <item>GD</item>
+        <item>G</item>
+        <item>GB</item>
+        <item>B</item>
+        <item>KB</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>m/sn</item>
+        <item>km/sa</item>
+        <item>mil/sa</item>
+        <item>knot</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>mmHg</item>
+        <item>hPa</item>
+        <item>mbar</item>
+        <item>inHg</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>km</item>
+        <item>mil</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>mm</item>
+        <item>inç</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>Otomatik</item>
+        <item>15 dakikada bir</item>
+        <item>30 dakikada bir</item>
+        <item>Saatte bir</item>
+        <item>2 saatte bir</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>Koyu</item>
+        <item>Açık</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>Saatlik</item>
+        <item>Günlük</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gemini: the glyph of Noto Sans Symbols (SIL Open Font License), outlined to the weight of the other icons; tinted where used -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="0.6"
+        android:strokeLineJoin="round"
+        android:pathData="M3.49,20.04Q4.99,19.48 6.59,19.13L6.59,4.87Q4.67,4.46 3.49,3.96L3.49,2.54Q7.18,4.04 12,4.04Q16.82,4.04 20.51,2.54L20.51,3.96Q19.21,4.5 17.42,4.89L17.42,19.13Q18.99,19.47 20.51,20.04L20.51,21.46Q18.44,20.64 16.41,20.3Q14.37,19.96 12,19.96Q9.7,19.96 7.64,20.3Q5.58,20.64 3.49,21.46L3.49,20.04ZM8.18,5.19L8.18,18.84Q9.98,18.54 12,18.54Q14.02,18.54 15.82,18.84L15.82,5.19Q13.93,5.46 12,5.46Q10.07,5.46 8.18,5.19Z"/>
+</vector>

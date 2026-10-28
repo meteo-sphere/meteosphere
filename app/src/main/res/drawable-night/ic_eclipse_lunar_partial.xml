@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A partial lunar eclipse: the Earth umbra over part of the Moon on night sky, for the dark theme -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF2B3038"
+        android:pathData="M0,12A12,12 0 1,0 24,12A12,12 0 1,0 0,12Z"/>
+    <path
+        android:fillColor="#FFE6E6E6"
+        android:pathData="M4.8,12A7.2,7.2 0 1,0 19.2,12A7.2,7.2 0 1,0 4.8,12Z"/>
+    <group>
+        <clip-path android:pathData="M4.8,12A7.2,7.2 0 1,0 19.2,12A7.2,7.2 0 1,0 4.8,12Z"/>
+        <path
+            android:fillColor="#FF6B3A2A"
+            android:pathData="M-17.52,13.44A15.84,15.84 0 1,0 14.16,13.44A15.84,15.84 0 1,0 -17.52,13.44Z"/>
+    </group>
+</vector>

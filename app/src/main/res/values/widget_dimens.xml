@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The widgets' corners, and the glass' inside its 1dp edge; values-v31 rounds them as the launchers do -->
+    <dimen name="widget_background_corner">5dp</dimen>
+    <dimen name="widget_background_corner_inner">4dp</dimen>
+    <!-- From the widget's edge to its glass; values-v31 moves the glass in -->
+    <dimen name="widget_glass_inset">0dp</dimen>
+    <!-- A widget's margin on the home screen: the settings draw their preview as wide as the screen less two of them -->
+    <dimen name="widget_margin">20dp</dimen>
+
+    <!-- The weather widgets: from the glass' edge to what is on it, less at the bottom for the place's line -->
+    <dimen name="widget_padding">12dp</dimen>
+    <dimen name="widget_padding_bottom">8dp</dimen>
+    <!-- The place's line at the bottom: the refresh button's square, and the name after it -->
+    <dimen name="widget_refresh_icon">16dp</dimen>
+    <dimen name="widget_place_text">13dp</dimen>
+    <dimen name="widget_place_gap">3dp</dimen>
+    <!-- The taps: the refresh at the bottom left, and before Android 12 the settings with their gear at the top left -->
+    <dimen name="widget_refresh_area">36dp</dimen>
+    <dimen name="widget_settings_area">30dp</dimen>
+    <dimen name="widget_settings_icon">14dp</dimen>
+    <dimen name="widget_settings_margin">4dp</dimen>
+    <!-- The wind's line: its text, and the arrow in its square before it -->
+    <dimen name="widget_wind_text">13dp</dimen>
+    <dimen name="widget_wind_square">13dp</dimen>
+    <dimen name="widget_wind_arrow">10dp</dimen>
+    <dimen name="widget_wind_gap">2.5dp</dimen>
+
+    <!-- 1x1: the temperature now, the day's lowest and highest -->
+    <dimen name="widget_icon_temperature">24dp</dimen>
+    <dimen name="widget_icon_range">17dp</dimen>
+    <!-- 2x1, and the 4x1's weather now: the temperature at most, the day's range, the date, and the column's gap from
+         the icon -->
+    <dimen name="widget_now_temperature">46dp</dimen>
+    <dimen name="widget_now_range">26dp</dimen>
+    <dimen name="widget_now_date">13dp</dimen>
+    <dimen name="widget_now_gap">4dp</dimen>
+    <!-- 4x1: the line between the weather now and the forecast, and the forecast's columns -->
+    <dimen name="widget_divider_gap">10dp</dimen>
+    <dimen name="widget_forecast_bottom">4dp</dimen>
+    <dimen name="widget_forecast_label">14dp</dimen>
+    <dimen name="widget_forecast_icon_gap">2dp</dimen>
+    <dimen name="widget_forecast_temperature">16dp</dimen>
+    <dimen name="widget_forecast_range">15dp</dimen>
+    <!-- At least this much between neighbouring columns' ranges, shrunk where a narrow widget's columns are too narrow
+         for them -->
+    <dimen name="widget_forecast_range_gap">4dp</dimen>
+
+    <!-- 4x2, the weather now with the clock: the padding, and the refresh's tap as wide as the padding and the icon -->
+    <dimen name="widget_now_clock_padding">20dp</dimen>
+    <dimen name="widget_now_clock_refresh_area">44dp</dimen>
+    <dimen name="widget_now_clock_refresh_reach">10dp</dimen>
+    <!-- Its sizes at full scale, shrunk together where the widget is too small: the temperature now, the other texts,
+         the clock, the icon's width; the gaps from the temperature to the day's range, between the range's two lines,
+         from the place to the wind, after the wind's arrow, and around the clock -->
+    <dimen name="widget_now_clock_temperature">54dp</dimen>
+    <dimen name="widget_now_clock_text">15dp</dimen>
+    <dimen name="widget_now_clock_time">50dp</dimen>
+    <dimen name="widget_now_clock_icon">66dp</dimen>
+    <dimen name="widget_now_clock_range_gap">6dp</dimen>
+    <dimen name="widget_now_clock_range_lines">4dp</dimen>
+    <dimen name="widget_now_clock_wind_gap">6dp</dimen>
+    <dimen name="widget_now_clock_wind_arrow_gap">3dp</dimen>
+    <dimen name="widget_now_clock_clear">12dp</dimen>
+
+    <!-- The clock over a chart: the least size of its time; the date and the next alarm in its row, with the alarm's
+         icon and its gaps; beside the low clock's time, the date kept this far from it -->
+    <dimen name="widget_clock_min_time">20dp</dimen>
+    <dimen name="widget_clock_text">15dp</dimen>
+    <dimen name="widget_clock_alarm_icon">20dp</dimen>
+    <dimen name="widget_clock_alarm_gap">5dp</dimen>
+    <dimen name="widget_clock_alarm_text_gap">3dp</dimen>
+    <dimen name="widget_clock_beside_gap">3dp</dimen>
+
+    <!-- The logo at the bottom right while the launcher waits for a widget -->
+    <dimen name="widget_logo_height">14dp</dimen>
+    <dimen name="widget_logo_right">5dp</dimen>
+    <dimen name="widget_logo_bottom">3dp</dimen>
+</resources>

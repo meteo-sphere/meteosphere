@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The weather widget 4x1: the weather now and the forecast in a row -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="40dp"
+    android:resizeMode="horizontal"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/widget_loading"
+    android:previewImage="@drawable/widget_picker_4x1"
+    android:configure="org.meteosphere.ui.widgets.settings.WeatherWidgetSettingsActivity"
+    android:widgetFeatures="reconfigurable"
+    android:widgetCategory="home_screen"/>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_data_provider_names">
+        <item>Serveur distant</item>
+        <item>Sur l\'appareil</item>
+    </string-array>
+    <!-- The status bar notification's background -->
+    <string-array name="notification_looks">
+        <item>Comme le système</item>
+        <item>Ciel de la météo</item>
+    </string-array>
+    <string-array name="moon_phases">
+        <item>Nouvelle lune</item>
+        <item>Premier croissant</item>
+        <item>Premier quartier</item>
+        <item>Gibbeuse croissante</item>
+        <item>Pleine lune</item>
+        <item>Gibbeuse décroissante</item>
+        <item>Dernier quartier</item>
+        <item>Dernier croissant</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_world_names">
+        <item>Désactivé</item>
+        <item>M6 et plus</item>
+        <item>M6,5 et plus</item>
+        <item>M7 et plus</item>
+    </string-array>
+    <string-array name="pref_earthquake_alerts_nearby_names">
+        <item>Désactivé</item>
+        <item>À moins de 300 km</item>
+        <item>À moins de 500 km</item>
+        <item>À moins de 1 000 km</item>
+        <item>À moins de 2 000 km</item>
+    </string-array>
+    <string-array name="pref_moon_phase_alerts_names">
+        <item>Désactivé</item>
+        <item>Pleine lune</item>
+        <item>Nouvelle et pleine lune</item>
+        <item>Les quatre phases</item>
+    </string-array>
+    <string-array name="zodiac_signs">
+        <item>Bélier</item>
+        <item>Taureau</item>
+        <item>Gémeaux</item>
+        <item>Cancer</item>
+        <item>Lion</item>
+        <item>Vierge</item>
+        <item>Balance</item>
+        <item>Scorpion</item>
+        <item>Sagittaire</item>
+        <item>Capricorne</item>
+        <item>Verseau</item>
+        <item>Poissons</item>
+    </string-array>
+    <string-array name="sun_in_sign">
+        <item>Soleil en Bélier</item>
+        <item>Soleil en Taureau</item>
+        <item>Soleil en Gémeaux</item>
+        <item>Soleil en Cancer</item>
+        <item>Soleil en Lion</item>
+        <item>Soleil en Vierge</item>
+        <item>Soleil en Balance</item>
+        <item>Soleil en Scorpion</item>
+        <item>Soleil en Sagittaire</item>
+        <item>Soleil en Capricorne</item>
+        <item>Soleil en Verseau</item>
+        <item>Soleil en Poissons</item>
+    </string-array>
+    <string-array name="sun_seasons">
+        <item>Équinoxe de printemps</item>
+        <item>Solstice d\'été</item>
+        <item>Équinoxe d\'automne</item>
+        <item>Solstice d\'hiver</item>
+    </string-array>
+    <string-array name="solar_eclipses">
+        <item>Éclipse solaire totale</item>
+        <item>Éclipse solaire annulaire</item>
+        <item>Éclipse solaire hybride</item>
+        <item>Éclipse solaire partielle</item>
+    </string-array>
+    <string-array name="lunar_eclipses">
+        <item>Éclipse lunaire totale</item>
+        <item>Éclipse lunaire partielle</item>
+        <item>Éclipse lunaire pénombrale</item>
+    </string-array>
+    <string-array name="pref_eclipse_alerts_names">
+        <item>Désactivé</item>
+        <item>Toutes les éclipses</item>
+        <item>Visibles ici seulement</item>
+    </string-array>
+    <string-array name="earthquake_directions">
+        <item>au nord</item>
+        <item>au nord-est</item>
+        <item>à l\'est</item>
+        <item>au sud-est</item>
+        <item>au sud</item>
+        <item>au sud-ouest</item>
+        <item>à l\'ouest</item>
+        <item>au nord-ouest</item>
+    </string-array>
+    <string-array name="earthquake_pager_levels">
+        <item>vert</item>
+        <item>jaune</item>
+        <item>orange</item>
+        <item>rouge</item>
+    </string-array>
+    <string-array name="pref_theme_names">
+        <item>Système</item>
+        <item>Clair</item>
+        <item>Sombre</item>
+    </string-array>
+    <!-- The principal phases short, for the narrow column of the Moon widget: new moon, first quarter, full moon, last quarter -->
+    <string-array name="moon_widget_phases">
+        <item>Nouv. lune</item>
+        <item>1er quart.</item>
+        <item>Pleine lune</item>
+        <item>Dern. quart.</item>
+    </string-array>
+    <!-- City details -->
+    <string-array name="details_on_weekday">
+        <item>dimanche</item>
+        <item>lundi</item>
+        <item>mardi</item>
+        <item>mercredi</item>
+        <item>jeudi</item>
+        <item>vendredi</item>
+        <item>samedi</item>
+    </string-array>
+    <string-array name="details_precipitation_kinds">
+        <item>Pluie</item>
+        <item>Neige</item>
+        <item>Neige fondue</item>
+    </string-array>
+    <string-array name="details_kp_levels">
+        <item>Calme</item>
+        <item>Instable</item>
+        <item>Orage</item>
+        <item>Fort orage</item>
+    </string-array>
+    <!-- Sunday first -->
+    <string-array name="weekdays_short">
+        <item>Di</item>
+        <item>Lu</item>
+        <item>Ma</item>
+        <item>Me</item>
+        <item>Je</item>
+        <item>Ve</item>
+        <item>Sa</item>
+    </string-array>
+    <!-- The months as a date names them after the day's number -->
+    <string-array name="months_in_date">
+        <item>janvier</item>
+        <item>février</item>
+        <item>mars</item>
+        <item>avril</item>
+        <item>mai</item>
+        <item>juin</item>
+        <item>juillet</item>
+        <item>août</item>
+        <item>septembre</item>
+        <item>octobre</item>
+        <item>novembre</item>
+        <item>décembre</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>janv</item>
+        <item>févr</item>
+        <item>mars</item>
+        <item>avr</item>
+        <item>mai</item>
+        <item>juin</item>
+        <item>juil</item>
+        <item>août</item>
+        <item>sept</item>
+        <item>oct</item>
+        <item>nov</item>
+        <item>déc</item>
+    </string-array>
+    <!-- A calm, then where the wind blows from, north first and on clockwise: the forecast's direction codes 0 to 8 -->
+    <string-array name="wind_directions">
+        <item>Calme</item>
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SO</item>
+        <item>O</item>
+        <item>NO</item>
+    </string-array>
+    <!-- m/s, km/h, mph, knots; after a speed, R.plurals.mph and R.plurals.knots name the last two -->
+    <string-array name="wind_units">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>nœuds</item>
+    </string-array>
+    <!-- mmHg, hPa, mbar, inHg -->
+    <string-array name="pressure_units">
+        <item>mmHg</item>
+        <item>hPa</item>
+        <item>mbar</item>
+        <item>inHg</item>
+    </string-array>
+    <!-- Kilometres, miles; after a number, R.plurals.miles names miles -->
+    <string-array name="distance_units">
+        <item>km</item>
+        <item>miles</item>
+    </string-array>
+    <!-- Millimetres, inches -->
+    <string-array name="precipitation_units">
+        <item>mm</item>
+        <item>pouces</item>
+    </string-array>
+    <!-- Automatic, then every 15, 30, 60 and 120 minutes -->
+    <string-array name="update_period_names">
+        <item>Automatique</item>
+        <item>Toutes les 15 minutes</item>
+        <item>Toutes les 30 minutes</item>
+        <item>Toutes les heures</item>
+        <item>Toutes les 2 heures</item>
+    </string-array>
+    <!-- Dark, light -->
+    <string-array name="widget_glass_names">
+        <item>Sombre</item>
+        <item>Clair</item>
+    </string-array>
+    <!-- By hours, by days -->
+    <string-array name="widget_forecast_kinds">
+        <item>Par heure</item>
+        <item>Par jour</item>
+    </string-array>
+</resources>

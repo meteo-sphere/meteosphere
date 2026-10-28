@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One side's requests: its title as a settings group's, the chart over the days, then the sources' table -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvStatsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        android:textAlignment="viewStart"
+        android:textAppearance="?attr/textAppearanceTitleSmall"
+        android:textColor="?attr/colorPrimary"/>
+    <FrameLayout
+        android:id="@+id/flStatsChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp">
+        <org.meteosphere.ui.settings.RequestChartView
+            android:id="@+id/chartStats"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"/>
+        <TextView
+            android:id="@+id/tvStatsState"
+            style="@style/SettingsRow.Summary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/llStatsTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp"/>
+</LinearLayout>

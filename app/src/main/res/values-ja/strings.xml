@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_language">ja</string>
+    <string name="app_name">Meteosphere</string>
+    <string name="search_failed">オフラインのため、検索できませんでした</string>
+    <string name="already_in_favorites">すでにお気に入りにあります</string>
+    <string name="pref_only_strong_wind_summary">地点一覧には風速%1$s %2$s以上の風のみを表示します。</string>
+    <string name="pref_live_sky">動く天気</string>
+    <string name="pref_live_sky_summary">雲が流れ、雨や雪が降ります。電池の消費が増えます</string>
+    <string name="pref_category_experimental">試験運用中の機能</string>
+    <string name="pref_statistics">統計</string>
+    <string name="stats_on_device">このデバイス</string>
+    <string name="stats_on_server">サーバー</string>
+    <string name="stats_today">今日</string>
+    <string name="stats_max">最大</string>
+    <string name="stats_min">最小</string>
+    <string name="stats_loading">読み込み中…</string>
+    <string name="stats_failed">サーバーの統計を読み込めませんでした</string>
+    <string name="stats_no_requests">まだリクエストはありません</string>
+    <string name="stats_note">データソースへの1日あたりのリクエスト（UTC基準）</string>
+    <string name="pref_statusbar_notification_forecast_title">1時間ごとの予報</string>
+    <string name="pref_statusbar_notification_forecast_summary">通知を展開したときに表示</string>
+    <string name="nearby_you_are_here">現在地</string>
+    <string name="tab_favorites">お気に入り</string>
+    <string name="tab_nearby">周辺</string>
+    <string name="weather_widget_settings">Meteosphereウィジェット</string>
+    <string name="updated_time">%1$s%2$d日 %3$sに更新</string>
+    <string name="widget_settings_show_wind">風</string>
+    <string name="widget_settings_show_precipitation">降水量</string>
+    <string name="widget_settings_group_show">ウィジェットに表示</string>
+    <string name="widget_settings_group_look">外観</string>
+    <string name="widget_settings_group_clock">時計</string>
+    <string name="widget_settings_city">都市</string>
+    <string name="pref_category_general">全般</string>
+    <string name="pref_category_display">表示</string>
+    <string name="pref_category_location">位置情報</string>
+    <string name="pref_category_notifications">通知</string>
+    <string name="pref_data_provider">データの取得元</string>
+    <string name="pref_weather_source">天気予報の提供元</string>
+    <string name="pref_foreca_key">Foreca API キー</string>
+    <string name="foreca_key_message">Foreca の API キーは登録後に %s で発行されます</string>
+    <string name="foreca_key_hint">キー</string>
+    <string name="foreca_key_checking">キーを確認しています…</string>
+    <string name="foreca_key_refused">Foreca がこのキーを受け付けませんでした</string>
+    <string name="foreca_key_unchecked">キーを確認できませんでした。Foreca に接続できません</string>
+    <string name="foreca_key_busy">Foreca は現在キーを確認できません</string>
+    <string name="moon">月</string>
+    <string name="moon_label">月の輝面比（%）</string>
+    <string name="earthquakes">地震</string>
+    <string name="earthquakes_period_day">1日</string>
+    <string name="earthquakes_period_week">1週間</string>
+    <string name="earthquakes_period_month">1か月</string>
+    <string name="earthquakes_sort_time">時刻順</string>
+    <string name="earthquakes_sort_distance">距離順</string>
+    <string name="earthquakes_empty">この期間にM5以上の地震はありません</string>
+    <string name="earthquakes_error">USGSのデータを読み込めませんでした</string>
+    <string name="earthquakes_saved">オフラインのため、保存済みのリストを表示しています</string>
+    <string name="tab_earthquakes">地震</string>
+    <string name="earthquakes_ago_now">今</string>
+    <string name="earthquakes_ago_minutes">%d分</string>
+    <string name="earthquakes_ago_hours">%d時間</string>
+    <string name="earthquakes_ago_days">%d日</string>
+    <string name="pref_earthquake_alerts_world">世界の強い地震</string>
+    <string name="pref_earthquake_alerts_nearby">マイ地点周辺のM5以上の地震</string>
+    <string name="earthquake_alert_title">M%sの地震</string>
+    <string name="earthquake_alert_details">詳細</string>
+    <string name="earthquake_alerts_denied">Androidの設定でMeteosphereの通知が許可されていません</string>
+    <string name="pref_main_tabs">タブ</string>
+    <string name="pref_moon_phase_alerts">月の満ち欠け</string>
+    <string name="moon_alert_today">今日 %s</string>
+    <string name="moon_alert_tonight">今夜 %s</string>
+    <string name="moon_rise">月の出</string>
+    <string name="moon_set">月の入り</string>
+    <string name="moon_next_phases">今後の月相</string>
+    <string name="moon_by_day">日別</string>
+    <string name="moon_tile_age">月齢</string>
+    <string name="moon_age_days">%s日</string>
+    <string name="moon_until_new">新月まで%1$d%2$s</string>
+    <string name="moon_new_today">今日は新月</string>
+    <string name="moon_illumination_change">1日で%1$s</string>
+    <string name="moon_illuminated">輝面比</string>
+    <string name="moon_month_title">1か月の輝面比</string>
+    <string name="moon_perigee">近地点</string>
+    <string name="moon_apogee">遠地点</string>
+    <string name="moon_supermoon">スーパームーン</string>
+    <string name="moon_distance_km">%s km</string>
+    <string name="moon_sign_until">%sまで</string>
+    <string name="moon_phase_at">%2$sに%1$s</string>
+    <string name="tab_sun">太陽</string>
+    <string name="sun_polar_day">白夜</string>
+    <string name="sun_polar_night">極夜</string>
+    <string name="duration_hours_minutes">%1$d時間%2$d分</string>
+    <string name="duration_minutes_seconds">%1$d分%2$d秒</string>
+    <string name="duration_seconds">%d秒</string>
+    <string name="eclipse_visible">ここから見える：%1$s〜%2$s</string>
+    <string name="eclipse_visible_covered">ここから見える：%1$s〜%2$s、最大%3$s欠ける</string>
+    <string name="eclipse_not_visible">ここからは見えません</string>
+    <string name="eclipse_alert_visible">ここから見える</string>
+    <string name="eclipse_alert_visible_covered">ここから見える、最大%s欠ける</string>
+    <string name="eclipse_alert_not_visible">ここからは見えない</string>
+    <string name="pref_eclipse_alerts">日食・月食</string>
+    <string name="sun_seasons_title">春分・夏至・秋分・冬至</string>
+    <string name="solar_eclipses_title">日食</string>
+    <string name="lunar_eclipses_title">月食</string>
+    <string name="sun_year_title">1年間の日の出・日の入り</string>
+    <string name="sun_signs_title">12星座</string>
+    <string name="sun_next_event">次のイベント</string>
+    <string name="sun_now">現在の太陽</string>
+    <string name="sun_now_taken">%sのSDO画像</string>
+    <string name="sun_now_frame">%sの画像</string>
+    <string name="sun_now_loading">読み込み中…</string>
+    <string name="sun_now_offline">Helioviewerに接続できません</string>
+    <string name="sun_now_failed">画像を読み込めませんでした。タップして再試行</string>
+    <string name="sun_now_day_ago">24時間前</string>
+    <string name="sun_now_half_day_ago">12時間前</string>
+    <string name="sun_now_now">現在</string>
+    <string name="sun_now_play">1日分を再生</string>
+    <string name="sun_now_pause">一時停止</string>
+    <string name="sun_now_time">撮影時刻</string>
+    <string name="sun_channel_corona">コロナ</string>
+    <string name="sun_channel_loops">ループ</string>
+    <string name="sun_channel_prominences">プロミネンス</string>
+    <string name="sun_channel_flares">フレア</string>
+    <string name="sun_channel_spots">黒点</string>
+    <string name="sun_channel_magnetic">磁場</string>
+    <string name="sun_channel_ejections">プラズマ噴出</string>
+    <string name="sun_channel_corona_about">約150万°Cの高温のコロナ。活動領域は明るく、コロナホールは暗く見えます</string>
+    <string name="sun_channel_loops_about">静穏なコロナと、活動領域の上にかかる磁気ループ。約60万°C</string>
+    <string name="sun_channel_prominences_about">約5万°Cの彩層。縁にはプロミネンス、太陽面にはフィラメントが見えます</string>
+    <string name="sun_channel_flares_about">フレアの最も高温なプラズマ。最高1000万°C</string>
+    <string name="sun_channel_spots_about">可視光：光球と黒点</string>
+    <string name="sun_channel_magnetic_about">マグネトグラム：白と黒は太陽表面の磁場の2つの極性を表します</string>
+    <string name="sun_channel_ejections_about">SOHOのコロナグラフ：太陽面を隠し、外部コロナとプラズマの噴出をとらえます</string>
+    <string name="sun_event_in_days">%1$d%2$s後</string>
+    <string name="sun_event_today">今日</string>
+    <string name="section_expanded">展開済み</string>
+    <string name="section_collapsed">折りたたみ済み</string>
+    <string name="sun_tile_day_length">昼の長さ</string>
+    <string name="sun_tile_noon">南中時刻</string>
+    <string name="sun_tile_twilight">市民薄明</string>
+    <string name="sun_tile_sign">星座</string>
+    <string name="sun_noon_height">太陽高度 %s°</string>
+    <string name="sun_tile_since_yesterday">昨日より%s</string>
+    <string name="sun_in_days">%1$s · %2$d%3$s後</string>
+    <string name="earthquake_title">地震</string>
+    <string name="earthquake_magnitude_scale">マグニチュード %s</string>
+    <string name="earthquake_time">発生時刻</string>
+    <string name="earthquake_depth">深さ</string>
+    <string name="earthquake_magnitude">マグニチュード</string>
+    <string name="earthquake_utc">UTC %1$s · %2$s</string>
+    <string name="earthquake_depth_shallow">浅発地震</string>
+    <string name="earthquake_depth_intermediate">やや深発地震</string>
+    <string name="earthquake_depth_deep">深発地震</string>
+    <string name="earthquake_scale_moment">モーメント</string>
+    <string name="earthquake_scale_body">実体波による</string>
+    <string name="earthquake_scale_surface">表面波による</string>
+    <string name="earthquake_scale_local">ローカル</string>
+    <string name="earthquake_scale_duration">継続時間による</string>
+    <string name="earthquake_tsunami">津波情報</string>
+    <string name="earthquake_pager">PAGER：%s</string>
+    <string name="earthquake_felt">%d人が体感</string>
+    <string name="earthquake_open_usgs">USGSで開く</string>
+    <string name="earthquake_ago_now">たった今</string>
+    <string name="earthquake_ago_minutes">%d分前</string>
+    <string name="earthquake_ago_hours">%d時間前</string>
+    <string name="earthquake_ago_days">%1$d%2$s前</string>
+    <string name="earthquakes_summary_day">過去24時間</string>
+    <string name="earthquake_widget_settings">地震ウィジェット</string>
+    <string name="earthquake_widget_period">期間</string>
+    <string name="earthquake_widget_show">表示順</string>
+    <string name="earthquake_widget_show_latest">新しい順</string>
+    <string name="earthquake_widget_show_strongest">規模の大きい順</string>
+    <string name="sun_widget_settings">太陽ウィジェット</string>
+    <string name="moon_widget_settings">月ウィジェット</string>
+    <!-- The zodiac sign next in the Sun and Moon widgets, its date and time on the line below -->
+    <string name="astro_widget_next_sign">次は%s</string>
+    <string name="earthquakes_summary_week">過去7日間</string>
+    <string name="earthquakes_summary_month">過去30日間</string>
+    <string name="earthquakes_count">M5以上の地震 %1$d%2$s</string>
+    <string name="earthquakes_today">今日</string>
+    <string name="earthquakes_yesterday">昨日 %s</string>
+    <string name="earthquakes_yesterday_short">昨日 %s</string>
+    <string name="earthquakes_today_at">今日 %s</string>
+    <string name="earthquakes_legend_day">過去24時間</string>
+    <string name="astro_time_back">戻る</string>
+    <string name="astro_time_forward">進む</string>
+    <string name="astro_time_now">現在時刻に戻る</string>
+    <string name="astro_day_strip_hint">グラフをダブルタップすると、現在時刻に戻ります</string>
+    <string name="pref_theme">テーマ</string>
+
+    <!-- City details -->
+    <string name="details_now">現在</string>
+    <string name="details_now_lc">現在</string>
+    <string name="details_today">今日</string>
+    <string name="details_tomorrow">明日</string>
+    <string name="details_today_lc">今日</string>
+    <string name="details_tomorrow_lc">明日</string>
+    <string name="details_feels_like">体感 %s</string>
+    <string name="details_summary_day_max">日中は最高%s</string>
+    <string name="details_summary_night_min">夜は最低%s</string>
+    <string name="details_summary_wind">%1$s風 %2$s</string>
+    <string name="details_precipitation_now_until">%1$sは%2$sまで</string>
+    <string name="details_precipitation_now">%1$sが降っています</string>
+    <string name="details_precipitation_from">%2$sから%1$s</string>
+    <string name="details_precipitation_on_day">%2$sは%1$s</string>
+    <string name="details_precipitation_none">この先数日は降水なし</string>
+    <string name="details_precipitation_today">今日</string>
+    <string name="details_precipitation_next">次は%1$s曜 %2$s</string>
+    <string name="details_precipitation_week_none">1週間降水なし</string>
+    <string name="details_wind">風</string>
+    <string name="details_wind_strong">強風（%s）</string>
+    <string name="details_wind_strong_label">強風</string>
+    <string name="details_quakes_loading">読み込み中…</string>
+    <string name="details_quakes_no_data">USGSのデータなし</string>
+    <string name="details_quakes_day_none">過去24時間M5以上なし</string>
+    <string name="details_quakes_strongest_day">過去24時間で最大</string>
+    <string name="details_wind_today_max">今日は最大%s</string>
+    <string name="details_magnetic">地磁気</string>
+    <string name="details_kp_storm">%sは磁気嵐の見込み</string>
+    <string name="details_warmer">明日は今日より%s高い</string>
+    <string name="details_colder">明日は今日より%s低い</string>
+    <string name="details_sun_sets">日の入りは%s</string>
+    <string name="details_sun_rises">日の出は%s</string>
+    <string name="details_at_today">今日 %s</string>
+    <string name="details_at_tomorrow">明日 %s</string>
+    <string name="details_at_day">%1$s %2$s</string>
+    <string name="details_dew_point">露点 %s</string>
+    <string name="details_pressure_rising">上昇</string>
+    <string name="details_pressure_falling">下降</string>
+    <string name="details_pressure_steady">横ばい</string>
+    <string name="details_polar_day">白夜</string>
+    <string name="details_polar_night">極夜</string>
+    <string name="details_sun_title">太陽 · 昼の長さ %s</string>
+    <string name="details_moon_illuminated">輝面比 %s</string>
+    <string name="details_moon_today_at">%1$sは今日 %2$s</string>
+    <string name="details_moon_tomorrow">%sは明日</string>
+    <string name="details_moon_in_days">%1$sは%2$d%3$s後</string>
+    <string name="details_daily_title">日別予報</string>
+    <string name="details_daily_more">詳細</string>
+    <string name="details_daily_less">簡易</string>
+    <string name="details_locations">地点一覧</string>
+    <string name="details_more_options">その他のオプション</string>
+    <string name="earthquakes_map_world">全世界</string>
+    <string name="format_weekday_day">%2$d日(%1$s)</string>
+    <string name="format_weekday_day_month">%3$s%2$d日(%1$s)</string>
+    <string name="city_time_already">%1$s、もう%2$s</string>
+    <string name="city_time_still">%1$s、まだ%2$s</string>
+    <string name="sentence">%s。</string>
+    <string name="details_row_label">%1$s（%2$s）</string>
+    <string name="list_separator">、</string>
+
+    <!-- Forecast for today and tomorrow -->
+    <string name="pref_daily_forecast">今日と明日の予報</string>
+    <string name="pref_daily_forecast_off">オフ</string>
+    <string name="daily_forecast_today">今日・%s</string>
+    <string name="daily_forecast_tomorrow">明日・%s</string>
+    <string name="daily_forecast_storm">磁気嵐、K指数 %d</string>
+    <string name="daily_forecast_precipitation">%2$sは%1$s</string>
+    <string name="daily_forecast_from_to">%1$s〜%2$s</string>
+    <string name="daily_forecast_from">%s以降</string>
+    <string name="daily_forecast_and">%1$sと%2$s</string>
+    <string name="daily_forecast_precipitation_breaks">%2$sは断続的に%1$s</string>
+
+    <!-- The places' menus and messages -->
+    <string name="favorites_add">お気に入りに追加</string>
+    <string name="favorites_remove">お気に入りから削除</string>
+    <string name="favorites_added">お気に入りに追加しました</string>
+    <string name="favorites_removed">お気に入りから削除しました</string>
+    <string name="rename_place">名前を変更</string>
+    <string name="delete">削除</string>
+    <string name="delete_all">すべて削除</string>
+    <string name="search">検索</string>
+    <string name="settings">設定</string>
+    <string name="favorites_empty">お気に入りはまだありません。右下の + をタップすると地点を追加できます</string>
+    <string name="favorites_header">保存した地点</string>
+    <string name="current_location">現在地</string>
+    <string name="airport">空港</string>
+
+    <!-- The nearby tab and the search -->
+    <string name="nearby_header">周辺のほかの地点</string>
+    <string name="nearby_failed">周辺の地点を読み込めませんでした</string>
+    <string name="nearby_permission_needed">周辺の地点を表示するには、端末の位置情報へのアクセスを許可してください</string>
+    <string name="nearby_permission_ask">アクセスを許可</string>
+    <string name="nearby_permission_settings">設定を開く</string>
+    <string name="distance_under_km">1 km未満</string>
+    <string name="distance_under_mile">1 マイル未満</string>
+    <string name="search_hint">都市名・地名</string>
+    <string name="search_type_more">2文字以上入力してください</string>
+    <string name="search_nothing_found">見つかりませんでした</string>
+
+    <!-- The rename screen -->
+    <string name="rename_title">地点名の変更</string>
+    <string name="rename_hint">新しい名前</string>
+
+    <!-- The weather's names -->
+    <string name="temperature">気温</string>
+    <string name="wind_speed">風速</string>
+    <string name="pressure">気圧</string>
+    <string name="precipitation">降水量</string>
+    <string name="humidity">湿度</string>
+    <string name="distance">距離</string>
+    <string name="geomagnetic">地磁気活動</string>
+    <string name="kp_index">K指数</string>
+    <string name="sunrise">日の出</string>
+    <string name="sunset">日の入り</string>
+    <string name="no_data">予報データがありません</string>
+
+    <!-- The settings -->
+    <string name="pref_language">言語</string>
+    <string name="pref_units">単位</string>
+    <string name="pref_update_period">天気の更新</string>
+    <string name="pref_24_hour">24時間表示</string>
+    <string name="pref_gps">GPSを使用</string>
+    <string name="pref_weather_parameters">気象項目</string>
+    <string name="pref_current_location">お気に入りに現在地を表示</string>
+    <string name="pref_only_strong_wind">強風のみ表示</string>
+    <string name="pref_notification">天気の通知</string>
+    <string name="notification_enabled">通知を表示</string>
+    <string name="version">バージョン</string>
+
+    <!-- The place of the widgets, the earthquake widget and the notification -->
+    <string name="place_title">地点</string>
+    <string name="place_automatic">自動で検出</string>
+    <string name="place_not_chosen">未選択</string>
+    <string name="no_place_message">地点が選択されていません</string>
+    <string name="no_place_choose">選択</string>
+    <string name="no_place_automatic">現在地を使用</string>
+
+    <!-- The widgets -->
+    <string name="background">背景</string>
+    <string name="widget_transparency">透明度</string>
+    <string name="widget_current_weather">現在の天気</string>
+    <string name="widget_clock_app">時計アプリ</string>
+    <string name="widget_clock_app_none">未選択</string>
+    <string name="widget_refreshing">更新中…</string>
+    <string name="widget_refreshed">更新しました</string>
+    <string name="widget_place_needed">地点を選択</string>
+
+    <!-- The wind: %1$s the speed, %2$s its unit, %3$s the direction it blows from -->
+    <string name="widget_wind">%3$s風 %1$s %2$s</string>
+    <string name="widget_wind_up_to">最大%1$s %2$s</string>
+    <string name="wind_phrase">%3$s風 %1$s %2$s</string>
+    <string name="wind_phrase_no_direction">風速%1$s %2$s</string>
+
+    <!-- The city page's local date and time: %1$s the short weekday, %2$d the day, %3$s the month, %4$s the time -->
+    <string name="details_date_time">%3$s%2$d日(%1$s) %4$s</string>
+
+    <!-- The date under a chart widget's clock: SimpleDateFormat patterns, read with the app's locale -->
+    <string name="widget_clock_date">M月d日(ccc)</string>
+    <string name="widget_clock_date_two_lines">ccc\nM月d日</string>
+
+    <!-- The most places the favourites keep, R.integer.max_favorites -->
+    <plurals name="favorites_limit">
+        <item quantity="other">お気に入りに保存できる地点は%d件までです</item>
+    </plurals>
+    <!-- The words that follow a number, which the callers' texts put before them: Lint's ImpliedQuantity, which
+         wants the number in each text itself, doesn't apply -->
+    <plurals name="days" tools:ignore="ImpliedQuantity">
+        <item quantity="other">日</item>
+    </plurals>
+    <plurals name="miles" tools:ignore="ImpliedQuantity">
+        <item quantity="other">マイル</item>
+    </plurals>
+    <plurals name="mph" tools:ignore="ImpliedQuantity">
+        <item quantity="other">mph</item>
+    </plurals>
+    <plurals name="knots" tools:ignore="ImpliedQuantity">
+        <item quantity="other">ノット</item>
+    </plurals>
+    <plurals name="earthquakes_counted" tools:ignore="ImpliedQuantity">
+        <item quantity="other">件</item>
+    </plurals>
+</resources>

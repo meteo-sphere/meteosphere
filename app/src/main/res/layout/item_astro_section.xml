@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title of a list of the Sun or Moon tab that folds the list away when tapped; it reaches 12dp past the title
+     and the arrow on each side for its press, so the list's parent must not clip to its padding -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-12dp"
+    android:layout_marginRight="-12dp"
+    android:layout_marginTop="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:minHeight="48dp"
+    android:background="@drawable/bg_astro_section_ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvSectionTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?attr/textAppearanceTitleSmall"
+        android:textColor="?attr/colorPrimary"/>
+    <ImageView
+        android:id="@+id/ivSectionArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_expand_more"
+        android:tint="?attr/colorPrimary"
+        android:contentDescription="@null"/>
+</LinearLayout>

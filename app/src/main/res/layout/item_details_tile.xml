@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A metric tile of the city details: the metric's name, its value now with its picture beside, a note under them -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="164dp"
+    android:layout_weight="1"
+    android:background="@drawable/bg_details_card"
+    android:backgroundTint="@color/details_sky_card_day">
+
+    <TextView
+        android:id="@+id/tvTileTitle"
+        style="@style/DetailsCardTitle"
+        android:layout_width="match_parent"
+        android:ellipsize="end"
+        tools:drawableStart="@drawable/ic_details_wind"
+        tools:text="Ветер" />
+
+    <TextView
+        android:id="@+id/tvTileValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="66dp"
+        android:ellipsize="end"
+        android:paddingStart="18dp"
+        android:singleLine="true"
+        android:textColor="@color/details_sky_text"
+        android:textSize="30sp"
+        tools:text="3 м/с" />
+
+    <org.meteosphere.ui.details.MetricDialView
+        android:id="@+id/dialTile"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:id="@+id/tvTileCaption"
+        style="@style/DetailsSmallLabel"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:ellipsize="end"
+        android:lineSpacingExtra="1dp"
+        android:maxLines="2"
+        android:paddingStart="18dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="16dp"
+        tools:text="ЮЗ\nСегодня до 5" />
+</FrameLayout>

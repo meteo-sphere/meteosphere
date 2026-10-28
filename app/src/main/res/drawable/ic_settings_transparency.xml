@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A widget setting's icon, the transparency: a square half chequered, on a disc of its group's hue -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_purple_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:fillColor="@color/settings_icon_purple"
+                android:pathData="M12,4.5h3.75v3.75h-3.75zM15.75,8.25h3.75v3.75h-3.75zM12,12h3.75v3.75h-3.75zM15.75,15.75h3.75v3.75h-3.75z"/>
+            <path
+                android:pathData="M7,4.5h10a2.5,2.5 0 0,1 2.5,2.5v10a2.5,2.5 0 0,1 -2.5,2.5h-10a2.5,2.5 0 0,1 -2.5,-2.5v-10a2.5,2.5 0 0,1 2.5,-2.5z"
+                android:strokeColor="@color/settings_icon_purple"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.6"/>
+        </vector>
+    </item>
+</layer-list>

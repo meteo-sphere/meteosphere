@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The package and the application's id are set by Gradle -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+        <!-- The apps of the launcher, among which the widgets' settings offer the clock their tap opens -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <!-- The app Android opens for its alarms, the phone's own clock, which a widget's clock opens by default -->
+        <intent>
+            <action android:name="android.intent.action.SHOW_ALARMS" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="org.meteosphere.MeteosphereApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backupscheme"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <!-- The search is the list's own field, not the system's: no SEARCH action and no searchable configuration -->
+        <activity
+            android:name="org.meteosphere.ui.main.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.meteosphere.ui.details.DetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Details" />
+        <activity
+            android:name="org.meteosphere.ui.locations.RenameActivity"
+            android:label="@string/rename_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="org.meteosphere.ui.settings.SettingsActivity"
+            android:label="@string/settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.meteosphere.ui.quakes.EarthquakesActivity"
+            android:label="@string/earthquakes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.meteosphere.ui.quakes.EarthquakeActivity"
+            android:label="@string/earthquake_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.meteosphere.ui.astro.AstroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.meteosphere.ui.astro.SunNowActivity"
+            android:label="@string/sun_now"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SunNow" />
+
+        <!-- The widgets' settings, which the launcher opens as a widget is added -->
+        <activity
+            android:name="org.meteosphere.ui.widgets.settings.WeatherWidgetSettingsActivity"
+            android:exported="true"
+            android:label="@string/weather_widget_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WidgetSettings">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.meteosphere.ui.widgets.settings.EarthquakeWidgetSettingsActivity"
+            android:exported="true"
+            android:label="@string/earthquake_widget_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WidgetSettings">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.meteosphere.ui.widgets.settings.AstroWidgetSettingsActivity"
+            android:exported="true"
+            android:label="@string/tab_sun"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WidgetSettings">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="org.meteosphere.location.PositionService"
+            android:exported="false" />
+
+        <receiver
+            android:name="org.meteosphere.background.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- The weather widgets, drawn anew as the weather of their places comes -->
+        <receiver
+            android:name="org.meteosphere.ui.widgets.WeatherWidget4x2"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="org.meteosphere.action.PLACE_LOADED" />
+                <action android:name="org.meteosphere.action.CURRENT_LOCATION_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_4x2" />
+        </receiver>
+        <receiver
+            android:name="org.meteosphere.ui.widgets.WeatherWidget4x3"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="org.meteosphere.action.PLACE_LOADED" />
+                <action android:name="org.meteosphere.action.CURRENT_LOCATION_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_4x3" />
+        </receiver>
+        <receiver
+            android:name="org.meteosphere.ui.widgets.WeatherWidgetClock"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="org.meteosphere.action.PLACE_LOADED" />
+                <action android:name="org.meteosphere.action.CURRENT_LOCATION_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_clock" />
+        </receiver>
+        <receiver
+            android:name="org.meteosphere.ui.widgets.WeatherWidget1x1"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="org.meteosphere.action.PLACE_LOADED" />
+                <action android:name="org.meteosphere.action.CURRENT_LOCATION_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_1x1" />
+        </receiver>
+        <receiver
+            android:name="org.meteosphere.ui.widgets.WeatherWidget4x1"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="org.meteosphere.action.PLACE_LOADED" />
+                <action android:name="org.meteosphere.action.CURRENT_LOCATION_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_4x1" />
+        </receiver>
+        <receiver
+            android:name="org.meteosphere.ui.widgets.WeatherWidget2x1"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="org.meteosphere.action.PLACE_LOADED" />
+                <action android:name="org.meteosphere.action.CURRENT_LOCATION_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_2x1" />
+        </receiver>
+
+        <!-- Their own alarms come to them by the class, so neither needs a filter: the weather notification's redraw at
+             half past an hour, and the daily forecast's -->
+        <receiver
+            android:name="org.meteosphere.background.NotificationUpdater"
+            android:exported="false" />
+        <receiver
+            android:name="org.meteosphere.background.DailyForecastReceiver"
+            android:exported="false" />
+        <!-- A weather widget's refresh button, and the clock's changes the widgets showing the time follow -->
+        <receiver
+            android:name="org.meteosphere.background.WidgetUpdateReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="org.meteosphere.action.REFRESH_WIDGET" />
+                <action android:name="android.app.action.NEXT_ALARM_CLOCK_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="org.meteosphere.ui.widgets.EarthquakeWidget"
+            android:exported="false"
+            android:label="@string/earthquakes">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_earthquakes" />
+        </receiver>
+        <receiver
+            android:name="org.meteosphere.ui.widgets.SunWidget"
+            android:exported="false"
+            android:label="@string/tab_sun">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_sun" />
+        </receiver>
+        <receiver
+            android:name="org.meteosphere.ui.widgets.MoonWidget"
+            android:exported="false"
+            android:label="@string/moon">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_moon" />
+        </receiver>
+
+        <receiver
+            android:name="org.meteosphere.location.PositionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="org.meteosphere.action.POSITION_FOUND" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

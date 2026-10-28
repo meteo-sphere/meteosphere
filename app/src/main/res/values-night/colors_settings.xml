@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="settings_page">@color/m3_surface</color>
+    <color name="settings_row">@color/m3_surface_container</color>
+    <color name="settings_icon_blue">#A2C9FF</color>
+    <color name="settings_icon_blue_bg">#1F3A5C</color>
+    <color name="settings_icon_teal">#86D1D8</color>
+    <color name="settings_icon_teal_bg">#173D42</color>
+    <color name="settings_icon_purple">#CDB8FF</color>
+    <color name="settings_icon_purple_bg">#352C52</color>
+    <color name="settings_icon_green">#9AD5A8</color>
+    <color name="settings_icon_green_bg">#1E3D2A</color>
+    <color name="settings_icon_orange">#FFB68A</color>
+    <color name="settings_icon_orange_bg">#4A2C1C</color>
+    <color name="settings_icon_red">#FFB4AB</color>
+    <color name="settings_icon_red_bg">#4F2423</color>
+    <color name="settings_icon_yellow">#F0D07A</color>
+    <color name="settings_icon_yellow_bg">#45391A</color>
+</resources>

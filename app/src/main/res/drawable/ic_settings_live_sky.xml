@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A settings row's icon: the glyph on a disc of its group's hue; a cloud drifting, for the animated weather -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/settings_icon_purple_bg"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <item android:width="22dp" android:height="22dp" android:gravity="center">
+        <vector android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path
+                android:pathData="M10,17h8.5a3,3 0 0,0 0.35,-5.98A4.7,4.7 0 0,0 10.3,9.8A3.6,3.6 0 0,0 10,17zM2.5,11.5h4M3.5,14.5h3.5M2.5,17.5h4"
+                android:strokeColor="@color/settings_icon_purple"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeWidth="1.7"/>
+        </vector>
+    </item>
+</layer-list>
