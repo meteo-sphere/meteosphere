@@ -531,11 +531,14 @@ public final class MainTabsFragment extends Fragment implements FavoritesFragmen
         jump.start();
     }
 
-    // The add button as much shown as given, 0 to 1: it scales, and shows only once most of it is there
+    // The add button as much shown as given, 0 to 1: it scales, and shows only once most of it is there. Unseen it is
+    // off, not only shrunk and transparent: a tap where it stands reaches the page under it
     private void showFab(float shown) {
+        float alpha = shown < 0.7f ? 0.0f : Math.max(0.0f, 1.0f - (3.0f * (1.0f - shown)));
         this.fabAddFavorite.setScaleX(shown);
         this.fabAddFavorite.setScaleY(shown);
-        this.fabAddFavorite.setAlpha(shown < 0.7f ? 0.0f : Math.max(0.0f, 1.0f - (3.0f * (1.0f - shown))));
+        this.fabAddFavorite.setAlpha(alpha);
+        this.fabAddFavorite.setVisibility(alpha > 0 ? View.VISIBLE : View.INVISIBLE);
     }
 
     // The page the pager came to rest on
@@ -547,10 +550,7 @@ public final class MainTabsFragment extends Fragment implements FavoritesFragmen
 
     // The add button is for the favorites only
     private void onPageShown(int page) {
-        float fabScale = page == AppSettings.TAB_FAVORITES ? 1.0f : 0.0f;
-        this.fabAddFavorite.setScaleX(fabScale);
-        this.fabAddFavorite.setScaleY(fabScale);
-        this.fabAddFavorite.setAlpha(fabScale);
+        showFab(page == AppSettings.TAB_FAVORITES ? 1.0f : 0.0f);
     }
 
     /**
