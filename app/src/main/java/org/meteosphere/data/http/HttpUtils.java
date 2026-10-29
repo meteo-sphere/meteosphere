@@ -1,5 +1,6 @@
 package org.meteosphere.data.http;
 
+import android.os.Build;
 import android.util.Log;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -10,11 +11,14 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import org.meteosphere.BuildConfig;
 
 public final class HttpUtils {
 
     private static final String TAG = "HttpUtils";
-    private static final String USER_AGENT = "Meteo Android v2";
+    private static final String PROJECT_URL = "https://github.com/meteo-sphere/meteosphere";
+    // Who asks, for the services' own logs: the app, its version, Android's, and where to find the project
+    private static final String USER_AGENT = userAgent(BuildConfig.VERSION_NAME, Build.VERSION.RELEASE);
 
     /** A response other than HTTP 200. */
     public static final class HttpStatusException extends IOException {
@@ -30,6 +34,11 @@ public final class HttpUtils {
     }
 
     private HttpUtils() {
+    }
+
+    /** "Meteosphere/1.0.0 (Android 17; +https://github.com/meteo-sphere/meteosphere)" */
+    static String userAgent(String appVersion, String androidRelease) {
+        return "Meteosphere/" + appVersion + " (Android " + androidRelease + "; +" + PROJECT_URL + ")";
     }
 
     public static String get(String url, int timeoutMs) throws IOException {
