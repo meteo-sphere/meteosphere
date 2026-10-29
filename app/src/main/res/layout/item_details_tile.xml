@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:ellipsize="end"
         tools:drawableStart="@drawable/ic_details_wind"
-        tools:text="Ветер" />
+        tools:text="Wind" />
 
     <TextView
         android:id="@+id/tvTileValue"
@@ -27,7 +27,7 @@
         android:singleLine="true"
         android:textColor="@color/details_sky_text"
         android:textSize="30sp"
-        tools:text="3 м/с" />
+        tools:text="3 m/s" />
 
     <org.meteosphere.ui.details.MetricDialView
         android:id="@+id/dialTile"
@@ -48,5 +48,5 @@
         android:paddingStart="18dp"
         android:paddingEnd="14dp"
         android:paddingBottom="16dp"
-        tools:text="ЮЗ\nСегодня до 5" />
+        tools:text="SW\nUp to 5 today" />
 </FrameLayout>

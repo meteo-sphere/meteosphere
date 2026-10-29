@@ -115,7 +115,7 @@ public final class EarthquakeFormatter {
         return (int) Math.round(255 * (value <= 0.0031308 ? value * 12.92 : 1.055 * Math.pow(value, 1 / 2.4) - 0.055));
     }
 
-    /** "За сутки", "За неделю", "За месяц" */
+    /** "Past day", "Past week", "Past month" */
     public static int periodTitle(int days) {
         return days == 1 ? R.string.earthquakes_summary_day : (days == 7 ? R.string.earthquakes_summary_week : R.string.earthquakes_summary_month);
     }

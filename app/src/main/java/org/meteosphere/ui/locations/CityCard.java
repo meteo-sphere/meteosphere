@@ -61,7 +61,7 @@ final class CityCard {
             this.windUnit = settings.windSpeedUnit;
             this.onlyStrongWind = settings.onlyStrongWind;
             this.strongWind = this.res.getInteger(R.integer.strong_wind_mps);
-            // The weekdays as a sentence writes them: "понедельник", "Montag", "月曜日"
+            // The weekdays as a sentence writes them: "lundi", "Montag", "月曜日"
             this.weekdays = DateFormatSymbols.getInstance(this.res.getConfiguration().getLocales().get(0)).getWeekdays();
         }
 

@@ -44,7 +44,7 @@
                 android:textAppearance="?attr/textAppearanceTitleSmall"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp"
-                tools:text="Шереметьево" />
+                tools:text="Sheremetyevo" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -70,7 +70,7 @@
                     android:singleLine="true"
                     android:textAppearance="?attr/textAppearanceBodySmall"
                     android:textColor="?attr/colorOnSurfaceVariant"
-                    tools:text="29 км" />
+                    tools:text="29 km" />
 
                 <TextView
                     android:id="@+id/tvTileWind"
@@ -80,7 +80,7 @@
                     android:singleLine="true"
                     android:textAppearance="?attr/textAppearanceBodySmall"
                     android:textColor="?attr/colorOnSurfaceVariant"
-                    tools:text=" · 6 м/с" />
+                    tools:text=" · 6 m/s" />
             </LinearLayout>
 
             <Space

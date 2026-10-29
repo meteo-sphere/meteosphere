@@ -44,7 +44,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:singleLine="true"
                     android:textSize="30sp"
-                    tools:text="Рига" />
+                    tools:text="Riga" />
 
                 <!-- The wind now beside the temperature, in its empty end, no taller than it: an arrow where it blows
                      to, its speed, its unit and where it blows from, and a strong one marked -->
@@ -101,7 +101,7 @@
                             style="@style/DetailsSkyHeaderText"
                             android:importantForAccessibility="no"
                             android:textSize="14sp"
-                            tools:text="м/с, З" />
+                            tools:text="m/s, W" />
 
                         <TextView
                             android:id="@+id/tvWindStrong"
@@ -125,7 +125,7 @@
                     style="@style/DetailsSkyHeaderText"
                     android:layout_marginTop="2dp"
                     android:textSize="24sp"
-                    tools:text="Пасмурно" />
+                    tools:text="Overcast" />
 
                 <TextView
                     android:id="@+id/tvHighLow"
@@ -140,14 +140,14 @@
                     style="@style/DetailsSkyHeaderText"
                     android:layout_marginTop="2dp"
                     android:textSize="16sp"
-                    tools:text="Ощущается как 9°" />
+                    tools:text="Feels like 9°" />
 
                 <TextView
                     android:id="@+id/tvDate"
                     style="@style/DetailsSkyHeaderText"
                     android:layout_marginTop="2dp"
                     android:textSize="16sp"
-                    tools:text="Вс, 4 октября, 10:25" />
+                    tools:text="Sun, Oct 4, 10:25" />
             </LinearLayout>
 
             <!-- The forecast on its way, where the cards come -->
@@ -187,7 +187,7 @@
                     android:paddingBottom="12dp"
                     android:textColor="@color/details_sky_text"
                     android:textSize="15sp"
-                    tools:text="Пасмурно. Днём до 15°. Ветер ЮЗ, 3–4 м/с." />
+                    tools:text="Overcast. Up to 15° in the afternoon. Wind SW, 3–4 m/s." />
 
                 <View
                     android:layout_width="match_parent"
@@ -292,7 +292,7 @@
                     android:id="@+id/tvSunTitle"
                     style="@style/DetailsCardTitle"
                     android:drawableStart="@drawable/ic_widget_sun"
-                    tools:text="Солнце · день 11 ч 17 мин" />
+                    tools:text="Sun · day 11 h 17 min" />
 
                 <org.meteosphere.ui.astro.SunDayChart
                     android:id="@+id/sunChart"
@@ -469,13 +469,13 @@
                         android:fontFamily="sans-serif-medium"
                         android:textColor="@color/details_sky_text"
                         android:textSize="18sp"
-                        tools:text="Убывающий серп" />
+                        tools:text="Waning crescent" />
 
                     <TextView
                         android:id="@+id/tvMoonInfo"
                         style="@style/DetailsSmallLabel"
                         android:layout_marginTop="2dp"
-                        tools:text="Освещено 42%\nНоволуние через 6 дней" />
+                        tools:text="Illuminated 42%\nNew moon in 6 days" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -538,7 +538,7 @@
                 <TextView
                     android:id="@+id/tvUpdated"
                     style="@style/DetailsSmallLabel"
-                    tools:text="Обновлено только что" />
+                    tools:text="Refreshed just now" />
             </LinearLayout>
         </LinearLayout>
     </org.meteosphere.ui.details.DetailsScrollView>
@@ -565,7 +565,7 @@
             android:singleLine="true"
             android:textColor="@color/details_sky_text"
             android:textSize="18sp"
-            tools:text="Рига" />
+            tools:text="Riga" />
 
         <ImageView
             android:id="@+id/ivPillIcon"

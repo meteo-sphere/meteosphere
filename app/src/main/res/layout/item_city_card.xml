@@ -74,7 +74,7 @@
                         android:fontFamily="sans-serif-medium"
                         android:singleLine="true"
                         android:textSize="21sp"
-                        tools:text="Амстердам" />
+                        tools:text="Amsterdam" />
 
                     <TextView
                         android:id="@+id/tvCityTime"
@@ -117,7 +117,7 @@
                     android:ellipsize="end"
                     android:maxLines="2"
                     android:textSize="14sp"
-                    tools:text="Переменная облачность" />
+                    tools:text="Partly cloudy" />
 
                 <!-- The wind with its icon, shadowed as the other texts on the sky; a strong one on a red pill -->
                 <TextView
@@ -134,7 +134,7 @@
                     android:paddingBottom="1dp"
                     android:singleLine="true"
                     android:textSize="14sp"
-                    tools:text="9 м/с" />
+                    tools:text="9 m/s" />
 
                 <!-- As wide as the widest high and low of the list, see the adapter: the pills keep to one column -->
                 <TextView

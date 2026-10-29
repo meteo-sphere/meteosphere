@@ -36,7 +36,7 @@
             android:imeOptions="actionDone"
             android:inputType="text|textCapSentences"
             android:maxLines="1"
-            tools:text="Дом" />
+            tools:text="Home" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
@@ -64,7 +64,7 @@
             android:singleLine="true"
             android:textAppearance="?attr/textAppearanceTitleSmall"
             android:textColor="?attr/colorOnSurface"
-            tools:text="Шереметьево" />
+            tools:text="Sheremetyevo" />
     </LinearLayout>
 
     <TextView
@@ -75,5 +75,5 @@
         android:layout_marginEnd="16dp"
         android:textAppearance="?attr/textAppearanceBodyMedium"
         android:textColor="?attr/colorOnSurfaceVariant"
-        tools:text="Россия, Московская область" />
+        tools:text="Russia, Moscow Oblast" />
 </LinearLayout>

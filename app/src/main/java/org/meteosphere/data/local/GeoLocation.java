@@ -4,9 +4,9 @@ import org.json.JSONObject;
 
 final class GeoLocation {
 
-    // {"id":524901,"name":"Москва","latitude":55.75204,"longitude":37.61781,"elevation":155.0,"feature_code":"PPLC",
+    // {"id":524901,"name":"Moscow","latitude":55.75204,"longitude":37.61781,"elevation":155.0,"feature_code":"PPLC",
     // "country_code":"RU","admin1_id":524894,"timezone":"Europe/Moscow","population":10381222,"country_id":2017370,
-    // "country":"Россия","admin1":"Москва"}
+    // "country":"Russia","admin1":"Moscow"}
 
     Integer id;
     String name;

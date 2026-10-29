@@ -10,7 +10,7 @@
         android:id="@+id/tvInsightTitle"
         style="@style/DetailsCardTitle"
         tools:drawableStart="@drawable/ic_details_precipitation"
-        tools:text="Осадки" />
+        tools:text="Precipitation" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:maxLines="2"
             android:textColor="@color/details_sky_text"
             android:textSize="16sp"
-            tools:text="Дождь в четверг" />
+            tools:text="Rain on Thursday" />
 
         <TextView
             android:id="@+id/tvInsightValue"
@@ -41,6 +41,6 @@
             android:layout_marginStart="12dp"
             android:textColor="@color/details_sky_text"
             android:textSize="28sp"
-            tools:text="3,3 мм" />
+            tools:text="3.3 mm" />
     </LinearLayout>
 </LinearLayout>

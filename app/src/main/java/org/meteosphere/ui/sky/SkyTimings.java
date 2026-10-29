@@ -66,7 +66,7 @@ final class SkyTimings {
             }
         }
         this.supported = supported;
-        text = supported ? null : "Таймеров видеочипа нет";
+        text = supported ? null : "No GPU timers";
     }
 
     /** The last second's timings, lines apart; null before the first */
@@ -172,8 +172,8 @@ final class SkyTimings {
             double framesShare = frameMs * 1e6 * this.drawn / period;
             double stillsShare = (double) this.stillsNs / period;
             text = String.format(Locale.ROOT,
-                    "облака %.2f мс\nсведение %.2f мс\nсборка %.2f мс\nкарта %.2f мс\nкадр %.2f мс × %.0f/с = %.0f%%"
-                            + "\nснимки %.0f%%",
+                    "clouds %.2f ms\nmerge %.2f ms\ncompose %.2f ms\nmap %.2f ms\nframe %.2f ms × %.0f/s = %.0f%%"
+                            + "\nstills %.0f%%",
                     ms[MARCH], ms[MERGE], ms[COMPOSE], ms[MAP], frameMs, perSecond,
                     100 * framesShare, 100 * stillsShare);
         }

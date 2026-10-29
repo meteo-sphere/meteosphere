@@ -77,7 +77,7 @@ final class HoursBuilder {
         return data;
     }
 
-    // "Сегодня · Ср, 14 октября", "Завтра · Чт, 15 октября", "Пт, 16 октября"
+    // "Today · Wed, Oct 14", "Tomorrow · Thu, Oct 15", "Fri, Oct 16"
     private String dayName(long time) {
         Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
         calendar.setTimeInMillis(time);
@@ -87,7 +87,7 @@ final class HoursBuilder {
         return word != null ? word + " · " + date : date;
     }
 
-    // "Сегодня", "Завтра", null for the other days
+    // "Today", "Tomorrow", null for the other days
     private String todayOrTomorrow(long time) {
         long days = this.format.daysFromToday(time);
         return days == 0 ? this.format.res.getString(R.string.details_today)

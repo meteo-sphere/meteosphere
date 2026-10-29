@@ -66,7 +66,7 @@ public class ForecastStripView extends View {
     public static final class Column {
         // The day over the hours, on a line of its own; null without the line
         public String day;
-        // A shorter name of the day for when its columns are narrower than day, like "Сегодня" late in the evening;
+        // A shorter name of the day for when its columns are narrower than day, like "Today" late in the evening;
         // null for none
         public String dayShort;
         public String label;

@@ -10,4 +10,4 @@
     android:paddingBottom="6dp"
     android:textAppearance="?attr/textAppearanceTitleSmall"
     android:textColor="?attr/colorPrimary"
-    tools:text="Аэропорты и метеостанции" />
+    tools:text="Airports and weather stations" />

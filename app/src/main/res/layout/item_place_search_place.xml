@@ -22,7 +22,7 @@
         android:singleLine="true"
         android:textAppearance="?attr/textAppearanceBodyLarge"
         android:textColor="?attr/colorOnSurface"
-        tools:text="Шереметьево" />
+        tools:text="Sheremetyevo" />
 
     <TextView
         android:id="@+id/tvSearchPlaceRegion"
@@ -32,5 +32,5 @@
         android:singleLine="true"
         android:textAppearance="?attr/textAppearanceBodyMedium"
         android:textColor="?attr/colorOnSurfaceVariant"
-        tools:text="Московская область" />
+        tools:text="Moscow Oblast" />
 </LinearLayout>
