@@ -15,7 +15,7 @@ def privateProperty = { String name -> wprUrl.isEmpty() ? '' : localProperties.g
 
 // The version as people see it, the only one to change for a release; the code Android compares versions by follows
 // from it, 1.2.3 being 10203
-def appVersion = '1.0.0'
+def appVersion = '1.0.1'
 if (!(appVersion ==~ /\d+\.\d{1,2}\.\d{1,2}/)) {
     throw new GradleException("The version ${appVersion} isn't major.minor.patch with the minor and the patch under 100")
 }
