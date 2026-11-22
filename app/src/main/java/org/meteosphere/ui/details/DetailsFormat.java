@@ -234,6 +234,9 @@ final class DetailsFormat {
     void windCell(ForecastStripView.Cell cell, int speed, int direction) {
         cell.text = String.valueOf(windSpeed(speed));
         cell.arrow = ForecastFormat.windArrow(speed, direction);
+        if (!Float.isNaN(cell.arrow)) {
+            cell.text2 = this.windDirections[direction];
+        }
     }
 
     // The amount after a drop as full as it is, an hour's or a day's; none, an empty drop
